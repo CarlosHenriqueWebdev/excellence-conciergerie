@@ -1,0 +1,94 @@
+{
+  "contactInfo": [
+    { "text": "Email", "type": "email", "icon": "vector1.svg", "link": "example@example.com" },
+    { "text": "Whatsapp", "type": "whatsapp", "icon": "vector2.svg", "link": "1234567890" },
+    { "text": "Phone", "type": "phone", "icon": "vector3.svg", "link": "123-456-7890" }
+  ],
+
+  "socials": [
+    { "text": "Instagram", "icon": "vector9.svg", "type": "url", "link": "https://www.instagram.com/" },
+    { "text": "Facebook", "icon": "vector10.svg", "type": "url", "link": "https://www.instagram.com/" },
+    { "text": "Linkedin", "icon": "vector11.svg", "type": "url", "link": "https://www.instagram.com/" }
+  ],
+
+"navLinks": [
+    { "text": "Nuestra Misión", "link": "#" },
+    { "text": "Gestión de Propiedades", "link": "#" },
+    { "text": "Conserjería Privada", "link": "#" },
+    { "text": "Conserjería Privada", "link": "#" }
+  ],
+  "heroSubtitle": "Excelencia en Conserjería",
+  "heroTitle": "Redefiniendo el Lujo\nen la Costa Azul",
+  "introductionSubtitle": "Detalles de Nuestro Compromiso",
+  "introductionTitle": "Nuestro Compromiso Contigo",
+  "introductionDescription": [
+    { "text": "En Excelencia en Conserjería, nos comprometemos a trascender los estándares de lujo creando recuerdos inolvidables y proporcionando un servicio que va más allá de lo extraordinario, todo manteniendo total discreción." },
+    { "text": "Para los propietarios, somos los guardianes de su inversión, asegurando una gestión integral transparente y eficiente." },
+    { "text": "Para los viajeros, ofrecemos una experiencia única, equiparable a los mejores hoteles de 5 estrellas, con el mismo nivel de excelencia, servicio y atención al detalle, siempre con la máxima confidencialidad." }
+  ],
+
+  "whyUsSubtitle": "",
+  "whyUsTitle": "",
+  "whyUsDescription": "",
+  "whyUsReasons": [
+    { "icon": "", "title": "", "description": "" },
+    { "icon": "", "title": "", "description": "" },
+    { "icon": "", "title": "", "description": "" },
+    { "icon": "", "title": "", "description": "" }
+  ],
+
+  "messageSubtitle": "",
+  "messageTitle": "",
+  "messageDescription": "",
+
+  "servicesSubtitle": "",
+  "servicesTitle": "",
+  "services": [
+    { "image": "", "title": "", "description": "" },
+    { "image": "", "title": "", "description": "" },
+    { "image": "", "title": "", "description": "" },
+    { "image": "", "title": "", "description": "" }
+  ],
+
+  "packsSubtitle": "",
+  "packsTitle": "",
+  "packs": [
+    { "icon": "", "title": "", "subTitle": "", "href": "" },
+    { "icon": "", "title": "", "subTitle": "", "href": "" },
+    { "icon": "", "title": "", "subTitle": "", "href": "" },
+    { "icon": "", "title": "", "subTitle": "", "href": "" }
+  ],
+  "packsButton": "",
+
+  "faqSubtitle": "",
+  "faqTitle": "",
+  "faq": [
+    { "title": "", "description": "" },
+    { "title": "", "description": "" },
+    { "title": "", "description": "" },
+    { "title": "", "description": "" }
+  ],
+
+  "contactSubtitle": "",
+  "contactTitle": "",
+  "contactDescription": "",
+
+  "legalLinks": [
+    { "text": "Terms and Conditions", "action": "#" },
+    { "text": "Privacy Policy", "action": "#" },
+    { "text": "Attributions", "action": "#" }
+  ], 
+ 
+  "currentLanguage": "Spanish",
+  "currentLanguageFlag": "flag4.svg",
+  "currentLocale": "es",
+  "languages": [
+    { "language": "Portugues", "flag": "flag3.svg", "locale": "pt" },      
+    { "language": "French", "flag": "flag2.svg", "locale": "fr" },      
+    { "language": "English", "flag": "flag1.svg", "locale": "en" }
+  ],
+
+  "footerDescription": "Excellence Conciergerie est une agence de gestion immobilière de luxe basée sur la Côte d’Azur. Notre équipe dévouée offre des services personnalisés pour répondre aux besoins uniques de chaque propriétaire.",
+  "footerContactTitle": "Contact",
+  "footerSiteLinksTitle": "Useful Links"
+}

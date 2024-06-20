@@ -1,0 +1,26 @@
+{
+  "navLinks": [
+    { "text": "Nossa Missão", "link": "#" },
+    { "text": "Gestão de Propriedades", "link": "#" },
+    { "text": "Concierge Privado", "link": "#" },
+    { "text": "Concierge Privado", "link": "#" }
+  ],
+  "heroSubtitle": "Excelência em Concierge",
+  "heroTitle": "Redefinindo o Luxo\nna Costa Azul",
+  "introductionSubtitle": "Detalhes do Nosso Compromisso",
+  "introductionTitle": "Nosso Compromisso com Você",
+  "introductionDescription": [
+    { "text": "Na Excelência em Concierge, estamos comprometidos em transcender os padrões de luxo, criando memórias inesquecíveis e oferecendo um serviço que vai além do extraordinário, mantendo total discrição." },
+    { "text": "Para os proprietários, somos os guardiões do seu investimento, garantindo uma gestão abrangente transparente e eficiente." },
+    { "text": "Para os viajantes, oferecemos uma experiência única, equivalente aos melhores hotéis 5 estrelas, com o mesmo nível de excelência, serviço e atenção aos detalhes, sempre com a máxima confidencialidade." }
+  ],
+
+  "currentLanguage": "Portugues",
+  "currentLanguageFlag": "flag3.svg",
+  "currentLocale": "pt",
+  "languages": [
+    { "language": "French", "flag": "flag2.svg", "locale": "fr" },      
+    { "language": "Spanish", "flag": "flag4.svg", "locale": "es" },      
+    { "language": "English", "flag": "flag1.svg", "locale": "en" }
+  ]
+}
