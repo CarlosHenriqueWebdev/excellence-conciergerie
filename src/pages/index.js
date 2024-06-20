@@ -39,12 +39,8 @@ export default function Home(props) {
     };
   }, []);
 
-  const maxBlur = 5;
-  const maxShadowOpacity = 1;
-  const maxOverlayOpacity = 0.3;
 
-  const blur = Math.min(maxBlur, scrollOffset / 100);
-  const shadowOpacity = Math.min(maxShadowOpacity, scrollOffset / 1000);
+  const maxOverlayOpacity = 0.3;
   const overlayOpacity = Math.min(maxOverlayOpacity, scrollOffset / 100);
 
   return (
@@ -53,9 +49,6 @@ export default function Home(props) {
       <main className="">
         <div className="overflow-hidden sticky top-0 z-[-1]">
           <div
-            style={{
-              filter: `blur(${blur}px)`,
-            }}
             className="relative"
           >
             <div
