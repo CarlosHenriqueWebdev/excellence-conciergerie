@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-export default function DetailImage({ src, className }) {
+export default function DetailImage({ src, className, delay }) {
   const [overlayTop, setOverlayTop] = useState(0);
   const targetRef = useRef(null);
 
@@ -29,13 +29,13 @@ export default function DetailImage({ src, className }) {
   }, []);
 
   return (
-    <div ref={targetRef} className="relative w-fit overflow-hidden">
+    <div ref={targetRef} className="relative">
       <div
-        className="w-full absolute bottom-0 z-[1] bg-pink-300"
+        className={`w-full absolute bottom-0 z-[1] bg-midnight-blue ${delay}`}
         style={{
           top: `${overlayTop}%`,
           width: "100%",
-          transition: "top 0.5s ease-in",
+          transition: `top 0.5s ease-in`,
         }}
       ></div>
       <img

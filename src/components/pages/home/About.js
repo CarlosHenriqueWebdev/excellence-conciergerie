@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import DetailText from "@/components/shared/DetailText";
+import ImageAnimation from "@/components/shared/ImageAnimation";
 import { useTranslation } from "next-i18next";
 
 export default function About({ translations }) {
@@ -8,11 +9,7 @@ export default function About({ translations }) {
   return (
     <div className="px-[24px] py-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[32px] md:grid md:grid-cols-[450fr_638fr]">
       <div>
-        <img
-          src={`/assets/images/img1.jpg`}
-          alt=""
-          className="block h-[250px] lg:h-[280px] w-full border-solid border-[3px] border-golden-sunbeam rounded-[4px] object-cover"
-        />
+        <ImageAnimation src="/assets/images/img1.jpg" delay="!delay-[0.475s]" className="block h-[250px] lg:h-[280px] w-full border-solid border-[3px] border-golden-sunbeam rounded-[4px] object-cover" />
       </div>
 
       <div className="flex flex-col gap-[16px] md:py-[16px]">
