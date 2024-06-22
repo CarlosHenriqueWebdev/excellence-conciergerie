@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
+import { NextSeo } from 'next-seo';
 import Link from "next/link";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
@@ -79,6 +80,10 @@ export default function Home(props) {
 
   return (
     <ParallaxProvider scrollAxis="vertical">
+      <NextSeo
+        title="Your Page Title"
+        description="Your page description"
+      />
       <div className="relative">
         <div
           className={`header-container ${isHeaderVisible ? animationClass : ""}`}
