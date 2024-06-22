@@ -44,27 +44,27 @@
   "messageDescription": "Bienvenue chez Excellence Conciergerie. En tant que Directrice Générale, je suis honorée de vous accueillir. Pour les propriétaires, nous prenons soin de votre bien avec passion et confidentialité. Aux voyageurs, nous promettons une expérience exceptionnelle et discrète. Excellence Conciergerie est une promesse de raffinement, de discrétion et d’attention personnelle. Bienvenue dans l’excellence.",
 
   "servicesSubtitle": "Gestion sans soucis, résultats exceptionnels",
-  "servicesTitle": "Gestion Locative de Luxe​",
+  "servicesTitle": "Gestion Locative de Luxe",
   "services": [
-    { "image": "img1.jpg", "title": "Gestion Intégrale", "description": "Excellence Conciergerie prend en charge tous les aspects de la gestion de votre propriété, tant à l’intérieur qu’à l’extérieur. Des rapports hebdomadaires détaillés vous tiennent informé de chaque intervention, assurant une transparence totale.", "pros": [
+    { "image": "img4.jpg", "title": "Gestion Intégrale", "description": "Excellence Conciergerie prend en charge tous les aspects de la gestion de votre propriété, tant à l’intérieur qu’à l’extérieur. Des rapports hebdomadaires détaillés vous tiennent informé de chaque intervention, assurant une transparence totale.", "pros": [
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." }
     ] },
-    { "image": "img1.jpg", "title": "Gestion Intégrale", "description": "Excellence Conciergerie prend en charge tous les aspects de la gestion de votre propriété, tant à l’intérieur qu’à l’extérieur. Des rapports hebdomadaires détaillés vous tiennent informé de chaque intervention, assurant une transparence totale.", "pros": [
+    { "image": "img5.jpg", "title": "Partenariats Exclusifs", "description": "Nous entretenons des partenariats exclusifs avec des entreprises de construction, des architectes, des décorateurs, des jardiniers et d’autres professionnels du secteur pour garantir la qualité supérieure des interventions sur votre propriété.", "pros": [
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." }
     ] },
-    { "image": "img1.jpg", "title": "Gestion Intégrale", "description": "Excellence Conciergerie prend en charge tous les aspects de la gestion de votre propriété, tant à l’intérieur qu’à l’extérieur. Des rapports hebdomadaires détaillés vous tiennent informé de chaque intervention, assurant une transparence totale.", "pros": [
+    { "image": "img6.jpg", "title": "Entretien Luxuriant ", "description": "Nos équipes dédiées veillent à ce que vos espaces extérieurs demeurent une oasis de beauté. De l’entretien du jardin à la maintenance de la piscine, nous préservons la splendeur de votre propriété.", "pros": [
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." }
     ] },
-    { "image": "img1.jpg", "title": "Gestion Intégrale", "description": "Excellence Conciergerie prend en charge tous les aspects de la gestion de votre propriété, tant à l’intérieur qu’à l’extérieur. Des rapports hebdomadaires détaillés vous tiennent informé de chaque intervention, assurant une transparence totale.", "pros": [
+    { "image": "img7.jpg", "title": "Services Exclusifs", "description": "Nous offrons des services personnalisés et exclusifs pour répondre à vos besoins spécifiques et surpasser vos attentes en matière de gestion de propriété.", "pros": [
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
