@@ -75,19 +75,19 @@
   "packsSubtitle": "Le plan parfait pour chaque style de vie.",
   "packsTitle": "Abonnements Personnalisés - Satisfaction Garantie",
   "packs": [
-    { "icon": "", "title": "Excellence Basic", "subTitle": "Du lundi au vendredi, de 8h30 à...", "href": "#", "pros": [
+    { "icon": "vector17.svg", "pattern": "pattern1.png", "title": "Excellence Basic", "subTitle": "Du lundi au vendredi, de 8h30 à...", "href": "#", "pros": [
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." }
     ] },
-    { "icon": "", "title": "Excellence Basic", "subTitle": "Du lundi au vendredi, de 8h30 à...", "href": "#", "pros": [
+    { "icon": "vector18.svg", "pattern": "pattern2.png", "title": "Excellence Basic", "subTitle": "Du lundi au vendredi, de 8h30 à...", "href": "#", "pros": [
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." }
     ] },
-    { "icon": "", "title": "Excellence Basic", "subTitle": "Du lundi au vendredi, de 8h30 à...", "href": "#", "pros": [
+    { "icon": "vector19.svg", "pattern": "pattern3.png", "title": "Excellence Basic", "subTitle": "Du lundi au vendredi, de 8h30 à...", "href": "#", "pros": [
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },
       { "text": "Entretien complet de votre propriété." },

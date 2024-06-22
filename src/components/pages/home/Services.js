@@ -73,7 +73,7 @@ export default function Services({ translations }) {
                     {item.pros.map((proItem, proIndex) => (
                       <li
                         key={proIndex}
-                        className="flex items-center gap-[8px]"
+                        className="flex items-baseline gap-[8px]"
                       >
                         <img
                           src={`/assets/images/vector16.svg`}
