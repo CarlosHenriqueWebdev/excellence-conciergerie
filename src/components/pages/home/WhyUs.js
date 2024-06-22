@@ -8,15 +8,10 @@ export default function WhyUs({ translations }) {
   const { t } = useTranslation();
   const reasons = t("whyUsReasons", { returnObjects: true });
   const [openIndexes, setOpenIndexes] = useState([0]);
-  const [closingIndex, setClosingIndex] = useState(null);
 
   const toggleFaq = (index) => {
     if (openIndexes.includes(index)) {
-      setClosingIndex(index);
-      setTimeout(() => {
         setOpenIndexes(openIndexes.filter((i) => i !== index));
-        setClosingIndex(null);
-      }, 500);
     } else {
       setOpenIndexes([...openIndexes, index]);
     }
@@ -72,21 +67,15 @@ export default function WhyUs({ translations }) {
                 />
               </div>
 
-              {openIndexes.includes(index) && (
-                <div
-                  className={`${
-                    closingIndex === index
-                      ? "dropdown-close-animation"
-                      : openIndexes.includes(index)
-                        ? "dropdown-open-animation"
-                        : ""
-                  }`}
-                >
-                  <p className="font-medium text-light-gray">
-                    {item.description}
-                  </p>
-                </div>
-              )}
+              <div
+                className={`transition-max-height overflow-hidden ${
+                  openIndexes.includes(index) ? "max-h-[500px]" : "max-h-[0px]"
+                }`}
+              >
+                <p className="font-medium text-light-gray pt-[16px]">
+                  {item.description}
+                </p>
+              </div>
             </AnimatedListItem>
           ))}
         </ul>

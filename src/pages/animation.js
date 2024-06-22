@@ -1,42 +1,48 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+const faqData = [
+  { question: 'What is Next.js?', answer: 'Next.js is a React framework for production.' },
+  { question: 'How do I use Next.js?', answer: 'You can use Next.js by creating a new project and writing React components.' },
+  // Add more FAQs here
+];
 
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+const FAQItem = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-export default function App() {
   return (
-    <>
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+    <div>
+      <motion.button
+        onClick={() => setIsOpen(!isOpen)}
+        initial={false}
+        animate={{ rotate: isOpen ? 90 : 0 }}
+        transition={{ duration: 0.3 }}
+        className="faq-question"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
-    </>
+        {question}
+      </motion.button>
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: 'auto' }}
+          transition={{ duration: 0.3 }}
+          className="faq-answer"
+        >
+          <p>{answer}</p>
+        </motion.div>
+      )}
+    </div>
   );
-}
+};
+
+const FAQ = () => {
+  return (
+    <div>
+      {faqData.map((faq, index) => (
+        <FAQItem key={index} question={faq.question} answer={faq.answer} />
+      ))}
+    </div>
+  );
+};
+
+export default FAQ;

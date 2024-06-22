@@ -29,7 +29,7 @@ export default function DetailImage({ src, className, delay }) {
   }, []);
 
   return (
-    <div ref={targetRef}>
+    <div ref={targetRef} className="img-container">
       <img
         className={`${className} animation-setup ${isVisible ? 'img-animation' : ''}`}
         src={src}

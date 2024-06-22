@@ -32,7 +32,7 @@ function AnimatedListItem({ children, index, onClick, isOpen }) {
     <li
       ref={itemRef}
       onClick={() => onClick(index)}
-      className={`hover:brightness-90 cursor-pointer font-semibold bg-graphite-gray rounded-[4px] px-[16px] py-[16px] flex flex-col gap-[16px] animation-setup ${isVisible ? 'list-animation' : ''}`}
+      className={`hover:brightness-90 cursor-pointer font-semibold bg-graphite-gray rounded-[4px] px-[16px] py-[16px] flex flex-col animation-setup ${isVisible ? 'list-animation' : ''}`}
     >
       {children}
     </li>
