@@ -1,48 +1,42 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-export default function DetailImage({ src, className }) {
-  const [overlayTop, setOverlayTop] = useState(0);
-  const targetRef = useRef(null);
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setOverlayTop(100);
-          observer.disconnect(); // Stop observing after the animation is triggered
-        }
-      },
-      {
-        threshold: 0.5,
-      },
-    );
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-    if (targetRef.current) {
-      observer.observe(targetRef.current);
-    }
-
-    return () => {
-      if (targetRef.current) {
-        observer.unobserve(targetRef.current);
-      }
-    };
-  }, []);
-
+export default function App() {
   return (
-    <div ref={targetRef} className="relative w-fit overflow-hidden">
-      <div
-        className="w-full absolute bottom-0 z-[1] bg-pink-300"
-        style={{
-          top: `${overlayTop}%`,
-          width: "100%",
-          transition: "top 0.5s ease-in",
+    <>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
-      ></div>
-      <img
-        className={className}
-        src={src}
-        alt=""
-      />
-    </div>
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
+    </>
   );
 }

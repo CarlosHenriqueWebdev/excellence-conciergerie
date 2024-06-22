@@ -2,48 +2,56 @@ import { useEffect, useRef, useState } from "react";
 import DetailText from "@/components/shared/DetailText";
 import { useTranslation } from "next-i18next";
 
-export default function Hero({ translations, minusScale }) {
+export default function Hero({ translations, isWhyUsInView }) {
   const { t } = useTranslation();
 
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [effectRan, setEffectRan] = useState(false); // Add a state to track if useEffect has run
+  const [effectRan, setEffectRan] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handlePlayButtonClick = () => {
-    videoRef.current.play();
-    setIsPlaying(true);
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        if (videoRef.current) {
-          videoRef.current.pause();
-          setIsPlaying(false);
-        }
-      } else if (window.innerWidth >= 768 && isPlaying === false) {
-        videoRef.current.play();
-        setIsPlaying(true);
-      }
-    };
-
-    // Initial check
-    if (window.innerWidth >= 768) {
+    if (isPlaying) {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    } else {
       videoRef.current.play();
       setIsPlaying(true);
     }
+  };
 
-    setEffectRan(true); // Set effectRan to true after the initial check
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    };
 
-    window.addEventListener("resize", handleResize);
+    checkIfMobile();
+    window.addEventListener("resize", checkIfMobile);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", checkIfMobile);
+      setEffectRan(true)
     };
-  }, [isPlaying]);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) {
+      setIsPlaying(false);
+      videoRef.current.pause();
+    } else if (isWhyUsInView && videoRef.current) {
+      setIsPlaying(false);
+      videoRef.current.pause();
+    } else if (!isWhyUsInView && videoRef.current && !isMobile) {
+      setIsPlaying(true);
+      videoRef.current.play();
+    }
+  }, [isWhyUsInView, isMobile]);
 
   return (
-    <div className="relative flex justify-center items-center">
+    <div
+      onClick={handlePlayButtonClick}
+      className="select-none cursor-pointer relative flex justify-center items-center"
+    >
       <video
         ref={videoRef}
         className="absolute top-0 left-0 object-cover w-full h-full"
@@ -55,7 +63,7 @@ export default function Hero({ translations, minusScale }) {
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50" />
       <div className="relative z-[20] h-[75vh] flex justify-center items-center px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px]">
-        {effectRan && !isPlaying ? ( // Render only if effectRan is true
+        {!isPlaying && effectRan ? (
           <button
             onClick={handlePlayButtonClick}
             className="hover:brightness-75"
@@ -67,27 +75,19 @@ export default function Hero({ translations, minusScale }) {
             />
           </button>
         ) : (
-          effectRan && ( // Render only if effectRan is true
-            <div
-              style={{
-                scale: `${minusScale}`,
-                transition: "scale 0.225s ease-in-out",
-              }}
-              className="font-bold uppercase flex flex-col gap-[16px] items-center"
-            >
-              <div className="w-fit flex gap-[8px] items-center text-[12px] text-light-gray">
-                <img
-                  src="/assets/images/star.png"
-                  alt="Star Icon"
-                  className="h-[14px]"
-                />
-                <span className="tracking-[2px] font-bold uppercase">
-                  {t("heroSubtitle")}
-                </span>
-              </div>
-              <h1 className="text-[28px] text-center">{t("heroTitle")}</h1>
+          <div className="font-bold uppercase flex flex-col gap-[16px] items-center">
+            <div className="w-fit flex gap-[8px] items-center text-[12px] text-light-gray">
+              <img
+                src="/assets/images/star.png"
+                alt="Star Icon"
+                className="h-[14px]"
+              />
+              <span className="tracking-[2px] font-bold uppercase">
+                {t("heroSubtitle")}
+              </span>
             </div>
-          )
+            <h1 className="text-[28px] text-center">{t("heroTitle")}</h1>
+          </div>
         )}
       </div>
     </div>

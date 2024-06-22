@@ -1,20 +1,20 @@
 import React, { useState, useEffect, useRef } from "react";
 
 export default function DetailImage({ src, className, delay }) {
-  const [overlayTop, setOverlayTop] = useState(0);
   const targetRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setOverlayTop(100);
+          setIsVisible(true);
           observer.disconnect(); // Stop observing after the animation is triggered
         }
       },
       {
         threshold: 0.5,
-      },
+      }
     );
 
     if (targetRef.current) {
@@ -29,17 +29,9 @@ export default function DetailImage({ src, className, delay }) {
   }, []);
 
   return (
-    <div ref={targetRef} className="relative">
-      <div
-        className={`w-full absolute bottom-0 z-[1] bg-midnight-blue ${delay}`}
-        style={{
-          top: `${overlayTop}%`,
-          width: "100%",
-          transition: `top 0.5s ease-in`,
-        }}
-      ></div>
+    <div ref={targetRef}>
       <img
-        className={className}
+        className={`${className} animation-setup ${isVisible ? 'img-animation' : ''}`}
         src={src}
         alt=""
       />
