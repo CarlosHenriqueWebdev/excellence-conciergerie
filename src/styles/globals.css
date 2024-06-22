@@ -490,27 +490,30 @@ table {
   transition: max-height 0.925s ease-out;
 }
 
-.root {
-  position: relative;
-  background-color: black;
-  width: 300vw;
+.scrollBackgroundAnimation {
+  animation: scrollBackground 20s linear infinite;
 }
 
-.artist {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  text-align: right;
-  color: rgb(190, 102, 87);
-  font-family: monospace;
-  z-index: 10;
+@keyframes scrollBackground {
+  0% {
+    background-position: center 0;
+  }
+  50% {
+    background-position: center -100px;
+  }
+  100% {
+    background-position: center 0;
+  }
 }
 
-.layer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  background-size: auto 100%;
-  background-repeat: repeat-x;
-  height: 100vh;
+.btn {
+ background: #a78a0f;
+}
+
+.btn:hover {
+ background: linear-gradient(90deg, #a78a0f 0%, #b79712 100%);
+}
+
+.btn:active {
+ transform: translate(0em, 0.2em);
 }

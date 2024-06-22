@@ -23,7 +23,7 @@ export default function Packs({ translations }) {
                 style={{
                   backgroundImage: `url(/assets/images/${item.pattern})`,
                 }}
-                className="flex flex-col gap-[16px] p-[24px] !bg-repeat !bg-[length:50%] md:text-center md:justify-center md:items-center"
+                className="scrollBackgroundAnimation flex flex-col gap-[16px] p-[24px] !bg-repeat !bg-[length:50%] md:text-center md:justify-center md:items-center"
               >
                 <img
                   src={`/assets/images/${item.icon}`}
@@ -51,7 +51,7 @@ export default function Packs({ translations }) {
                   ))}
                 </ul>
 
-                <button className="px-[32px] py-[12px] bg-sunset-yellow rounded-[4px] uppercase font-bold text-[16px] text-white w-fit md:self-center">{t('packsButton')}</button>
+                <button className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-fit md:self-center">{t('packsButton')}</button>
               </div>
             </div>
           </li>
