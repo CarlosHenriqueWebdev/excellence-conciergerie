@@ -7,35 +7,8 @@ import Sparkle from 'react-sparkle'
 export default function Message({ translations }) {
   const { t } = useTranslation();
 
-    const targetRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect(); // Stop observing after the animation is triggered
-        }
-      },
-      {
-        threshold: 0.5,
-      }
-    );
-
-    if (targetRef.current) {
-      observer.observe(targetRef.current);
-    }
-
-    return () => {
-      if (targetRef.current) {
-        observer.unobserve(targetRef.current);
-      }
-    };
-  }, []);
-
   return (
-    <div ref={targetRef} className={`py-[100px] bg-cover bg-fixed bg-[url('/assets/images/img3.jpg')] border-solid border-y-[8px] border-[#020201] ${isVisible ? 'bg-pan-br' : ''}`}>
+    <div className={`py-[100px] bg-cover bg-fixed bg-[url('/assets/images/img3.jpg')] border-solid border-y-[8px] border-[#020201]`}>
       <div className="bg-deep-night py-[56px]">
         <div className="px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[24px] md:justify-center md:items-center md:text-center">
           <div className="relative w-fit">

@@ -15,7 +15,8 @@ import Faq from "@/components/pages/home/Faq";
 import ContactUpper from "@/components/pages/home/ContactUpper";
 import ContactLower from "@/components/pages/home/ContactLower";
 import { ParallaxProvider } from "react-scroll-parallax";
-import ParallaxExample from "./ParallaxExample";
+import FirstParallaxObject from "@/components/shared/FirstParallaxObject";
+import SecondParallaxObject from "@/components/shared/SecondParallaxObject";
 
 export const getStaticProps = async ({ locale }) => {
   return {
@@ -77,50 +78,51 @@ export default function Home(props) {
   const overlayOpacity = Math.min(0.5, scrollOffset / 100);
 
   return (
-                  <ParallaxProvider scrollAxis="vertical">
-    <div className="relative">
-      <div
-        className={`header-container ${isHeaderVisible ? animationClass : ""}`}
-      >
-        <Header translations={props} />
-      </div>
-      <main>
+    <ParallaxProvider scrollAxis="vertical">
+      <div className="relative">
         <div
-          className={`overflow-hidden top-0 ${!isWhyUsInView ? "sticky" : "static"}`}
+          className={`header-container ${isHeaderVisible ? animationClass : ""}`}
         >
-          <div className="relative">
-            <div
-              style={{
-                backgroundColor: `rgba(0, 0, 0, ${overlayOpacity})`,
-                transition: "background-color 0.2s ease-in-out",
-              }}
-              className="h-full w-full absolute top-0 left-0 z-[40] pointer-events-none"
-            />
-            <Hero translations={props} isWhyUsInView={isWhyUsInView} />
-          </div>
+          <Header translations={props} />
         </div>
-        <div className="relative z-[1] flex flex-col gap-[100px] pt-[100px] bg-midnight-blue border-solid border-t-[8px] border-[#020201] overflow-hidden">
-          <About translations={props} />
-          <div ref={headerStickyRef}>
-            <div className="relative flex flex-col gap-[100px]">
-                            <ParallaxExample />
-
-              <WhyUs translations={props} />
+        <main>
+          <div
+            className={`overflow-hidden top-0 ${!isWhyUsInView ? "sticky" : "static"}`}
+          >
+            <div className="relative">
+              <div
+                style={{
+                  backgroundColor: `rgba(0, 0, 0, ${overlayOpacity})`,
+                  transition: "background-color 0.2s ease-in-out",
+                }}
+                className="h-full w-full absolute top-0 left-0 z-[40] pointer-events-none"
+              />
+              <Hero translations={props} isWhyUsInView={isWhyUsInView} />
+            </div>
+          </div>
+          <div className="relative z-[1] flex flex-col gap-[100px] pt-[100px] bg-midnight-blue border-solid border-t-[8px] border-[#020201] overflow-hidden">
+            <About translations={props} />
+            <div ref={headerStickyRef} className="flex flex-col gap-[100px]">
+              <div className="relative">
+                <FirstParallaxObject />
+                <WhyUs translations={props} />
+              </div>
               <Message translations={props} />
               <Services translations={props} />
-              <Packs translations={props} />
-            </div>
-            <div className="flex flex-col">
-              <Faq translations={props} />
-              <ContactUpper translations={props} />
-              <ContactLower translations={props} />
+              <div className="relative">
+                <SecondParallaxObject />
+                <Packs translations={props} />
+              </div>
+              <div className="flex flex-col">
+                <Faq translations={props} />
+                <ContactUpper translations={props} />
+                <ContactLower translations={props} />
+              </div>
             </div>
           </div>
-        </div>
-      </main>
-      <Footer translations={props} />
-    </div>
-                  </ParallaxProvider>
-
+        </main>
+        <Footer translations={props} />
+      </div>
+    </ParallaxProvider>
   );
 }
