@@ -4,7 +4,7 @@ import { useTranslation } from "next-i18next";
 import ImageAnimation from "@/components/shared/ImageAnimation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation, Loop } from 'swiper/modules';
 
 
 export default function Services({ translations }) {
@@ -41,6 +41,7 @@ export default function Services({ translations }) {
           delay: 6500,
           disableOnInteraction: true,
         }}
+        loop={true}
         modules={[Autoplay]}
           spaceBetween={100}
           onSwiper={setSwiper}
