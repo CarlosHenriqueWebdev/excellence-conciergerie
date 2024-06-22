@@ -14,6 +14,8 @@ import Packs from "@/components/pages/home/Packs";
 import Faq from "@/components/pages/home/Faq";
 import ContactUpper from "@/components/pages/home/ContactUpper";
 import ContactLower from "@/components/pages/home/ContactLower";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxExample from "./ParallaxExample";
 
 export const getStaticProps = async ({ locale }) => {
   return {
@@ -58,7 +60,7 @@ export default function Home(props) {
           setIsWhyUsInView(entry.isIntersecting);
         });
       },
-      { threshold: 0.01 }
+      { threshold: 0.01 },
     );
 
     if (headerStickyRef.current) {
@@ -75,12 +77,17 @@ export default function Home(props) {
   const overlayOpacity = Math.min(0.5, scrollOffset / 100);
 
   return (
+                  <ParallaxProvider scrollAxis="vertical">
     <div className="relative">
-      <div className={`header-container ${isHeaderVisible ? animationClass : ""}`}>
+      <div
+        className={`header-container ${isHeaderVisible ? animationClass : ""}`}
+      >
         <Header translations={props} />
       </div>
       <main>
-        <div className={`overflow-hidden top-0 ${!isWhyUsInView ? 'sticky' : 'static'}`}>
+        <div
+          className={`overflow-hidden top-0 ${!isWhyUsInView ? "sticky" : "static"}`}
+        >
           <div className="relative">
             <div
               style={{
@@ -94,18 +101,26 @@ export default function Home(props) {
         </div>
         <div className="relative z-[1] flex flex-col gap-[100px] pt-[100px] bg-midnight-blue border-solid border-t-[8px] border-[#020201] overflow-hidden">
           <About translations={props} />
-          <div ref={headerStickyRef} className="flex flex-col gap-[100px]">
-            <WhyUs translations={props} />
-          <Message translations={props} />
-          <Services translations={props} />
-          <Packs translations={props} />
-          <Faq translations={props} />
-          <ContactUpper translations={props} />
-          <ContactLower translations={props} />
+          <div ref={headerStickyRef}>
+            <div className="relative flex flex-col gap-[100px]">
+                            <ParallaxExample />
+
+              <WhyUs translations={props} />
+              <Message translations={props} />
+              <Services translations={props} />
+              <Packs translations={props} />
+            </div>
+            <div className="flex flex-col">
+              <Faq translations={props} />
+              <ContactUpper translations={props} />
+              <ContactLower translations={props} />
+            </div>
           </div>
         </div>
       </main>
       <Footer translations={props} />
     </div>
+                  </ParallaxProvider>
+
   );
 }

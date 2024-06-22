@@ -178,7 +178,7 @@ export default function Header({ translations }) {
                           className="h-[12px] block"
                         />
                       </DisclosureButton>
-                      <DisclosurePanel className="flex flex-col gap-[16px] pl-[8px]">
+                      <DisclosurePanel className="flex flex-col gap-[16px]">
                         {t("languages", {
                           returnObjects: true,
                         }).map((item, index) => (
