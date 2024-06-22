@@ -81,7 +81,7 @@ export default function Home(props) {
   return (
     <ParallaxProvider scrollAxis="vertical">
       <NextSeo
-        title="Your Page Title"
+        title="Excellence Conciergerie"
         description="Your page description"
       />
       <div className="relative">
