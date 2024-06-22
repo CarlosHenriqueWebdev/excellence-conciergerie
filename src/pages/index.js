@@ -11,6 +11,7 @@ import WhyUs from "@/components/pages/home/WhyUs";
 import Message from "@/components/pages/home/Message";
 import Services from "@/components/pages/home/Services";
 import Packs from "@/components/pages/home/Packs";
+import Faq from "@/components/pages/home/Faq";
 import ContactUpper from "@/components/pages/home/ContactUpper";
 import ContactLower from "@/components/pages/home/ContactLower";
 
@@ -98,6 +99,7 @@ export default function Home(props) {
           <Message translations={props} />
           <Services translations={props} />
           <Packs translations={props} />
+          <Faq translations={props} />
           <ContactUpper translations={props} />
           <ContactLower translations={props} />
           </div>

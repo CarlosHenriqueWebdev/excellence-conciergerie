@@ -48,6 +48,7 @@ export default function WhyUs({ translations }) {
               index={index}
               onClick={toggleFaq}
               isOpen={openIndexes.includes(index)}
+              shoudPlayAnimation={true}
             >
               <div className="flex justify-between items-center cursor-pointer">
                 <div className="flex items-center gap-[8px]">
@@ -68,8 +69,8 @@ export default function WhyUs({ translations }) {
               </div>
 
               <div
-                className={`transition-max-height overflow-hidden ${
-                  openIndexes.includes(index) ? "max-h-[500px]" : "max-h-[0px]"
+                className={`overflow-hidden ${
+                  openIndexes.includes(index) ? "transition-max-height max-h-[500px]" : "transition-max-height-closed max-h-[0px]"
                 }`}
               >
                 <p className="font-medium text-light-gray pt-[16px]">

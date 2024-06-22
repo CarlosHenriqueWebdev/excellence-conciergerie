@@ -483,6 +483,10 @@ table {
 }
 
 .transition-max-height {
-  transition: max-height 0.5s;
+  transition: max-height 0.725s ease-in;
+}
+
+.transition-max-height-closed {
+  transition: max-height 0.925s ease-out;
 }
 
