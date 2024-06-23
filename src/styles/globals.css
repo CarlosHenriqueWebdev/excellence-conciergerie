@@ -518,9 +518,8 @@ table {
  transform: translate(0em, 0.2em);
 }
 
-
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -530,7 +529,6 @@ table {
 
 ::-webkit-scrollbar-thumb {
   background: #919191;
-  border: 3px solid #4c4c4c;
 }
 
 ::-webkit-scrollbar-thumb:hover {

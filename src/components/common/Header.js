@@ -45,7 +45,7 @@ export default function Header({ translations }) {
   };
 
   return (
-    <header className="bg-eclipse-black text-lavender-haze text-[14px] border-solid border-b-[8px] border-[#020201]">
+    <header className="bg-eclipse-black text-lavender-haze text-[14px] border-solid border-b-[2px] border-twilight-gray">
       <nav
         className="px-[24px] py-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex items-center justify-between"
         aria-label="Global"

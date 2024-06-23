@@ -4,7 +4,7 @@ import { Parallax } from "react-scroll-parallax";
 
 export default function SecondParallaxObject() {
   return (
-    <Parallax translateY={[-0, 0]} translateX={[800, -200]} className="hidden md:block opacity-[1] w-fit absolute z-[2] top-[-140px] pointer-events-none">
+    <Parallax translateY={[-0, 0]} translateX={[800, -200]} className="hidden md:block opacity-[1] w-fit absolute z-[2] top-[-110px] pointer-events-none">
       <img
         src="/assets/images/detail2.png"
         alt=""
