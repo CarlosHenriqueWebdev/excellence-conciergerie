@@ -517,3 +517,61 @@ table {
 .btn:active {
  transform: translate(0em, 0.2em);
 }
+
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f1f1f150;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #919191;
+  border: 3px solid #4c4c4c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9c9c9c;
+}
+
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+  background-color: #f1f1f150;
+  background-size: 8px;
+  background-repeat: no-repeat;
+}
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  height: 12px;
+  width: 16px;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23e5e5e5'><polygon points='50,0 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23ffffff'><polygon points='50,0 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23000000'><polygon points='50,0 0,50 100,50'/></svg>");
+}
+
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  height: 12px;
+  width: 16px;
+  background-position: center 2px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23e5e5e5'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23ffffff'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23000000'><polygon points='0,0 100,0 50,50'/></svg>");
+}
