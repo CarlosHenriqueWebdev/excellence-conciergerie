@@ -1,84 +1,101 @@
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
 
-const formFields = [
-  {
-    type: "text",
-    name: "fullName",
-    label: "Nom complet",
-    placeholder: "Votre nom complet",
-    required: true,
-  },
-  {
-    type: "email",
-    name: "email",
-    label: "Email",
-    placeholder: "Your Email",
-    required: true,
-  },
-  {
-    type: "select",
-    name: "formType",
-    label: "Choisissez un type de formulaire",
-    options: [
-      { value: "proprietaires", label: "Propriétaires" },
-      { value: "locataires", label: "Locataires" },
-      { value: "autres", label: "Autres" },
-    ],
-    required: true,
-    helperText:
-      "Si vous avez des questions générales, remplissez ce formulaire. Si vous êtes propriétaire, veuillez choisir l'option 'Propriétaires' dans le menu déroulant. Si vous souhaitez acheter un forfait, sélectionnez l'option 'Acheteurs de forfaits' dans le menu déroulant.",
-  },
-];
-
-const additionalForms = {
-  proprietaires: [
-    {
-      type: "text",
-      name: "propertyName",
-      label: "Nom de la propriété",
-      placeholder: "Nom de la propriété",
-      required: true,
-    },
-    {
-      type: "number",
-      name: "propertyValue",
-      label: "Valeur de la propriété",
-      placeholder: "Valeur de la propriété",
-      required: true,
-    },
-  ],
-  locataires: [
-    {
-      type: "text",
-      name: "tenantName",
-      label: "Nom du locataire",
-      placeholder: "Nom du locataire",
-      required: true,
-    },
-    {
-      type: "date",
-      name: "leaseStart",
-      label: "Date de début du bail",
-      required: true,
-    },
-  ],
-  autres: [
-    {
-      type: "textarea",
-      name: "otherInfo",
-      label: "Autres informations",
-      placeholder: "Autres informations",
-      required: true,
-    },
-  ],
-};
-
 export default function ContactLower({ translations }) {
   const { t } = useTranslation();
   const [step, setStep] = useState(1);
   const [selectedFormType, setSelectedFormType] = useState(null);
   const [formData, setFormData] = useState({});
+
+  const formFields = [
+    {
+      type: "text",
+      name: "fullName",
+      label: "fullNameLabel",
+      placeholder: t("fullNamePlaceholder"),
+      required: true,
+    },
+    {
+      type: "email",
+      name: "email",
+      label: "emailLabel",
+      placeholder: "emailPlaceholder",
+      required: true,
+    },
+    {
+      type: "select",
+      name: "formType",
+      label: "formTypeLabel",
+      options: "formTypeOptions",
+      required: true,
+      helperText: "formTypeHelperText",
+    },
+  ];
+
+  const additionalForms = {
+    proprietaires: [
+      {
+        type: "text",
+        name: "propertyLocation",
+        label: "propertyLocationLabel",
+        placeholder: "propertyLocationPlaceholder",
+        required: true,
+      },
+      {
+        type: "number",
+        name: "propertyRoomAmount",
+        label: "propertyRoomAmountLabel",
+        placeholder: "propertyRoomAmountPlaceholder",
+        required: true,
+      },
+      {
+        type: "select",
+        name: "services",
+        label: "servicesLabel",
+        options: "servicesOptions",
+        required: true,
+      },
+      {
+        type: "select",
+        name: "propertyType",
+        label: "propertyTypeLabel",
+        options: "propertyTypeOptions",
+        required: true,
+      },
+      {
+        type: "textarea",
+        name: "propertyMessage",
+        label: "propertyMessageLabel",
+        placeholder: "propertyMessagePlaceholder",
+        required: false,
+      },
+    ],
+    subscriptions: [
+      {
+        type: "select",
+        name: "subscriptionsChoices",
+        label: "subscriptionsChoicesLabel",
+        options: "subscriptionsChoicesOptions",
+        required: true,
+      },
+      {
+        type: "tel",
+        name: "subscriptionPhone",
+        label: "subscriptionPhoneLabel",
+        placeholder: "subscriptionPhonePlaceholder",
+        required: false,
+      },
+    ],
+    autres: [
+      {
+        type: "textarea",
+        name: "otherInfo",
+        label: "otherInfoLabel",
+        placeholder: "otherInfoPlaceholder",
+        required: true,
+      },
+    ],
+  };
 
   const handleNextStep = (e) => {
     e.preventDefault();
@@ -89,6 +106,10 @@ export default function ContactLower({ translations }) {
 
   const handlePreviousStep = () => {
     setStep(step - 1);
+  };
+
+  const backToStart = () => {
+    setStep(1);
   };
 
   const handleSubmit = (e) => {
@@ -109,7 +130,11 @@ export default function ContactLower({ translations }) {
           {t(field.label)}{" "}
           {field.required && <span className="text-[#FF4C4C]">*</span>}
         </label>
-        {field.type === "text" || field.type === "email" || field.type === "number" || field.type === "date" ? (
+        {field.type === "text" ||
+        field.type === "email" ||
+        field.type === "number" ||
+        field.type === "tel" ||
+        field.type === "date" ? (
           <input
             type={field.type}
             name={field.name}
@@ -125,10 +150,12 @@ export default function ContactLower({ translations }) {
             required={field.required}
             value={formData[field.name] || ""}
             onChange={handleChange}
-            className="w-full px-[16px] py-[12px] bg-[#31343C] text-white placeholder-white-75 rounded-[4px] border-none focus-visible:outline-golden-yellow"
+            className="w-full px-[16px] py-[12px] bg-[#31343C] text-white placeholder-white-75 rounded-[4px] border-r-[16px] border-transparent border-solid focus-visible:outline-golden-yellow"
           >
-            <option value="" disabled>{t("Select an option")}</option>
-            {field.options.map((option, idx) => (
+            <option value="" disabled>
+              {t("blankOption")}
+            </option>
+            {t(field.options, { returnObjects: true }).map((option, idx) => (
               <option key={idx} value={option.value}>
                 {t(option.label)}
               </option>
@@ -160,37 +187,48 @@ export default function ContactLower({ translations }) {
         onSubmit={step === 1 ? handleNextStep : handleSubmit}
       >
         {step === 1 && (
-          <div className="flex flex-col gap-[16px]">
+          <div className="flex flex-col gap-[32px]">
             {renderFormFields(formFields)}
-            <button className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-fit self-end">
-              Next Step
+            <button className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-full md:w-fit self-end">
+              {t("nextStep")}
             </button>
           </div>
         )}
         {step === 2 && selectedFormType && (
-          <div className="flex flex-col gap-[16px]">
+          <div className="flex flex-col gap-[32px]">
             {renderFormFields(additionalForms[selectedFormType])}
-            <div className="flex justify-between">
+            <div className="flex flex-col gap-[16px] md:flex-row justify-between">
               <button
                 type="button"
-                className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-fit"
+                className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-full md:w-fit"
                 onClick={handlePreviousStep}
               >
-                Previous
+                {t("previousStep")}
               </button>
               <button
                 type="submit"
-                className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-fit"
+                className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-full md:w-fit"
               >
-                Submit
+                {t("submit")}
               </button>
             </div>
           </div>
         )}
         {step === 3 && (
           <div className="flex flex-col gap-[16px] items-center">
-            <h2 className="text-[24px] text-white">Form Submitted Successfully!</h2>
-            <p className="text-[#FFD84C] text-[16px]">Thank you for your submission. We will get back to you soon.</p>
+            <h2 className="text-[24px] text-white">
+              {t("formSubmittedSuccessfully")}
+            </h2>
+            <p className="text-[#FFD84C] text-[16px]">
+              {t("thankYouForYourSubmission")}
+            </p>
+            <button
+              type="button"
+              className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-full md:w-fit"
+              onClick={backToStart}
+            >
+              {t("backToStart")}
+            </button>
           </div>
         )}
       </form>
