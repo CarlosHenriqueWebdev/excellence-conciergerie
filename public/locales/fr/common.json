@@ -51,7 +51,7 @@
   ],
 
   "navLinks": [
-    { "text": "Pourquoi Nous", "link": "whyUs" },
+    { "text": "Notre Mission", "link": "whyUs" },
     { "text": "Gestion Locative", "link": "services" },
     { "text": "Abonnements", "link": "subscriptions" },
     { "text": "Contact", "link": "contact" }

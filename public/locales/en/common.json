@@ -1,22 +1,4 @@
 {
- "navLinks": [
-    { "text": "Our Mission", "link": "#" },
-    { "text": "Property Management", "link": "#" },
-    { "text": "Private Concierge", "link": "#" },
-    { "text": "Private Concierge", "link": "#" }
-  ],
-
-  "heroSubtitle": "Concierge Excellence",
-  "heroTitle": "Redefining Luxury\non the French Riviera",
-  
-  "introductionSubtitle": "Details of Our Commitment",
-  "introductionTitle": "Our Commitment to You",
-  "introductionDescription": [
-    { "text": "At Concierge Excellence, we are committed to transcending the standards of luxury by creating unforgettable memories and providing a service that goes beyond extraordinary, all while maintaining total discretion." },
-    { "text": "For property owners, we are the guardians of your investment, ensuring transparent and efficient comprehensive management." },
-    { "text": "For travelers, we offer a unique experience, equivalent to the finest 5-star hotels, with the same level of excellence, service, and attention to detail, always in the strictest confidence." }
-  ],
-
   "currentLanguage": "English",
   "currentLanguageFlag": "flag1.svg",
   "currentLocale": "en",
@@ -24,5 +6,277 @@
     { "language": "Portugues", "flag": "flag3.svg", "locale": "pt" },      
     { "language": "Spanish", "flag": "flag4.svg", "locale": "es" },      
     { "language": "French", "flag": "flag2.svg", "locale": "fr" }
-  ]
+  ],
+
+  "contactInfo": [
+    {
+      "text": "Email",
+      "type": "email",
+      "icon": "vector1.svg",
+      "link": "example@example.com"
+    },
+    {
+      "text": "Whatsapp",
+      "type": "whatsapp",
+      "icon": "vector2.svg",
+      "link": "1234567890"
+    },
+    {
+      "text": "Phone",
+      "type": "phone",
+      "icon": "vector3.svg",
+      "link": "123-456-7890"
+    }
+  ],
+
+  "socials": [
+    {
+      "text": "Instagram",
+      "icon": "vector9.svg",
+      "type": "url",
+      "link": "https://www.instagram.com/"
+    },
+    {
+      "text": "Facebook",
+      "icon": "vector10.svg",
+      "type": "url",
+      "link": "https://www.instagram.com/"
+    },
+    {
+      "text": "Linkedin",
+      "icon": "vector11.svg",
+      "type": "url",
+      "link": "https://www.instagram.com/"
+    }
+  ],
+
+  "navLinks": [
+    { "text": "Notre Mission", "link": "whyUs" },
+    { "text": "Gestion Locative", "link": "services" },
+    { "text": "Abonnements", "link": "subscriptions" },
+    { "text": "Contact", "link": "contact" }
+  ],
+
+  "heroSubtitle": "Excellence Conciergerie",
+  "heroTitle": "Redéfinir le Luxe\nsur la Côte d'Azur",
+
+  "introductionSubtitle": "Détails de notre engagement",
+  "introductionTitle": "Notre Engagement envers Vous",
+  "introductionDescription": [
+    {
+      "text": "Chez Excellence Conciergerie, nous nous engageons à transcender les standards du luxe en créant des souvenirs inoubliables et en fournissant un service qui va au-delà de l’extraordinaire, tout en préservant une discrétion totale."
+    },
+    {
+      "text": "Pour les propriétaires, nous sommes les gardiens de votre investissement, assurant une gestion intégrale transparente et efficace."
+    },
+    {
+      "text": "Aux voyageurs, nous offrons une expérience unique, équiparée aux plus grands hôtels 5 étoiles, avec le même niveau d’exigence, de service et d’attention aux détails, toujours dans la plus stricte confidentialité."
+    }
+  ],
+
+  "whyUsSubtitle": "Gestion de propriétés de luxe",
+  "whyUsTitle": "Pourquoi Choisir Excellence Conciergerie?",
+  "whyUsDescription": "Chez Excellence Conciergerie, nous nous démarquons par notre dévouement à fournir des services de gestion de propriétés de luxe qui allient expertise, personnalisation et efficacité. Découvrez pourquoi nos clients nous font confiance pour gérer leurs biens avec un professionnalisme inégalé et une attention méticuleuse aux détails.",
+  "whyUsReasons": [
+    {
+      "icon": "vector12.svg",
+      "title": "Professionnalisme et Expertise",
+      "description": "Notre équipe expérimentée assure une gestion complète des annonces, garantissant une visibilité optimale sur les plateformes de renom. Des professionnels aguerris s'occupent de la rédaction des annonces pour mettre en valeur les atouts uniques de votre bien."
+    },
+    {
+      "icon": "vector13.svg",
+      "title": "Service Personnalisé",
+      "description": "Notre équipe expérimentée assure une gestion complète des annonces, garantissant une visibilité optimale sur les plateformes de renom. Des professionnels aguerris s'occupent de la rédaction des annonces pour mettre en valeur les atouts uniques de votre bien."
+    },
+    {
+      "icon": "vector14.svg",
+      "title": "Optimisation de la Rentabilité",
+      "description": "Notre équipe expérimentée assure une gestion complète des annonces, garantissant une visibilité optimale sur les plateformes de renom. Des professionnels aguerris s'occupent de la rédaction des annonces pour mettre en valeur les atouts uniques de votre bien."
+    },
+    {
+      "icon": "vector15.svg",
+      "title": "Gestion Complète et Sérénité",
+      "description": "Notre équipe expérimentée assure une gestion complète des annonces, garantissant une visibilité optimale sur les plateformes de renom. Des professionnels aguerris s'occupent de la rédaction des annonces pour mettre en valeur les atouts uniques de votre bien."
+    }
+  ],
+
+  "messageSubtitle": "Catherine Teixeira",
+  "messageTitle": "Message de la Directrice",
+  "messageDescription": "Bienvenue chez Excellence Conciergerie. En tant que Directrice Générale, je suis honorée de vous accueillir. Pour les propriétaires, nous prenons soin de votre bien avec passion et confidentialité. Aux voyageurs, nous promettons une expérience exceptionnelle et discrète. Excellence Conciergerie est une promesse de raffinement, de discrétion et d’attention personnelle. Bienvenue dans l’excellence.",
+
+  "servicesSubtitle": "Gestion sans soucis, résultats exceptionnels",
+  "servicesTitle": "Gestion Locative de Luxe",
+  "services": [
+    {
+      "image": "img4.jpg",
+      "title": "Gestion Intégrale",
+      "description": "Excellence Conciergerie prend en charge tous les aspects de la gestion de votre propriété, tant à l’intérieur qu’à l’extérieur. Des rapports hebdomadaires détaillés vous tiennent informé de chaque intervention, assurant une transparence totale.",
+      "pros": [
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." }
+      ]
+    },
+    {
+      "image": "img5.jpg",
+      "title": "Partenariats Exclusifs",
+      "description": "Nous entretenons des partenariats exclusifs avec des entreprises de construction, des architectes, des décorateurs, des jardiniers et d’autres professionnels du secteur pour garantir la qualité supérieure des interventions sur votre propriété.",
+      "pros": [
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." }
+      ]
+    },
+    {
+      "image": "img6.jpg",
+      "title": "Entretien Luxuriant ",
+      "description": "Nos équipes dédiées veillent à ce que vos espaces extérieurs demeurent une oasis de beauté. De l’entretien du jardin à la maintenance de la piscine, nous préservons la splendeur de votre propriété.",
+      "pros": [
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." }
+      ]
+    },
+    {
+      "image": "img7.jpg",
+      "title": "Services Exclusifs",
+      "description": "Nous offrons des services personnalisés et exclusifs pour répondre à vos besoins spécifiques et surpasser vos attentes en matière de gestion de propriété.",
+      "pros": [
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." }
+      ]
+    }
+  ],
+
+  "packsSubtitle": "Le plan parfait pour chaque style de vie.",
+  "packsTitle": "Abonnements Personnalisés - Satisfaction Garantie",
+  "packs": [
+    {
+      "icon": "vector17.svg",
+      "pattern": "pattern1.png",
+      "title": "Excellence Basic",
+      "subTitle": "Du lundi au vendredi, de 8h30 à...",
+      "href": "#",
+      "pros": [
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." }
+      ]
+    },
+    {
+      "icon": "vector18.svg",
+      "pattern": "pattern2.png",
+      "title": "Excellence Basic",
+      "subTitle": "Du lundi au vendredi, de 8h30 à...",
+      "href": "#",
+      "pros": [
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." }
+      ]
+    },
+    {
+      "icon": "vector19.svg",
+      "pattern": "pattern3.png",
+      "title": "Excellence Basic",
+      "subTitle": "Du lundi au vendredi, de 8h30 à...",
+      "href": "#",
+      "pros": [
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." },
+        { "text": "Entretien complet de votre propriété." }
+      ]
+    }
+  ],
+  "packsButton": "S'abonner",
+
+  "faqSubtitle": "Questions Fréquemment Posées",
+  "faqTitle": "Nous sommes là pour vous aider",
+  "faq": [
+    {
+      "title": "Quels services propose Excellence Conciergerie ?",
+      "description": "Excellence Conciergerie offre une gamme complète de services de gestion de propriétés de luxe, incluant la maintenance, la sécurité, la gestion des réservations, et des services personnalisés pour les propriétaires et les voyageurs."
+    },
+    {
+      "title": "Quels services propose Excellence Conciergerie ?",
+      "description": "Excellence Conciergerie offre une gamme complète de services de gestion de propriétés de luxe, incluant la maintenance, la sécurité, la gestion des réservations, et des services personnalisés pour les propriétaires et les voyageurs."
+    },
+    {
+      "title": "Quels services propose Excellence Conciergerie ?",
+      "description": "Excellence Conciergerie offre une gamme complète de services de gestion de propriétés de luxe, incluant la maintenance, la sécurité, la gestion des réservations, et des services personnalisés pour les propriétaires et les voyageurs."
+    },
+    {
+      "title": "Quels services propose Excellence Conciergerie ?",
+      "description": "Excellence Conciergerie offre une gamme complète de services de gestion de propriétés de luxe, incluant la maintenance, la sécurité, la gestion des réservations, et des services personnalisés pour les propriétaires et les voyageurs."
+    }
+  ],
+
+  "contactSubtitle": "Entrons en Contact",
+  "contactTitle": "Contact",
+  "contactDescription": "Êtes-vous prêt à élever votre hospitalité et à vous engager dans l’excellence ? Veuillez remplir le formulaire ci-dessous et notre équipe vous contactera sous peu pour discuter de la manière dont nous pouvons vous aider à offrir des séjours inoubliables à vos clients.",
+
+  "blankOption": "Select an option",
+  "fullNameLabel": "Nom complet",
+  "fullNamePlaceholder": "Votre nom complet",
+  "emailLabel": "Email",
+  "emailPlaceholder": "Votre Email",
+  "formTypeLabel": "Choisissez un type de formulaire",
+  "formTypeOptions": [
+    { "value": "proprietaires", "label": "Propriétaires" },
+    { "value": "subscriptions", "label": "Abonnements" },
+    { "value": "autres", "label": "Autres" }
+  ],
+  "formTypeHelperText": "Si vous avez des questions générales, remplissez ce formulaire. Si vous êtes propriétaire, veuillez choisir l'option 'Propriétaires' dans le menu déroulant. Si vous souhaitez acheter un forfait, sélectionnez l'option 'Acheteurs de forfaits' dans le menu déroulant.",
+  "propertyLocationLabel": "Emplacement de la propriété",
+  "propertyLocationPlaceholder": "Location",
+  "propertyRoomAmountLabel": "Nombre de chambres",
+  "propertyRoomAmountPlaceholder": "Nombre",
+  "servicesLabel": "Services souhaités",
+  "servicesOptions": [
+    { "value": "proprietaires", "label": "Conciergerie privée" },
+    { "value": "locataires", "label": "Conciergerie privée" },
+    { "value": "autres", "label": "Conciergerie privée" }
+  ],
+  "propertyTypeLabel": "Type de propriété",
+  "propertyTypeOptions": [
+    { "value": "proprietaires", "label": "Conciergerie privée" },
+    { "value": "locataires", "label": "Conciergerie privée" },
+    { "value": "autres", "label": "Conciergerie privée" }
+  ],
+  "propertyMessageLabel": "Message / Commentaires ou demandes spéciales",
+  "propertyMessagePlaceholder": "Votre Message",
+  "subscriptionsChoicesLabel": "Choisissez des abonnements",
+  "subscriptionsChoicesOptions": [
+    { "value": "proprietaires", "label": "Abonnement Excellence Basic" },
+    { "value": "locataires", "label": "Abonnement Excellence Standard" },
+    { "value": "autres", "label": "Abonnement Excellence Premium" }
+  ],
+  "subscriptionPhoneLabel": "Téléphone",
+  "subscriptionPhonePlaceholder": "Téléphone",
+  "otherInfoLabel": "Autres informations",
+  "otherInfoPlaceholder": "Autres informations",
+  "nextStep": "Étape suivante",
+  "previousStep": "Étape précédente",
+  "submit": "Soumettre",
+  "formSubmittedSuccessfully": "Formulaire soumis avec succès!",
+  "thankYouForYourSubmission": "Merci pour votre soumission. Nous vous répondrons bientôt.",
+  "backToStart": "Revenir au début",
+
+  "legalLinks": [
+    { "text": "Terms and Conditions", "action": "#" },
+    { "text": "Privacy Policy", "action": "#" },
+    { "text": "Attributions", "action": "#" }
+  ],
+
+  "footerDescription": "Excellence Conciergerie est une agence de gestion immobilière de luxe basée sur la Côte d’Azur. Notre équipe dévouée offre des services personnalisés pour répondre aux besoins uniques de chaque propriétaire.",
+  "footerContactTitle": "Contact",
+  "footerSiteLinksTitle": "Liens Utiles"
 }
