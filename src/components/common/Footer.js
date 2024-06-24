@@ -3,17 +3,82 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import { useState } from "react";
 
-function LegalModal({ onClose, title, content }) {
+function LegalModal({ item, onClose }) {
+  const renderContent = () => {
+    switch (item.action) {
+      case "terms":
+        return (
+          <div className="flex flex-col gap-[32px]">
+            <h2 className="text-[24px] font-bold uppercase">{item.text}</h2>
+            <div className="flex flex-col gap-[24px]">
+              {item.array.map((subItem, index) => (
+                <div key={index} className="flex flex-col gap-[16px]">
+                  {subItem.title && (
+                    <h3 className="font-bold text-[20px]">{subItem.title}</h3>
+                  )}
+                  {subItem.description && (
+                    <p className="font-medium text-[16px]">
+                      {subItem.description}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      case "privacy":
+        return (
+          <div>
+            <h2 className="text-xl font-bold mb-4">{item.text}</h2>
+            {item.array.map((subItem, index) => (
+              <div key={index} className="mb-4">
+                {subItem.title && (
+                  <h3 className="font-semibold">{subItem.title}</h3>
+                )}
+                {subItem.description && <p>{subItem.description}</p>}
+              </div>
+            ))}
+          </div>
+        );
+      case "attributions":
+        return (
+          <div>
+            <h2 className="text-xl font-bold mb-4">{item.text}</h2>
+            {item.array.map((subItem, index) => (
+              <div key={index} className="mb-4">
+                <p>
+                  <a
+                    href={subItem.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-blue-500"
+                  >
+                    {subItem.text}
+                  </a>
+                </p>
+              </div>
+            ))}
+          </div>
+        );
+      default:
+        return null;
+    }
+  };
+
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="bg-white p-8 rounded-lg max-w-md">
-        <h2 className="text-xl font-bold mb-4">Test</h2>
-        <p>Modal</p>
+    <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex text-[#181C18] px-[24px] lg:px-[80px] py-[24px] lg:py-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px]">
+      <div className="overflow-y-scroll bg-white p-[24px] rounded-[4px] w-full flex flex-col gap-[32px] justify-start">
+        <div className="flex justify-end w-full">
+          <button onClick={onClose} className="text-[24px]">
+            x
+          </button>
+        </div>
+        {renderContent()}
         <button
           onClick={onClose}
-          className="mt-4 bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md"
+          className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-fit cursor-pointer"
         >
-          Close
+          {t('closeModalButton')}
         </button>
       </div>
     </div>
@@ -24,15 +89,19 @@ export default function Footer({ translations }) {
   const { t } = useTranslation();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalItem, setModalItem] = useState(null);
   const currentYear = new Date().getFullYear();
 
-  // Retrieve the contact info and socials arrays
   const contactInfo = t("contactInfo", { returnObjects: true });
   const socials = t("socials", { returnObjects: true });
   const legalLinks = t("legalLinks", { returnObjects: true });
 
-  // Merge the arrays
   const mergedArray = contactInfo.concat(socials);
+
+  const handleModalOpen = (item) => {
+    setModalItem(item);
+    setIsModalOpen(true);
+  };
 
   return (
     <footer className="flex flex-col text-lavender-haze bg-eclipse-black mt-[100px]">
@@ -118,9 +187,7 @@ export default function Footer({ translations }) {
           {legalLinks.map((item, index) => (
             <li key={index} className="text-white-75 flex gap-[6px]">
               <button
-                onClick={() => {
-                  setIsModalOpen(true);
-                }}
+                onClick={() => handleModalOpen(item)}
                 className="cursor-pointer hover:underline"
               >
                 {item.text}
@@ -130,10 +197,8 @@ export default function Footer({ translations }) {
           ))}
         </ul>
 
-        {isModalOpen && (
-          <LegalModal
-            onClose={() => setIsModalOpen(false)}
-          />
+        {isModalOpen && modalItem && (
+          <LegalModal item={modalItem} onClose={() => setIsModalOpen(false)} />
         )}
       </div>
       <div className="mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] px-[24px] lg:px-[80px] py-[48px] text-center font-medium text-[16px]">

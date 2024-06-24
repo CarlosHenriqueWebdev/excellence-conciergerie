@@ -289,13 +289,13 @@ table {
 
 .header-container {
   transition: transform 0.3s ease-in-out;
+  z-index: 20;
 }
 
 .header-container.header-enter,
 .header-container.header-leave {
-   position: sticky;
+  position: sticky;
   top: 0;
-  z-index: 20;
 }
 
 .header-enter {

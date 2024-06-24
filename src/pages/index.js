@@ -63,7 +63,7 @@ export default function Home(props) {
           setIsWhyUsInView(entry.isIntersecting);
         });
       },
-      { threshold: 0.01 },
+      { threshold: 0.1 },
     );
 
     if (headerStickyRef.current) {
@@ -143,15 +143,14 @@ export default function Home(props) {
             </div>
           </div>
           <div className="relative z-[1] flex flex-col gap-[100px] pt-[100px] bg-midnight-blue border-solid border-t-[8px] border-[#020201] overflow-hidden">
+            <div ref={headerStickyRef} className="flex flex-col gap-[100px]">
             <div id="about">
               <About translations={props} />
             </div>
-
             <div className="relative" id="whyUs">
               <FirstParallaxObject />
               <WhyUs translations={props} />
             </div>
-            <div ref={headerStickyRef} className="flex flex-col gap-[100px]">
               <Message translations={props} />
               <div id="services">
                 <Services translations={props} />
