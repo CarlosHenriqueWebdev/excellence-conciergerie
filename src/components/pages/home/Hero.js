@@ -7,7 +7,6 @@ export default function Hero({ translations, isWhyUsInView }) {
 
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [effectRan, setEffectRan] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   const handlePlayButtonClick = () => {
@@ -30,7 +29,6 @@ export default function Hero({ translations, isWhyUsInView }) {
 
     return () => {
       window.removeEventListener("resize", checkIfMobile);
-      setEffectRan(true)
     };
   }, []);
 
@@ -62,33 +60,36 @@ export default function Hero({ translations, isWhyUsInView }) {
         Your browser does not support the video tag.
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50" />
-      <div className="relative z-[20] h-[75vh] flex justify-center items-center px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px]">
-        {!isPlaying && effectRan ? (
-          <button
-            onClick={handlePlayButtonClick}
-            className="hover:brightness-75"
-          >
+      <div className="relative z-[20] h-[75vh] flex justify-center items-center px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col w-full">
+        <div className="font-bold uppercase flex flex-col gap-[16px] items-center">
+          <div className="w-fit flex gap-[8px] items-center text-[12px] text-light-gray">
             <img
-              src="/assets/images/vector7.svg"
-              alt="Play Button"
-              className="w-16 h-16"
+              src="/assets/images/star.png"
+              alt="Star Icon"
+              className="h-[14px]"
             />
-          </button>
-        ) : (
-          <div className="font-bold uppercase flex flex-col gap-[16px] items-center">
-            <div className="w-fit flex gap-[8px] items-center text-[12px] text-light-gray">
-              <img
-                src="/assets/images/star.png"
-                alt="Star Icon"
-                className="h-[14px]"
-              />
-              <span className="tracking-[2px] font-bold uppercase">
-                {t("heroSubtitle")}
-              </span>
-            </div>
-            <h1 className="text-[28px] text-center">{t("heroTitle")}</h1>
+            <span className="tracking-[2px] font-bold uppercase">
+              {t("heroSubtitle")}
+            </span>
           </div>
-        )}
+          <h1 className="text-[28px] text-center">{t("heroTitle")}</h1>
+        </div>
+
+        <button className="hover:brightness-75 absolute z-[9999] bottom-[12px] left-0 px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] opacity-[0.8]">
+          {isPlaying ? (
+            <img
+              src="/assets/images/vector21.svg"
+              alt="Play Button"
+              className="w-[20px] h-[20px]"
+            />
+          ) : (
+            <img
+              src="/assets/images/vector20.svg"
+              alt="Play Button"
+              className="w-[20px] h-[20px]"
+            />
+          )}
+        </button>
       </div>
     </div>
   );
