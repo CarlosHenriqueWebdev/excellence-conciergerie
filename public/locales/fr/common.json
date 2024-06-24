@@ -269,6 +269,8 @@
   "formSubmittedSuccessfully": "Formulaire soumis avec succès!",
   "thankYouForYourSubmission": "Merci pour votre soumission. Nous vous répondrons bientôt.",
   "backToStart": "Revenir au début",
+  "privacyPolicyWarningText": "En soumettant ce formulaire, vous acceptez notre ",
+  "privacyPolicyWarningLink": "politique de confidentialité",
 
   "legalLinks": [
     {

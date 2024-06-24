@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
+import LegalModal from "@/components/shared/LegalModal";
 
 export default function ContactLower({ translations }) {
   const { t } = useTranslation();
@@ -7,12 +8,26 @@ export default function ContactLower({ translations }) {
   const [selectedFormType, setSelectedFormType] = useState(null);
   const [formData, setFormData] = useState({});
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalItem, setModalItem] = useState(null);
+  const legalLinks = t("legalLinks", { returnObjects: true });
+
+  const handleModalOpen = () => {
+    const attributionItem = legalLinks.find(
+      (item) => item.action === "privacy",
+    );
+    if (attributionItem) {
+      setModalItem(attributionItem);
+      setIsModalOpen(true);
+    }
+  };
+
   const formFields = [
     {
       type: "text",
       name: "fullName",
       label: "fullNameLabel",
-      placeholder: t("fullNamePlaceholder"),
+      placeholder: "fullNamePlaceholder",
       required: true,
     },
     {
@@ -197,21 +212,42 @@ export default function ContactLower({ translations }) {
         {step === 2 && selectedFormType && (
           <div className="flex flex-col gap-[32px]">
             {renderFormFields(additionalForms[selectedFormType])}
-            <div className="flex flex-col gap-[16px] md:flex-row justify-between">
+            <div className="flex flex-col gap-[12px]">
+              <div className="flex flex-col gap-[16px] md:flex-row justify-between">
+                <button
+                  type="button"
+                  className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-full md:w-fit"
+                  onClick={handlePreviousStep}
+                >
+                  {t("previousStep")}
+                </button>
+                <button
+                  type="submit"
+                  className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-full md:w-fit"
+                >
+                  {t("submit")}
+                </button>
+              </div>
+            </div>
+
+            <span className="text-[#FFD84C] text-[14px]">
+              {t("privacyPolicyWarningText")}
               <button
                 type="button"
-                className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-full md:w-fit"
-                onClick={handlePreviousStep}
+                onClick={() => handleModalOpen()}
+                className="text-[#4C68FF] hover:underline"
               >
-                {t("previousStep")}
+                {t("privacyPolicyWarningLink")}
               </button>
-              <button
-                type="submit"
-                className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-full md:w-fit"
-              >
-                {t("submit")}
-              </button>
-            </div>
+              .
+            </span>
+
+            {isModalOpen && modalItem && (
+              <LegalModal
+                item={modalItem}
+                onClose={() => setIsModalOpen(false)}
+              />
+            )}
           </div>
         )}
         {step === 3 && (
