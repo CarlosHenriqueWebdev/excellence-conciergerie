@@ -8,7 +8,7 @@ export default function FirstParallaxObject() {
       <img
         src="/assets/images/detail1.png"
         alt=""
-        className="h-[120px] w-[120px]"
+        className="h-[120px] w-full"
       />
     </Parallax>
   );

@@ -87,8 +87,7 @@ export default function Home(props) {
         canonical="https://www.excellence-conciergerie.com/"
         openGraph={{
           url: "https://www.excellence-conciergerie.com/",
-          title:
-            "Excellence Conciergerie",
+          title: "Excellence Conciergerie",
           description:
             "Experience the pinnacle of luxury with Excellence Conciergerie.",
           images: [
@@ -147,11 +146,12 @@ export default function Home(props) {
             <div id="about">
               <About translations={props} />
             </div>
+
+            <div className="relative" id="whyUs">
+              <FirstParallaxObject />
+              <WhyUs translations={props} />
+            </div>
             <div ref={headerStickyRef} className="flex flex-col gap-[100px]">
-              <div className="relative" id="whyUs">
-                <FirstParallaxObject />
-                <WhyUs translations={props} />
-              </div>
               <Message translations={props} />
               <div id="services">
                 <Services translations={props} />

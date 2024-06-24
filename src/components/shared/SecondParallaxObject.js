@@ -8,7 +8,7 @@ export default function SecondParallaxObject() {
       <img
         src="/assets/images/detail2.png"
         alt=""
-        className="h-[120px] w-[120px]"
+        className="h-[120px] w-full"
       />
     </Parallax>
   );
