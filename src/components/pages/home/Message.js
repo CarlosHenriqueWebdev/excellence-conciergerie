@@ -22,14 +22,14 @@ export default function Message({ translations }) {
 
           <div className="flex flex-col gap-[20px] md:justify-center md:items-center">
             <div className="flex flex-col gap-[16px] md:justify-center md:items-center">
-              <DetailText text={t("introductionSubtitle")} />
+              <DetailText text={t("messageSubtitle")} />
               <h2 className="uppercase text-[24px] font-bold">
-                {t("introductionTitle")}
+                {t("messageTitle")}
               </h2>
             </div>
 
             <div className="flex flex-col gap-[16px] text-light-gray font-medium">
-              <p className="md:max-w-[800px]">{t("whyUsDescription")}</p>
+              <p className="md:max-w-[800px]">{t("messageDescription")}</p>
             </div>
           </div>
         </div>

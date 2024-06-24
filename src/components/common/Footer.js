@@ -1,9 +1,29 @@
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
-import Link from 'next/link';
+import Link from "next/link";
+import { useState } from "react";
+
+function LegalModal({ onClose, title, content }) {
+  return (
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-50 flex justify-center items-center">
+      <div className="bg-white p-8 rounded-lg max-w-md">
+        <h2 className="text-xl font-bold mb-4">Test</h2>
+        <p>Modal</p>
+        <button
+          onClick={onClose}
+          className="mt-4 bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  );
+}
 
 export default function Footer({ translations }) {
   const { t } = useTranslation();
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const currentYear = new Date().getFullYear();
 
   // Retrieve the contact info and socials arrays
@@ -81,7 +101,10 @@ export default function Footer({ translations }) {
             <ul className="flex flex-col gap-[16px]">
               {t("navLinks", { returnObjects: true }).map((item, index) => (
                 <li key={index}>
-                  <Link href={item.link} className="hover:underline hover:text-golden-yellow font-medium">
+                  <Link
+                    href={item.link}
+                    className="hover:underline hover:text-golden-yellow font-medium"
+                  >
                     {item.text}
                   </Link>
                 </li>
@@ -94,17 +117,24 @@ export default function Footer({ translations }) {
         <ul className="mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] px-[24px] lg:px-[80px] py-[32px] text-silver-mist flex gap-[4px] flex-wrap">
           {legalLinks.map((item, index) => (
             <li key={index} className="text-white-75 flex gap-[6px]">
-              <Link
-                href={item.action}
-                target="_blank"
+              <button
+                onClick={() => {
+                  setIsModalOpen(true);
+                }}
                 className="cursor-pointer hover:underline"
               >
                 {item.text}
-              </Link>
+              </button>
               {index !== legalLinks.length - 1 && <span>|</span>}
             </li>
           ))}
         </ul>
+
+        {isModalOpen && (
+          <LegalModal
+            onClose={() => setIsModalOpen(false)}
+          />
+        )}
       </div>
       <div className="mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] px-[24px] lg:px-[80px] py-[48px] text-center font-medium text-[16px]">
         <p>&copy; {currentYear} Excellence Conciergerie</p>
