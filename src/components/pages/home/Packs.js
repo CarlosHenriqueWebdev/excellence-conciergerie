@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import DetailText from "@/components/shared/DetailText";
 import { useTranslation } from "next-i18next";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function Packs({ translations }) {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ export default function Packs({ translations }) {
         {t("packs", { returnObjects: true }).map((item, index) => (
           <li
             key={index}
-            className="bg-twilight-gray rounded-[4px] flex flex-col w-full overflow-hidden"
+            className="hover:scale-[1.02] transition-scale bg-twilight-gray rounded-[4px] flex flex-col w-full overflow-hidden"
           >
             <div className="flex flex-col">
               <div
@@ -33,14 +34,19 @@ export default function Packs({ translations }) {
 
                 <div className="flex flex-col gap-[12px] font-bold uppercase">
                   <h3 className="text-[20px]">{item.title}</h3>
-                  <span className="text-white-75 text-[16px]">{item.subTitle}</span>
+                  <span className="text-white-75 text-[16px]">
+                    {item.subTitle}
+                  </span>
                 </div>
               </div>
 
               <div className="flex flex-col gap-[32px] p-[24px]">
                 <ul className="flex flex-col gap-[12px]">
                   {item.pros.map((proItem, proIndex) => (
-                    <li key={proIndex} className="flex items-baseline gap-[8px]">
+                    <li
+                      key={proIndex}
+                      className="flex items-baseline gap-[8px]"
+                    >
                       <img
                         src={`/assets/images/vector16.svg`}
                         alt=""
@@ -51,7 +57,15 @@ export default function Packs({ translations }) {
                   ))}
                 </ul>
 
-                <button className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-fit md:self-center">{t('packsButton')}</button>
+                <ScrollLink
+                  className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-fit md:self-center"
+                  to="contact"
+                  smooth={true}
+                  duration={1200}
+                  offset={-73}
+                >
+                  {t("packsButton")}
+                </ScrollLink>
               </div>
             </div>
           </li>

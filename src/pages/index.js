@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
-import { NextSeo } from 'next-seo';
+import { NextSeo } from "next-seo";
 import Link from "next/link";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
@@ -18,6 +18,7 @@ import ContactLower from "@/components/pages/home/ContactLower";
 import { ParallaxProvider } from "react-scroll-parallax";
 import FirstParallaxObject from "@/components/shared/FirstParallaxObject";
 import SecondParallaxObject from "@/components/shared/SecondParallaxObject";
+import { debounce } from "lodash";
 
 export const getStaticProps = async ({ locale }) => {
   return {
@@ -36,13 +37,13 @@ export default function Home(props) {
   const [animationClass, setAnimationClass] = useState("");
 
   useEffect(() => {
-    function handleScroll() {
+    const handleScrollDebounced = debounce(() => {
       setScrollOffset(window.pageYOffset);
-    }
+    }, 1);
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScrollDebounced);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScrollDebounced);
     };
   }, []);
 
@@ -106,21 +107,29 @@ export default function Home(props) {
             </div>
           </div>
           <div className="relative z-[1] flex flex-col gap-[100px] pt-[100px] bg-midnight-blue border-solid border-t-[8px] border-[#020201] overflow-hidden">
-            <About translations={props} />
+            <div id="about">
+              <About translations={props} />
+            </div>
             <div ref={headerStickyRef} className="flex flex-col gap-[100px]">
-              <div className="relative">
+              <div className="relative" id="whyUs">
                 <FirstParallaxObject />
                 <WhyUs translations={props} />
               </div>
               <Message translations={props} />
-              <Services translations={props} />
+              <div id="services">
+                <Services translations={props} />
+              </div>
               <div className="relative">
                 <SecondParallaxObject />
-                <Packs translations={props} />
+                <div id="subscriptions">
+                  <Packs translations={props} />
+                </div>
               </div>
               <div className="flex flex-col">
                 <Faq translations={props} />
-                <ContactUpper translations={props} />
+                <div id="contact">
+                  <ContactUpper translations={props} />
+                </div>
                 <ContactLower translations={props} />
               </div>
             </div>

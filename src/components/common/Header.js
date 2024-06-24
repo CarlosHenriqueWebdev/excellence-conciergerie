@@ -28,6 +28,7 @@ import {
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
 import { useTranslation } from "next-i18next";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function Header({ translations }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -41,7 +42,7 @@ export default function Header({ translations }) {
 
   const changeLanguage = (newLocale) => {
     const { pathname, query } = router;
-    router.push({ pathname, query }, pathname, { locale: newLocale });
+    window.location.href = `${pathname}${newLocale}`;
   };
 
   return (
@@ -75,13 +76,16 @@ export default function Header({ translations }) {
         </div>
         <PopoverGroup className="hidden lg:flex gap-[24px] items-center">
           {t("navLinks", { returnObjects: true }).map((item, index) => (
-            <a
+            <ScrollLink
               key={index}
-              href={item.link}
-              className="font-semibold hover:text-golden-yellow"
+              className="font-semibold hover:text-golden-yellow cursor-pointer"
+              to={item.link}
+              smooth={true}
+              duration={1200}
+              offset={-120}
             >
               {item.text}
-            </a>
+            </ScrollLink>
           ))}
 
           <span className="text-white-75">|</span>
@@ -111,11 +115,10 @@ export default function Header({ translations }) {
                   {t("languages", {
                     returnObjects: true,
                   }).map((item, index) => (
-                    <Link
+                    <a
                       key={index}
-                      href="/"
-                      locale={item.locale}
-                      className="flex items-center gap-[6px] hover:bg-graphite-gray px-[24px] py-[12px] w-full"
+                      className="flex items-center gap-[6px] hover:bg-graphite-gray px-[24px] py-[12px] w-full cursor-pointer"
+                      onClick={() => changeLanguage(item.locale)}
                     >
                       <img
                         src={`/assets/images/${item.flag}`}
@@ -123,7 +126,7 @@ export default function Header({ translations }) {
                         className="h-[14px] block"
                       />
                       {item.language}
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </div>
@@ -138,7 +141,7 @@ export default function Header({ translations }) {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-[50] w-full overflow-y-auto bg-eclipse-black px-[24px] py-[24px] sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-[50] max-w-[280px] overflow-y-auto bg-eclipse-black px-[24px] py-[24px] w-full sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -182,11 +185,10 @@ export default function Header({ translations }) {
                         {t("languages", {
                           returnObjects: true,
                         }).map((item, index) => (
-                          <Link
+                          <a
                             key={item.name}
-                            href="/"
-                            locale={item.locale}
-                            className="border-solid border-golden-sunbeam border-[3px] flex items-center gap-[6px] w-full text-start block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold"
+                            className="border-solid border-golden-sunbeam border-[3px] flex items-center gap-[6px] w-full text-start block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold cursor-pointer"
+                            onClick={() => changeLanguage(item.locale)}
                           >
                             <img
                               src={`/assets/images/${item.flag}`}
@@ -194,7 +196,7 @@ export default function Header({ translations }) {
                               className="h-[14px] block"
                             />
                             {item.language}
-                          </Link>
+                          </a>
                         ))}
                       </DisclosurePanel>
                     </>
@@ -202,13 +204,16 @@ export default function Header({ translations }) {
                 </Disclosure>
 
                 {t("navLinks", { returnObjects: true }).map((item, index) => (
-                  <a
+                  <ScrollLink
                     key={index}
-                    href={item.link}
-                    className="block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold"
+                    className="block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold cursor-pointer"
+                    to={item.link}
+                    smooth={true}
+                    duration={1200}
+                    offset={-120}
                   >
                     {item.text}
-                  </a>
+                  </ScrollLink>
                 ))}
               </div>
             </div>

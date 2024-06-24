@@ -51,10 +51,10 @@
   ],
 
   "navLinks": [
-    { "text": "Notre Mission", "link": "#" },
-    { "text": "Gestion Locative", "link": "#" },
-    { "text": "Conciergerie Privée", "link": "#" },
-    { "text": "Conciergerie Privée", "link": "#" }
+    { "text": "Pourquoi Nous", "link": "whyUs" },
+    { "text": "Gestion Locative", "link": "services" },
+    { "text": "Abonnements", "link": "subscriptions" },
+    { "text": "Contact", "link": "contact" }
   ],
 
   "heroSubtitle": "Excellence Conciergerie",
