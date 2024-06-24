@@ -58,11 +58,11 @@ export default function Packs({ translations }) {
                 </ul>
 
                 <ScrollLink
-                  className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-fit md:self-center"
+                  className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-fit md:self-center cursor-pointer"
                   to="contact"
                   smooth={true}
                   duration={1200}
-                  offset={-73}
+                  offset={-120}
                 >
                   {t("packsButton")}
                 </ScrollLink>

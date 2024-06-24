@@ -83,8 +83,45 @@ export default function Home(props) {
     <ParallaxProvider scrollAxis="vertical">
       <NextSeo
         title="Excellence Conciergerie"
-        description="Your page description"
+        description="Experience the pinnacle of luxury with Excellence Conciergerie."
+        canonical="https://www.excellence-conciergerie.com/"
+        openGraph={{
+          url: "https://www.excellence-conciergerie.com/",
+          title:
+            "Excellence Conciergerie",
+          description:
+            "Experience the pinnacle of luxury with Excellence Conciergerie.",
+          images: [
+            {
+              url: "https://excellence-conciergerie.com/assets/images/img1.jpg",
+              width: 800,
+              height: 600,
+              alt: "Excellence Conciergerie",
+              type: "image/jpg",
+            },
+          ],
+          site_name: "Excellence Conciergerie",
+        }}
+        languageAlternates={[
+          {
+            hrefLang: "fr",
+            href: "https://www.excellence-conciergerie.com/fr/",
+          },
+          {
+            hrefLang: "en",
+            href: "https://www.excellence-conciergerie.com/en/",
+          },
+          {
+            hrefLang: "pt",
+            href: "https://www.excellence-conciergerie.com/pt/",
+          },
+          {
+            hrefLang: "es",
+            href: "https://www.excellence-conciergerie.com/es/",
+          },
+        ]}
       />
+
       <div className="relative">
         <div
           className={`header-container ${isHeaderVisible ? animationClass : ""}`}

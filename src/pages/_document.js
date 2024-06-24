@@ -5,7 +5,6 @@ export default function Document() {
     <Html>
       <Head>
         <link rel="icon" href="/faviconIcon.ico" />
-        <title>Excellence Conciergerie</title>
       </Head>
       <body className="text-lavender-haze bg-midnight-blue">
         <Main />
