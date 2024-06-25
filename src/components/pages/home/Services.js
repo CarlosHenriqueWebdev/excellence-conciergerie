@@ -58,32 +58,34 @@ export default function Services({ translations }) {
                   />
                 </div>
 
-                <div className="flex flex-col gap-[20px] md:py-[16px] lg:pb-[40px]">
-                  <div className="flex flex-col gap-[16px]">
-                    <h3 className="uppercase text-[20px] font-bold">
-                      {item.title}
-                    </h3>
+                <div className="md:py-[16px] lg:pb-[40px]">                 
+                  <div className="flex flex-col gap-[20px] h-[300px] overflow-y-auto">
+                    <div className="flex flex-col gap-[16px]">
+                      <h3 className="uppercase text-[20px] font-bold">
+                        {item.title}
+                      </h3>
 
-                    <div className="flex flex-col gap-[16px] text-light-gray font-medium">
-                      <p>{item.description}</p>
+                      <div className="flex flex-col gap-[16px] text-light-gray font-medium">
+                        <p>{item.description}</p>
+                      </div>
                     </div>
-                  </div>
 
-                  <ul className="flex flex-col gap-[12px]">
-                    {item.pros.map((proItem, proIndex) => (
-                      <li
-                        key={proIndex}
-                        className="flex items-baseline gap-[8px]"
-                      >
-                        <img
-                          src={`/assets/images/vector16.svg`}
-                          alt=""
-                          className="h-[12px] block"
-                        />
-                        <p className="font-medium">{proItem.text}</p>
-                      </li>
-                    ))}
-                  </ul>
+                    <ul className="flex flex-col gap-[12px]">
+                      {item.pros.map((proItem, proIndex) => (
+                        <li
+                          key={proIndex}
+                          className="flex items-baseline gap-[8px]"
+                        >
+                          <img
+                            src={`/assets/images/vector16.svg`}
+                            alt=""
+                            className="h-[12px] block"
+                          />
+                          <p className="font-medium">{proItem.text}</p>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>

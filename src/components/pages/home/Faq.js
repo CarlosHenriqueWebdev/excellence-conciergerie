@@ -29,7 +29,7 @@ export default function Faq({ translations }) {
           </div>
         </div>
 
-        <ul className="flex flex-col gap-[16px] select-none">
+        <ul className="flex flex-col gap-[16px]">
           {faq.map((item, index) => (
             <AnimatedListItem
               key={index}

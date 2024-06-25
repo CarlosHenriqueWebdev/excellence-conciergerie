@@ -19,7 +19,7 @@ export default function Packs({ translations }) {
             key={index}
             className="hover:scale-[1.02] transition-scale bg-twilight-gray rounded-[4px] flex flex-col w-full overflow-hidden"
           >
-            <div className="flex flex-col">
+            <div className="flex flex-col h-full">
               <div
                 style={{
                   backgroundImage: `url(/assets/images/${item.pattern})`,
@@ -40,7 +40,7 @@ export default function Packs({ translations }) {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-[32px] p-[24px]">
+              <div className="flex flex-col gap-[32px] p-[24px] justify-between h-full">
                 <ul className="flex flex-col gap-[12px]">
                   {item.pros.map((proItem, proIndex) => (
                     <li
@@ -58,7 +58,7 @@ export default function Packs({ translations }) {
                 </ul>
 
                 <ScrollLink
-                  className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-fit md:self-center cursor-pointer"
+                  className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-fit md:self-center cursor-pointer md:text-center"
                   to="contact"
                   smooth={true}
                   duration={1200}

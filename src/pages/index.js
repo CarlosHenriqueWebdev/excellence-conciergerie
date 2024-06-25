@@ -144,13 +144,13 @@ export default function Home(props) {
           </div>
           <div className="relative z-[1] flex flex-col gap-[100px] pt-[100px] bg-midnight-blue border-solid border-t-[8px] border-[#020201] overflow-hidden">
             <div ref={headerStickyRef} className="flex flex-col gap-[100px]">
-            <div id="about">
-              <About translations={props} />
-            </div>
-            <div className="relative" id="whyUs">
-              <FirstParallaxObject />
-              <WhyUs translations={props} />
-            </div>
+              <div id="about">
+                <About translations={props} />
+              </div>
+              <div className="relative" id="whyUs">
+                <FirstParallaxObject />
+                <WhyUs translations={props} />
+              </div>
               <Message translations={props} />
               <div id="services">
                 <Services translations={props} />
@@ -162,7 +162,9 @@ export default function Home(props) {
                 </div>
               </div>
               <div className="flex flex-col">
+              <div id="faq">                
                 <Faq translations={props} />
+              </div>
                 <div id="contact">
                   <ContactUpper translations={props} />
                 </div>

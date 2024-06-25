@@ -41,7 +41,7 @@ export default function WhyUs({ translations }) {
           </div>
         </div>
 
-        <ul className="flex flex-col gap-[16px] select-none">
+        <ul className="flex flex-col gap-[16px]">
           {reasons.map((item, index) => (
             <AnimatedListItem
               key={index}
