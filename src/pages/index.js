@@ -14,7 +14,7 @@ import Services from "@/components/pages/home/Services";
 import Packs from "@/components/pages/home/Packs";
 import Faq from "@/components/pages/home/Faq";
 import ContactUpper from "@/components/pages/home/ContactUpper";
-import ContactLower from "@/components/pages/home/ContactLower";
+import ContactLower from "@/components/pages/home/ContactLower/ContactLower";
 import { ParallaxProvider } from "react-scroll-parallax";
 import FirstParallaxObject from "@/components/shared/FirstParallaxObject";
 import SecondParallaxObject from "@/components/shared/SecondParallaxObject";

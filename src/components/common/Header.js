@@ -79,7 +79,7 @@ export default function Header({ translations }) {
             <ScrollLink
               key={index}
               className="font-semibold hover:text-golden-yellow cursor-pointer"
-              to={item.link}
+              to={item.DO_NOT_CHANGE}
               smooth={true}
               duration={1200}
               offset={-120}
@@ -118,7 +118,7 @@ export default function Header({ translations }) {
                     <a
                       key={index}
                       className="flex items-center gap-[6px] hover:bg-graphite-gray px-[24px] py-[12px] w-full cursor-pointer"
-                      onClick={() => changeLanguage(item.locale)}
+                      onClick={() => changeLanguage(item.DO_NOT_CHANGE)}
                     >
                       <img
                         src={`/assets/images/${item.flag}`}
@@ -188,7 +188,7 @@ export default function Header({ translations }) {
                           <a
                             key={item.name}
                             className="border-solid border-golden-sunbeam border-[3px] flex items-center gap-[6px] w-full text-start block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold cursor-pointer"
-                            onClick={() => changeLanguage(item.locale)}
+                            onClick={() => changeLanguage(item.DO_NOT_CHANGE)}
                           >
                             <img
                               src={`/assets/images/${item.flag}`}
@@ -207,7 +207,7 @@ export default function Header({ translations }) {
                   <ScrollLink
                     key={index}
                     className="block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold cursor-pointer"
-                    to={item.link}
+                    to={item.DO_NOT_CHANGE}
                     smooth={true}
                     duration={1200}
                     offset={-120}

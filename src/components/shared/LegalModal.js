@@ -5,7 +5,7 @@ function LegalModal({ item, onClose }) {
   const { t } = useTranslation();
 
   const renderContent = () => {
-    switch (item.action) {
+    switch (item.DO_NOT_CHANGE) {
       case "terms":
         return (
           <div className="flex flex-col gap-[32px]">

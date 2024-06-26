@@ -90,7 +90,7 @@ function Footer({ translations }) {
               {t("navLinks", { returnObjects: true }).map((item, index) => (
                 <li key={index}>
                   <Link
-                    href={item.link}
+                    href={item.DO_NOT_CHANGE}
                     className="hover:underline hover:text-golden-yellow font-medium"
                   >
                     {item.text}

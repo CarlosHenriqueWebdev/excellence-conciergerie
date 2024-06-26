@@ -1,18 +1,21 @@
 {
   "currentLanguage": "English",
   "currentLanguageFlag": "flag1.svg",
+
+  "guideLinesLanguagesLocale": "Warning: Do not alter the DO_NOT_CHANGE and currentLocale fields. They are linked to the website language. For example, changing 'en' to 'en_US' will lead to a non-existent page (e.g., https://excellence-conciergerie.com/en_US). Existing locales are pt, en, fr, es. Do not add non-existent locales. Only modify based on the current translation file. fr/common.js currentLocale should always be 'fr', en/common.js currentLocale should always be 'en', etc.",
   "currentLocale": "en",
   "languages": [
-    { "language": "Portuguese", "flag": "flag3.svg", "locale": "pt" },
-    { "language": "Spanish", "flag": "flag4.svg", "locale": "es" },
-    { "language": "French", "flag": "flag2.svg", "locale": "fr" }
+    { "language": "Portuguese", "flag": "flag3.svg", "DO_NOT_CHANGE": "pt" },
+    { "language": "Spanish", "flag": "flag4.svg", "DO_NOT_CHANGE": "es" },
+    { "language": "French", "flag": "flag2.svg", "DO_NOT_CHANGE": "fr" }
   ],
 
+  "guideLinesLinks": "Warning: The only accepted values for the DO_NOT_CHANGE fields in navLinks are the current website IDs, which are as follows: about, whyUs, message, subscriptions, services, faq, contact",
   "navLinks": [
-    { "text": "Engagement", "link": "about" },
-    { "text": "Rental Management", "link": "services" },
-    { "text": "Custom Subscriptions", "link": "subscriptions" },
-    { "text": "Contact", "link": "contact" }
+    { "text": "Engagement", "DO_NOT_CHANGE": "about" },
+    { "text": "Rental Management", "DO_NOT_CHANGE": "services" },
+    { "text": "Custom Subscriptions", "DO_NOT_CHANGE": "subscriptions" },
+    { "text": "Contact", "DO_NOT_CHANGE": "contact" }
   ],
 
   "heroSubtitle": "Excellence Conciergerie",
@@ -128,7 +131,6 @@
       "pattern": "pattern1.png",
       "title": "Excellence Basic",
       "subTitle": "Monday to Friday, from 8:30 AM to 5:30 PM",
-      "href": "#",
       "pros": [
         { "text": "Comprehensive maintenance of your property." },
         { "text": "Personalized and dedicated service." },
@@ -141,7 +143,6 @@
       "pattern": "pattern2.png",
       "title": "Excellence Premium",
       "subTitle": "7 days a week, with flexible scheduling",
-      "href": "#",
       "pros": [
         { "text": "All benefits of Excellence Basic." },
         { "text": "Priority access to our exclusive partners." },
@@ -154,7 +155,6 @@
       "pattern": "pattern3.png",
       "title": "Excellence Prestige",
       "subTitle": "24/7 service, with personalized VIP management",
-      "href": "#",
       "pros": [
         { "text": "All benefits of Excellence Premium." },
         { "text": "Interior design consultation included." },
@@ -204,11 +204,14 @@
   "emailLabel": "Email",
   "emailPlaceholder": "Your Email",
   "formTypeLabel": "Choose a Form Type",
+
+  "guideLinesFormTypeOptions": "Warning Text: Don't alter the DO_NOT_CHANGE fields. Don't add a new extra formTypeOptions object. Don't remove a existing object. If you need more forms options, contact me so I can insert it for you.",
   "formTypeOptions": [
-    { "value": "owners", "label": "Owners" },
-    { "value": "subscriptions", "label": "Subscriptions" },
-    { "value": "others", "label": "Others" }
+    { "DO_NOT_CHANGE": "owners", "label": "Owners" },
+    { "DO_NOT_CHANGE": "subscriptions", "label": "Subscriptions" },
+    { "DO_NOT_CHANGE": "others", "label": "Others" }
   ],
+  
   "formTypeHelperText": "If you have general inquiries, please fill out this form. If you are a property owner, please choose 'Owners' from the dropdown. If you are looking to purchase a subscription, select 'Subscriptions' from the dropdown.",
   "propertyLocationLabel": "Property Location",
   "propertyLocationPlaceholder": "Location",
@@ -249,7 +252,7 @@
   "legalLinks": [
     {
       "text": "Conditions Générales",
-      "action": "terms",
+      "DO_NOT_CHANGE": "terms",
       "array": [
         {
           "title": "1. Introduction",
@@ -287,7 +290,7 @@
     },
     {
       "text": "Politique de Confidentialité",
-      "action": "privacy",
+      "DO_NOT_CHANGE": "privacy",
       "array": [
         {
           "title": "1. Information we collect",
@@ -309,7 +312,7 @@
     },
     {
       "text": "Attributions",
-      "action": "attributions",
+      "DO_NOT_CHANGE": "attributions",
       "array": [
         {
           "text": "Images from Unsplash",
