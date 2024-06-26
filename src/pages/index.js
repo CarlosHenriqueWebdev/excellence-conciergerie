@@ -15,9 +15,6 @@ import Packs from "@/components/pages/home/Packs";
 import Faq from "@/components/pages/home/Faq";
 import ContactUpper from "@/components/pages/home/ContactUpper";
 import ContactLower from "@/components/pages/home/ContactLower/ContactLower";
-import { ParallaxProvider } from "react-scroll-parallax";
-import FirstParallaxObject from "@/components/shared/FirstParallaxObject";
-import SecondParallaxObject from "@/components/shared/SecondParallaxObject";
 import { debounce } from "lodash";
 
 export const getStaticProps = async ({ locale }) => {
@@ -80,7 +77,7 @@ export default function Home(props) {
   const overlayOpacity = Math.min(0.5, scrollOffset / 100);
 
   return (
-    <ParallaxProvider scrollAxis="vertical">
+    <div>
       <NextSeo
         title="Excellence Conciergerie"
         description="Experience the pinnacle of luxury with Excellence Conciergerie."
@@ -147,16 +144,14 @@ export default function Home(props) {
               <div id="about">
                 <About translations={props} />
               </div>
-              <div className="relative" id="whyUs">
-                <FirstParallaxObject />
+              <div id="whyUs">
                 <WhyUs translations={props} />
               </div>
               <Message translations={props} />
               <div id="services">
                 <Services translations={props} />
               </div>
-              <div className="relative">
-                <SecondParallaxObject />
+              <div>
                 <div id="subscriptions">
                   <Packs translations={props} />
                 </div>
@@ -175,6 +170,6 @@ export default function Home(props) {
         </main>
         <Footer translations={props} />
       </div>
-    </ParallaxProvider>
+    </div>
   );
 }
