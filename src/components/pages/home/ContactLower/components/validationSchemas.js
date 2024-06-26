@@ -1,9 +1,6 @@
 import * as Yup from "yup";
-import { useTranslation } from "next-i18next";
 
-export const getValidationSchema = (formType) => {
-	const { t } = useTranslation();
-
+export const getValidationSchema = (formType, t) => {
   const baseValidationSchema = Yup.object().shape({
     fullName: Yup.string().required(t("requiredField")),
     email: Yup.string().email(t("invalidEmail")).required(t("requiredField")),

@@ -118,7 +118,7 @@ export default function ContactLower({ translations }) {
     <div className="px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] pt-[64px] w-full">
       <Formik
         initialValues={initialValues}
-        validationSchema={getValidationSchema(selectedFormType)}
+        validationSchema={getValidationSchema(selectedFormType, t)}
         onSubmit={(values, actions) => {
           if (step === 1) {
             setSelectedFormType(values.formType);

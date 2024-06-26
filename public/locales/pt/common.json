@@ -333,6 +333,10 @@
   "privacyPolicyWarningText": "En soumettant ce formulaire, vous acceptez notre ",
   "privacyPolicyWarningLink": "politique de confidentialité",
 
+  "requiredField": "Ce champ est obligatoire",
+  "invalidEmail": "L'adresse e-mail est invalide",
+  "submissionError": "Une erreur inattendue s'est produite lors de la soumission. Veuillez réessayer.",
+
   "footerDescription": "obiliária de luxo baseada na Riviera Francesa. Nossa equipe dedicada oferece serviços personalizados para atender às necessidades únicas de cada proprietário de imóveis.",
   "footerContactTitle": "Contato",
   "footerSiteLinksTitle": "Links Úteis"

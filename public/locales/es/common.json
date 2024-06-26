@@ -353,6 +353,10 @@
   "privacyPolicyWarningText": "En soumettant ce formulaire, vous acceptez notre ",
   "privacyPolicyWarningLink": "politique de confidentialité",
 
+  "requiredField": "Ce champ est obligatoire",
+  "invalidEmail": "L'adresse e-mail est invalide",
+  "submissionError": "Une erreur inattendue s'est produite lors de la soumission. Veuillez réessayer.",
+
   "footerDescription": "Excellence Conciergerie es una agencia de gestión de bienes raíces de lujo con sede en la Riviera Francesa. Nuestro equipo dedicado proporciona servicios personalizados para satisfacer las necesidades únicas de cada propietario.",
   "footerContactTitle": "Contacto",
   "footerSiteLinksTitle": "Enlaces Útiles"
