@@ -5,10 +5,14 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Image from "next/image";
 import useScrollTriggerAnimation from "@/components/hooks/useScrollTriggerAnimation";
 
-export default function Packs({ translations }) {
+export default function Packs() {
   const { t } = useTranslation();
 
   const containerRef = useRef(null);
+  useScrollTriggerAnimation(containerRef, {
+    entranceScroll: true,
+    entranceScrollDuration: 5,
+  });
 
   return (
     <div ref={containerRef}>
@@ -73,9 +77,6 @@ export default function Packs({ translations }) {
                   <ScrollLink
                     className="item btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-fit md:self-center cursor-pointer md:text-center"
                     to="contact"
-                    smooth={true}
-                    duration={1200}
-                    offset={-120}
                   >
                     {t("packsButton")}
                   </ScrollLink>

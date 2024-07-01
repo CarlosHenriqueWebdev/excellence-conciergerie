@@ -8,7 +8,7 @@ import { Autoplay, Pagination, Navigation, Loop } from "swiper/modules";
 import Image from "next/image";
 import useScrollTriggerAnimation from "@/components/hooks/useScrollTriggerAnimation";
 
-export default function Services({ translations }) {
+export default function Services() {
   const { t } = useTranslation();
 
   const containerRef = useRef(null);
@@ -28,6 +28,11 @@ export default function Services({ translations }) {
       setActiveIndex(index);
     }
   };
+
+  useScrollTriggerAnimation(containerRef, {
+    entranceScroll: true,
+    entranceScrollDuration: 2,
+  });
 
   return (
     <div ref={containerRef}>
@@ -102,7 +107,7 @@ export default function Services({ translations }) {
             ))}
           </Swiper>
 
-          <div className="item flex w-full justify-between gap-[4px] mt-[32px]">
+          <div className="flex w-full justify-between gap-[4px] mt-[32px]">
             {t("services", { returnObjects: true }).map((_, index) => (
               <button
                 key={index}

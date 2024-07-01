@@ -5,7 +5,7 @@ import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import useScrollTriggerAnimation from "@/components/hooks/useScrollTriggerAnimation";
 
-export default function WhyUs({ translations }) {
+export default function WhyUs() {
   const { t } = useTranslation();
 
   const containerRef = useRef(null);
@@ -20,6 +20,11 @@ export default function WhyUs({ translations }) {
       setOpenIndexes([...openIndexes, index]);
     }
   };
+
+  useScrollTriggerAnimation(containerRef, {
+    entranceScroll: true,
+    entranceScrollDuration: 2,
+  });
 
   return (
     <div ref={containerRef}>

@@ -2,7 +2,14 @@ import { useEffect, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-function useScrollTriggerAnimation(ref, commonScroll, panelScroll) {
+function useScrollTriggerAnimation(ref, options = {}) {
+	const {
+		commonScroll = false,
+		panelScroll = false,
+		entranceScroll = false,
+		entranceScrollDuration = 1,
+	} = options;
+
 	const [isMobile, setIsMobile] = useState(
 		window.matchMedia("(max-width: 767px)").matches,
 	);
@@ -30,7 +37,7 @@ function useScrollTriggerAnimation(ref, commonScroll, panelScroll) {
 					scrollTrigger: {
 						trigger: container,
 						pinSpacing: false,
-						start: "top 100",
+						start: "top 40",
 						end: "bottom bottom",
 						scrub: true,
 						markers: false,
@@ -60,13 +67,45 @@ function useScrollTriggerAnimation(ref, commonScroll, panelScroll) {
 					pinSpacing: false,
 					markers: false,
 				});
+			} else if (entranceScroll) {
+				const tl = gsap.timeline({
+					scrollTrigger: {
+						trigger: container,
+						pinSpacing: false,
+						start: "top 400",
+						end: "bottom bottom",
+						scrub: true,
+						markers: false,
+					},
+				});
+
+				tl.fromTo(
+					container.querySelectorAll(".item"),
+					{
+						opacity: 0,
+						y: 50,
+					},
+					{
+						opacity: 1,
+						y: 0,
+						duration: entranceScrollDuration,
+						stagger: 0.5,
+					},
+				);
 			}
 		});
 
 		return () => {
 			ctx.revert();
 		};
-	}, [ref, commonScroll, panelScroll, isMobile]);
+	}, [
+		ref,
+		commonScroll,
+		panelScroll,
+		entranceScroll,
+		entranceScrollDuration,
+		isMobile,
+	]);
 }
 
 export default useScrollTriggerAnimation;

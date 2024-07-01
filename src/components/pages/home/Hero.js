@@ -34,7 +34,9 @@ export default function Hero() {
     setIsVideoReady(true);
   };
 
-  useScrollTriggerAnimation(containerRef, false, true);
+  useScrollTriggerAnimation(containerRef, {
+    panelScroll: true,
+  });
 
   return (
     <div ref={containerRef} onClick={handlePlayButtonClick}>

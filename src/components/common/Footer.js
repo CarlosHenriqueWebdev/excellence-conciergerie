@@ -5,7 +5,7 @@ import Image from "next/image";
 import LegalModal from "@/components/shared/LegalModal";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
-function Footer({ translations }) {
+function Footer() {
   const { t } = useTranslation();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -96,8 +96,6 @@ function Footer({ translations }) {
                   key={index}
                   className="cursor-pointer hover:underline hover:text-golden-yellow font-medium"
                   to={item.DO_NOT_CHANGE}
-                  smooth={true}
-                  duration={1200}
                 >
                   {item.text}
                 </ScrollLink>

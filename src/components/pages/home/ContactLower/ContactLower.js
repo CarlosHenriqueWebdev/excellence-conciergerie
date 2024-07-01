@@ -13,7 +13,7 @@ import {
 import { getValidationSchema } from "@/components/pages/home/ContactLower/components/validationSchemas";
 import Image from "next/image";
 
-export default function ContactLower({ translations }) {
+export default function ContactLower() {
   const { t } = useTranslation();
   const [step, setStep] = useState(1);
   const [selectedFormType, setSelectedFormType] = useState(null);

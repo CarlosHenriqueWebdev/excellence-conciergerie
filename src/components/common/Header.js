@@ -31,7 +31,7 @@ import {
 import { useTranslation } from "next-i18next";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
-export default function Header({ translations }) {
+export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
   const router = useRouter();
@@ -84,8 +84,6 @@ export default function Header({ translations }) {
               key={index}
               className="font-semibold hover:text-golden-yellow cursor-pointer"
               to={item.DO_NOT_CHANGE}
-              smooth={true}
-              duration={1200}
             >
               {item.text}
             </ScrollLink>
@@ -231,8 +229,6 @@ export default function Header({ translations }) {
                     key={index}
                     className="block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold cursor-pointer"
                     to={item.DO_NOT_CHANGE}
-                    smooth={true}
-                    duration={1200}
                   >
                     {item.text}
                   </ScrollLink>

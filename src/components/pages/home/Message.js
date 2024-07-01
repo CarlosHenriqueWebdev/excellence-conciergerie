@@ -10,7 +10,9 @@ export default function Message() {
   const { t } = useTranslation();
   const containerRef = useRef(null);
 
-  useScrollTriggerAnimation(containerRef, true, false);
+  useScrollTriggerAnimation(containerRef, {
+    commonScroll: true,
+  });
 
   return (
     <div ref={containerRef} className="md:h-[200vh]">
