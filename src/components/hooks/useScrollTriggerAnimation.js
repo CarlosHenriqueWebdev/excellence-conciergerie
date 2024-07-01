@@ -30,7 +30,7 @@ function useScrollTriggerAnimation(ref, commonScroll, panelScroll) {
 					scrollTrigger: {
 						trigger: container,
 						pinSpacing: false,
-						start: "top top",
+						start: "top 100",
 						end: "bottom bottom",
 						scrub: true,
 						markers: false,

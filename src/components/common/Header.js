@@ -86,7 +86,6 @@ export default function Header({ translations }) {
               to={item.DO_NOT_CHANGE}
               smooth={true}
               duration={1200}
-              offset={-120}
             >
               {item.text}
             </ScrollLink>
@@ -234,7 +233,6 @@ export default function Header({ translations }) {
                     to={item.DO_NOT_CHANGE}
                     smooth={true}
                     duration={1200}
-                    offset={-120}
                   >
                     {item.text}
                   </ScrollLink>
