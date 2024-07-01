@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import Image from "next/image";
 import LegalModal from "@/components/shared/LegalModal";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function Footer({ translations }) {
   const { t } = useTranslation();
@@ -28,10 +29,13 @@ function Footer({ translations }) {
         <ul className="mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] px-[24px] lg:px-[80px] py-[48px] flex flex-col gap-[48px] md:grid md:grid-cols-[1.5fr_1fr_1fr]">
           <li className="flex flex-col gap-[24px]">
             <Link href="/">
-              <img
-                className="block h-[32px]"
-                src="/assets/images/logo.png"
+              <Image
+                src="/assets/images/logo.webp"
                 alt=""
+                layout="intrinsic"
+                width={166}
+                height={32}
+                quality={100}
               />
             </Link>
             <p className="md:max-w-[360px] text-light-gray">
@@ -88,14 +92,16 @@ function Footer({ translations }) {
             </h2>
             <ul className="flex flex-col gap-[16px]">
               {t("navLinks", { returnObjects: true }).map((item, index) => (
-                <li key={index}>
-                  <Link
-                    href={item.DO_NOT_CHANGE}
-                    className="hover:underline hover:text-golden-yellow font-medium"
-                  >
-                    {item.text}
-                  </Link>
-                </li>
+                <ScrollLink
+                  key={index}
+                  className="cursor-pointer hover:underline hover:text-golden-yellow font-medium"
+                  to={item.DO_NOT_CHANGE}
+                  smooth={true}
+                  duration={1200}
+                  offset={-120}
+                >
+                  {item.text}
+                </ScrollLink>
               ))}
             </ul>
           </li>

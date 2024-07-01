@@ -2,102 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Dancing Script Font */
-@font-face {
-    font-family: 'Dancing Script';
-    src: url('/assets/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Import Lato Fonts */
 @font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+  font-family: "Lato";
+  src: url("/assets/fonts/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
+  font-family: "Lato";
+  src: url("/assets/fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Lato";
+  src: url("/assets/fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-BoldItalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/lato-medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
+  font-family: "Lato";
+  src: url("/assets/fonts/lato-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }
 
 * {
-    white-space: pre-line;
-    font-family: "Lato", sans-serif !important;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+  white-space: pre-line;
+  font-family: "Lato", sans-serif !important;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 h1 {
@@ -113,8 +56,8 @@ h3 {
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.6 !important;
+  font-size: 16px;
+  line-height: 1.6 !important;
 }
 
 span {
@@ -202,12 +145,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -222,80 +165,73 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: "";
-    content: none;
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 @media (min-width: 768px) {
-    .shadow-container {
-        box-shadow: -10px 10px #171B27;
-        width: calc(100% - 10px);
-        height: calc(100% - 10px);
-    }
+  .shadow-container {
+    box-shadow: -10px 10px #171b27;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+  }
 
-        .slate-container {
-        box-shadow: 10px 10px #262931;
-        width: calc(100% - 10px);
-        height: calc(100% - 10px);
-    }
+  .slate-container {
+    box-shadow: 10px 10px #262931;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+  }
 }
 
 .shadow-image {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
 }
 
 .swiper-pagination {
-    justify-content: center;
-    bottom: 32px !important;
-    display: flex;
-    gap: 8px;
+  justify-content: center;
+  bottom: 32px !important;
+  display: flex;
+  gap: 8px;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-    opacity: 1 !important;
-    border-radius: 0;
-    background: transparent !important;
-    border: 2.5px solid #181C18;
-    width: 12px;
-    height: 12px;
-    margin: 0px !important;
+  opacity: 1 !important;
+  border-radius: 0;
+  background: transparent !important;
+  border: 2.5px solid #181c18;
+  width: 12px;
+  height: 12px;
+  margin: 0px !important;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
-    border-color: #57B957 !important;
+  border-color: #57b957 !important;
 }
 
 .header-container {
   transition: transform 0.3s ease-in-out;
-  z-index: 20;
-}
-
-.header-container.header-enter,
-.header-container.header-leave {
-  position: sticky;
-  top: 0;
 }
 
 .header-enter {
@@ -303,7 +239,7 @@ table {
 }
 
 .header-leave {
-  animation: slideOut 0.3s forwards;
+  animation: slideOut 0.3s;
 }
 
 @keyframes slideIn {
@@ -325,15 +261,16 @@ table {
 }
 
 .animation-setup {
-    opacity: 0;
+  opacity: 0;
 }
 
 .img-container {
-    perspective: 1000px;
+  perspective: 1000px;
 }
 
 .img-animation {
-  animation: swing-in-bottom-bck 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  animation: swing-in-bottom-bck 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
 }
 
 /* ----------------------------------------------
@@ -361,8 +298,36 @@ table {
   }
 }
 
+.slide-in-bottom {
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-bottom-leave {
+  animation: slide-in-bottom-leave 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+}
+@keyframes slide-in-bottom-leave {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+
 .list-animation {
-    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 /* ----------------------------------------------
  * Generated by Animista on 2024-6-21 15:52:26
@@ -388,7 +353,7 @@ table {
 }
 
 .bg-pan-br {
-    animation: bg-pan-br 8s both;
+  animation: bg-pan-br 8s both;
 }
 
 /* ----------------------------------------------
@@ -443,7 +408,7 @@ table {
 }
 
 .heartbeat {
-    animation: heartbeat 2s ease-in-out both;
+  animation: heartbeat 2s ease-in-out both;
 }
 
 /* ----------------------------------------------
@@ -507,15 +472,15 @@ table {
 }
 
 .btn {
- background: #a78a0f;
+  background: #a78a0f;
 }
 
 .btn:hover {
- background: linear-gradient(90deg, #a78a0f 0%, #b79712 100%);
+  background: linear-gradient(90deg, #a78a0f 0%, #b79712 100%);
 }
 
 .btn:active {
- transform: translate(0em, 0.2em);
+  transform: translate(0em, 0.2em);
 }
 
 ::-webkit-scrollbar {

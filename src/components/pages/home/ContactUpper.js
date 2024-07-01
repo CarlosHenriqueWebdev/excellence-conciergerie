@@ -3,7 +3,7 @@ import DetailText from "@/components/shared/DetailText";
 import ImageAnimation from "@/components/shared/ImageAnimation";
 import { useTranslation } from "next-i18next";
 import Sparkle from "react-sparkle";
-import Link from 'next/link';
+import Link from "next/link";
 import Image from "next/image";
 
 export default function ContactUpper({ translations }) {
@@ -11,7 +11,7 @@ export default function ContactUpper({ translations }) {
 
   return (
     <div
-      className={`py-[100px] bg-cover bg-fixed bg-[url('/assets/images/img8.jpg')] border-solid border-y-[8px] border-[#020201]`}
+      className={`py-[100px] bg-cover bg-fixed bg-[url('/assets/images/img8.webp')] border-solid border-y-[8px] border-[#020201]`}
     >
       <div className="bg-deep-night py-[56px]">
         <div className="px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[24px]">

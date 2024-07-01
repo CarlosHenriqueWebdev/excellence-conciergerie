@@ -1,39 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 export default function DetailText({ text }) {
-  const [overlayLeft, setOverlayLeft] = useState(0);
-  const targetRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setOverlayLeft(100);
-          observer.disconnect(); // Stop observing after the animation is triggered
-        }
-      },
-      {
-        threshold: 1,
-      },
-    );
-
-    if (targetRef.current) {
-      observer.observe(targetRef.current);
-    }
-
-    return () => {
-      if (targetRef.current) {
-        observer.unobserve(targetRef.current);
-      }
-    };
-  }, []);
-
   return (
-    <div
-      ref={targetRef}
-      className="w-fit flex gap-[8px] items-baseline text-[12px] text-light-gray"
-    >
-      <img src="/assets/images/star.png" alt="Star Icon" className="h-[14px]" />
+    <div className="w-fit flex gap-[8px] items-baseline text-[12px] text-light-gray">
+      <Image
+        src="/assets/images/star.webp"
+        alt=""
+        intrinsic
+        width={14}
+        height={14}
+        quality={100}
+      />
       <span className="tracking-[2px] font-bold uppercase">{text}</span>
     </div>
   );

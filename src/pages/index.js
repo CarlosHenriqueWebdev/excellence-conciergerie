@@ -1,21 +1,76 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import dynamic from "next/dynamic";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
 import { NextSeo } from "next-seo";
-import Link from "next/link";
-import Header from "@/components/common/Header";
-import Footer from "@/components/common/Footer";
-import Hero from "@/components/pages/home/Hero";
-import About from "@/components/pages/home/About";
-import WhyUs from "@/components/pages/home/WhyUs";
-import Message from "@/components/pages/home/Message";
-import Services from "@/components/pages/home/Services";
-import Packs from "@/components/pages/home/Packs";
-import Faq from "@/components/pages/home/Faq";
-import ContactUpper from "@/components/pages/home/ContactUpper";
-import ContactLower from "@/components/pages/home/ContactLower/ContactLower";
-import { debounce } from "lodash";
+
+// Import skeleton loaders
+import HeaderSkeleton from "@/components/skeleton-loaders/HeaderSkeleton";
+import FooterSkeleton from "@/components/skeleton-loaders/FooterSkeleton";
+import HeroSkeleton from "@/components/skeleton-loaders/HeroSkeleton";
+import AboutSkeleton from "@/components/skeleton-loaders/AboutSkeleton";
+import WhyUsSkeleton from "@/components/skeleton-loaders/WhyUsSkeleton";
+import MessageSkeleton from "@/components/skeleton-loaders/MessageSkeleton";
+import ServicesSkeleton from "@/components/skeleton-loaders/ServicesSkeleton";
+import PacksSkeleton from "@/components/skeleton-loaders/PacksSkeleton";
+import FaqSkeleton from "@/components/skeleton-loaders/FaqSkeleton";
+import ContactUpperSkeleton from "@/components/skeleton-loaders/ContactUpperSkeleton";
+import ContactLowerSkeleton from "@/components/skeleton-loaders/ContactLowerSkeleton";
+
+// Dynamic imports with dynamic loading
+const Header = dynamic(() => import("@/components/common/Header"), {
+  loading: () => <HeaderSkeleton />,
+  ssr: false,
+});
+const Hero = dynamic(() => import("@/components/pages/home/Hero"), {
+  loading: () => <HeroSkeleton />,
+  ssr: false,
+});
+const About = dynamic(() => import("@/components/pages/home/About"), {
+  loading: () => <AboutSkeleton />,
+  ssr: false,
+});
+const WhyUs = dynamic(() => import("@/components/pages/home/WhyUs"), {
+  loading: () => <WhyUsSkeleton />,
+  ssr: false,
+});
+const Message = dynamic(() => import("@/components/pages/home/Message"), {
+  loading: () => <MessageSkeleton />,
+  ssr: false,
+});
+const Services = dynamic(() => import("@/components/pages/home/Services"), {
+  loading: () => <ServicesSkeleton />,
+  ssr: false,
+});
+const Packs = dynamic(() => import("@/components/pages/home/Packs"), {
+  loading: () => <PacksSkeleton />,
+  ssr: false,
+});
+const Faq = dynamic(() => import("@/components/pages/home/Faq"), {
+  loading: () => <FaqSkeleton />,
+  ssr: false,
+});
+const ContactUpper = dynamic(
+  () => import("@/components/pages/home/ContactUpper"),
+  {
+    loading: () => <ContactUpperSkeleton />,
+    ssr: false,
+  },
+);
+const ContactLower = dynamic(
+  () => import("@/components/pages/home/ContactLower/ContactLower"),
+  {
+    loading: () => <ContactLowerSkeleton />,
+    ssr: false,
+  },
+);
+const Footer = dynamic(() => import("@/components/common/Footer"), {
+  loading: () => <FooterSkeleton />,
+  ssr: false,
+});
 
 export const getStaticProps = async ({ locale }) => {
   return {
@@ -27,54 +82,6 @@ export const getStaticProps = async ({ locale }) => {
 
 export default function Home(props) {
   const { t, i18n } = useTranslation();
-  const [scrollOffset, setScrollOffset] = useState(0);
-  const headerStickyRef = useRef(null);
-  const [isWhyUsInView, setIsWhyUsInView] = useState(false);
-  const [isHeaderVisible, setIsHeaderVisible] = useState(false);
-  const [animationClass, setAnimationClass] = useState("");
-
-  useEffect(() => {
-    const handleScrollDebounced = debounce(() => {
-      setScrollOffset(window.pageYOffset);
-    }, 1);
-
-    window.addEventListener("scroll", handleScrollDebounced);
-    return () => {
-      window.removeEventListener("scroll", handleScrollDebounced);
-    };
-  }, []);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setAnimationClass("header-enter");
-            setIsHeaderVisible(true);
-          } else {
-            setAnimationClass("header-leave");
-            setTimeout(() => {
-              setIsHeaderVisible(false);
-            }, 300); // Match the duration of the leave animation
-          }
-          setIsWhyUsInView(entry.isIntersecting);
-        });
-      },
-      { threshold: 0.1 },
-    );
-
-    if (headerStickyRef.current) {
-      observer.observe(headerStickyRef.current);
-    }
-
-    return () => {
-      if (headerStickyRef.current) {
-        observer.unobserve(headerStickyRef.current);
-      }
-    };
-  }, []);
-
-  const overlayOpacity = Math.min(0.5, scrollOffset / 100);
 
   return (
     <div>
@@ -89,7 +96,7 @@ export default function Home(props) {
             "Experience the pinnacle of luxury with Excellence Conciergerie.",
           images: [
             {
-              url: "https://excellence-conciergerie.com/assets/images/img1.jpg",
+              url: "https://excellence-conciergerie.com/assets/images/img1.webp",
               width: 800,
               height: 600,
               alt: "Excellence Conciergerie",
@@ -118,57 +125,41 @@ export default function Home(props) {
         ]}
       />
 
-      <div className="relative">
-        <div
-          className={`header-container ${isHeaderVisible ? animationClass : ""}`}
-        >
-          <Header translations={props} />
+      <div>
+        <Header />
+        <Hero />
+
+        <div className="bg-midnight-blue border-solid border-t-[8px] border-[#020201] relative z-[1]">
+          <div id="about">
+            <About />
+          </div>
+          <div id="whyUs" className="py-[100px]">
+            <WhyUs />
+          </div>
+          <div className="flex flex-col gap-[100px]">
+            <div id="message">
+              <Message />
+            </div>
+
+            <div id="services">
+              <Services />
+            </div>
+            <div id="subscriptions">
+              <Packs />
+            </div>
+
+            <div>
+              <div id="questions">
+                <Faq />
+              </div>
+              <div id="contact">
+                <ContactUpper />
+                <ContactLower />
+              </div>
+            </div>
+          </div>
         </div>
-        <main>
-          <div
-            className={`overflow-hidden top-0 ${!isWhyUsInView ? "sticky" : "static"}`}
-          >
-            <div className="relative">
-              <div
-                style={{
-                  backgroundColor: `rgba(0, 0, 0, ${overlayOpacity})`,
-                  transition: "background-color 0.2s ease-in-out",
-                }}
-                className="h-full w-full absolute top-0 left-0 z-[40] pointer-events-none"
-              />
-              <Hero translations={props} isWhyUsInView={isWhyUsInView} />
-            </div>
-          </div>
-          <div className="relative z-[1] flex flex-col gap-[100px] pt-[100px] bg-midnight-blue border-solid border-t-[8px] border-[#020201] overflow-hidden">
-            <div ref={headerStickyRef} className="flex flex-col gap-[100px]">
-              <div id="about">
-                <About translations={props} />
-              </div>
-              <div id="whyUs">
-                <WhyUs translations={props} />
-              </div>
-              <Message translations={props} />
-              <div id="services">
-                <Services translations={props} />
-              </div>
-              <div>
-                <div id="subscriptions">
-                  <Packs translations={props} />
-                </div>
-              </div>
-              <div className="flex flex-col">
-              <div id="faq">                
-                <Faq translations={props} />
-              </div>
-                <div id="contact">
-                  <ContactUpper translations={props} />
-                </div>
-                <ContactLower translations={props} />
-              </div>
-            </div>
-          </div>
-        </main>
-        <Footer translations={props} />
+        <Footer />
       </div>
     </div>
   );

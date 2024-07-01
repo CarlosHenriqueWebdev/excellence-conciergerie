@@ -36,4 +36,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/src/pages/test.js
+/src/pages/importedPin.js
+/src/pages/testing.js
+# /src/pages/test.js
+# /src/pages/components

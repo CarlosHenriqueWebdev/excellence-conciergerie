@@ -74,7 +74,7 @@
   "servicesTitle": "Luxury Rental Management",
   "services": [
     {
-      "image": "img4.jpg",
+      "image": "img4.webp",
       "title": "Comprehensive Property Management",
       "description": "Excellence Conciergerie handles all aspects of managing your luxury property, ensuring both interior and exterior maintenance. Our detailed weekly reports provide transparent updates on every service, keeping you informed.",
       "pros": [
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "image": "img5.jpg",
+      "image": "img5.webp",
       "title": "Exclusive Partnerships with Industry Leaders",
       "description": "We maintain exclusive partnerships with leading construction companies, architects, interior designers, landscapers, and more. This ensures superior quality interventions and enhances the value and appeal of your property.",
       "pros": [
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "image": "img6.jpg",
+      "image": "img6.webp",
       "title": "Luxurious Outdoor Maintenance",
       "description": "Our dedicated teams preserve the beauty of your outdoor spaces, from meticulous garden upkeep to expert pool maintenance. We ensure your property's exterior remains a serene oasis.",
       "pros": [
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "image": "img7.jpg",
+      "image": "img7.webp",
       "title": "Exclusive Personalized Services",
       "description": "We offer bespoke and exclusive services tailored to exceed your expectations in property management. From specialized care to transparent communication, we ensure excellence in every detail.",
       "pros": [
@@ -128,7 +128,7 @@
   "packs": [
     {
       "icon": "vector17.svg",
-      "pattern": "pattern1.png",
+      "pattern": "pattern1.webp",
       "title": "Excellence Basic",
       "subTitle": "Monday to Friday, from 8:30 AM to 5:30 PM",
       "pros": [
@@ -140,7 +140,7 @@
     },
     {
       "icon": "vector18.svg",
-      "pattern": "pattern2.png",
+      "pattern": "pattern2.webp",
       "title": "Excellence Premium",
       "subTitle": "7 days a week, with flexible scheduling",
       "pros": [
@@ -152,7 +152,7 @@
     },
     {
       "icon": "vector19.svg",
-      "pattern": "pattern3.png",
+      "pattern": "pattern3.webp",
       "title": "Excellence Prestige",
       "subTitle": "24/7 service, with personalized VIP management",
       "pros": [
@@ -211,7 +211,7 @@
     { "DO_NOT_CHANGE": "subscriptions", "label": "Subscriptions" },
     { "DO_NOT_CHANGE": "others", "label": "Others" }
   ],
-  
+
   "formTypeHelperText": "If you have general inquiries, please fill out this form. If you are a property owner, please choose 'Owners' from the dropdown. If you are looking to purchase a subscription, select 'Subscriptions' from the dropdown.",
   "propertyLocationLabel": "Property Location",
   "propertyLocationPlaceholder": "Location",

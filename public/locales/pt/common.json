@@ -5,17 +5,17 @@
   "guideLinesLanguagesLocale": "Warning: Do not alter the DO_NOT_CHANGE and currentLocale fields. They are linked to the website language. For example, changing 'en' to 'en_US' will lead to a non-existent page (e.g., https://excellence-conciergerie.com/en_US). Existing locales are pt, en, fr, es. Do not add non-existent locales. Only modify based on the current translation file. fr/common.js currentLocale should always be 'fr', en/common.js currentLocale should always be 'en', etc.",
   "currentLocale": "pt",
   "languages": [
-    { "language": "Inglês", "flag": "flag1.svg", "DO_NOT_CHANGE": "en" },      
-    { "language": "Espanhol", "flag": "flag4.svg", "DO_NOT_CHANGE": "es" },      
+    { "language": "Inglês", "flag": "flag1.svg", "DO_NOT_CHANGE": "en" },
+    { "language": "Espanhol", "flag": "flag4.svg", "DO_NOT_CHANGE": "es" },
     { "language": "Francês", "flag": "flag2.svg", "DO_NOT_CHANGE": "fr" }
   ],
 
   "guideLinesLinks": "Warning: The only accepted values for the DO_NOT_CHANGE fields in navLinks are the current website IDs, which are as follows: about, whyUs, message, subscriptions, services, faq, contact",
   "navLinks": [
-      { "text": "Compromisso", "DO_NOT_CHANGE": "about" },
-      { "text": "Gestão de Locação", "DO_NOT_CHANGE": "services" },
-      { "text": "Assinaturas Personalizadas", "DO_NOT_CHANGE": "subscriptions" },
-      { "text": "Contato", "DO_NOT_CHANGE": "contact" }
+    { "text": "Compromisso", "DO_NOT_CHANGE": "about" },
+    { "text": "Gestão de Locação", "DO_NOT_CHANGE": "services" },
+    { "text": "Assinaturas Personalizadas", "DO_NOT_CHANGE": "subscriptions" },
+    { "text": "Contato", "DO_NOT_CHANGE": "contact" }
   ],
 
   "heroSubtitle": "Excellence Conciergerie",
@@ -74,69 +74,85 @@
   "servicesTitle": "Gestão de Aluguel de Luxo",
   "services": [
     {
-      "image": "img4.jpg",
+      "image": "img4.webp",
       "title": "Gestão Completa de Propriedades",
       "description": "A Excellence Conciergerie cuida de todos os aspectos da gestão da sua propriedade de luxo, garantindo manutenção interna e externa. Nossos relatórios semanais detalhados fornecem atualizações transparentes sobre cada serviço, mantendo você informado.",
       "pros": [
         { "text": "Manutenção abrangente da sua propriedade." },
         { "text": "Serviço personalizado e dedicado." },
         { "text": "Monitoramento 24/7 para total segurança." },
-        { "text": "Soluções sob medida para atender às suas necessidades únicas." }
+        {
+          "text": "Soluções sob medida para atender às suas necessidades únicas."
+        }
       ]
     },
     {
-      "image": "img5.jpg",
+      "image": "img5.webp",
       "title": "Parcerias Exclusivas com Líderes do Setor",
       "description": "Mantemos parcerias exclusivas com empresas líderes em construção, arquitetos, designers de interiores, paisagistas e outros. Isso garante intervenções de alta qualidade e aumenta o valor e o apelo da sua propriedade.",
       "pros": [
         { "text": "Acesso a profissionais de alto nível no setor." },
-        { "text": "Serviços personalizados para valorizar esteticamente a propriedade." },
+        {
+          "text": "Serviços personalizados para valorizar esteticamente a propriedade."
+        },
         { "text": "Expertise em gestão de propriedades de luxo." },
         { "text": "Abordagem colaborativa para resultados excepcionais." }
       ]
     },
     {
-      "image": "img6.jpg",
+      "image": "img6.webp",
       "title": "Manutenção Luxuosa de Áreas Externas",
       "description": "Nossas equipes dedicadas preservam a beleza dos seus espaços ao ar livre, desde a manutenção meticulosa do jardim até o cuidado especializado da piscina. Garantimos que o exterior da sua propriedade permaneça um oásis sereno.",
       "pros": [
-        { "text": "Cuidado especializado para melhorar e embelezar áreas externas." },
-        { "text": "Serviços sob medida para preservar e melhorar a estética da propriedade." },
+        {
+          "text": "Cuidado especializado para melhorar e embelezar áreas externas."
+        },
+        {
+          "text": "Serviços sob medida para preservar e melhorar a estética da propriedade."
+        },
         { "text": "Manutenção regular para manter a condição impecável." },
-        { "text": "Soluções especializadas para manutenção luxuosa da propriedade." }
+        {
+          "text": "Soluções especializadas para manutenção luxuosa da propriedade."
+        }
       ]
     },
     {
-      "image": "img7.jpg",
+      "image": "img7.webp",
       "title": "Serviços Personalizados Exclusivos",
       "description": "Oferecemos serviços exclusivos e personalizados, projetados para superar suas expectativas na gestão de propriedades. Desde cuidados especializados até comunicação transparente, garantimos excelência em cada detalhe.",
       "pros": [
-        { "text": "Soluções personalizadas para todas as necessidades da sua propriedade." },
+        {
+          "text": "Soluções personalizadas para todas as necessidades da sua propriedade."
+        },
         { "text": "Compromisso com excelência e satisfação do cliente." },
         { "text": "Relatórios de serviço transparentes e detalhados." },
-        { "text": "Abordagem personalizada para atender às preferências exclusivas dos clientes." }
+        {
+          "text": "Abordagem personalizada para atender às preferências exclusivas dos clientes."
+        }
       ]
     }
   ],
 
- "packsSubtitle": "O plano perfeito para cada estilo de vida.",
+  "packsSubtitle": "O plano perfeito para cada estilo de vida.",
   "packsTitle": "Assinaturas Personalizadas - Satisfação Garantida",
   "packs": [
     {
       "icon": "vector17.svg",
-      "pattern": "pattern1.png",
+      "pattern": "pattern1.webp",
       "title": "Excellence Basic",
       "subTitle": "De segunda a sexta-feira, das 8h30 às 17h30",
       "pros": [
         { "text": "Manutenção abrangente da sua propriedade." },
         { "text": "Serviço personalizado e dedicado." },
         { "text": "Monitoramento 24/7 para total segurança." },
-        { "text": "Soluções sob medida para atender às suas necessidades únicas." }
+        {
+          "text": "Soluções sob medida para atender às suas necessidades únicas."
+        }
       ]
     },
     {
       "icon": "vector18.svg",
-      "pattern": "pattern2.png",
+      "pattern": "pattern2.webp",
       "title": "Excellence Premium",
       "subTitle": "7 dias por semana, com agendamento flexível",
       "pros": [
@@ -148,7 +164,7 @@
     },
     {
       "icon": "vector19.svg",
-      "pattern": "pattern3.png",
+      "pattern": "pattern3.webp",
       "title": "Excellence Prestige",
       "subTitle": "Serviço 24/7, com gestão VIP personalizada",
       "pros": [
@@ -161,7 +177,7 @@
   ],
   "packsButton": "Descubra Nossas Ofertas e Assine",
 
- "faqSubtitle": "Perguntas Frequentes",
+  "faqSubtitle": "Perguntas Frequentes",
   "faqTitle": "Estamos Aqui para Ajudar",
   "faq": [
     {

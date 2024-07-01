@@ -14,7 +14,10 @@
   "navLinks": [
     { "text": "Compromiso", "DO_NOT_CHANGE": "about" },
     { "text": "Gestión de Alquileres", "DO_NOT_CHANGE": "services" },
-    { "text": "Suscripciones Personalizadas", "DO_NOT_CHANGE": "subscriptions" },
+    {
+      "text": "Suscripciones Personalizadas",
+      "DO_NOT_CHANGE": "subscriptions"
+    },
     { "text": "Contacto", "DO_NOT_CHANGE": "contact" }
   ],
 
@@ -74,7 +77,7 @@
   "servicesTitle": "Gestión de Alquileres de Lujo",
   "services": [
     {
-      "image": "img4.jpg",
+      "image": "img4.webp",
       "title": "Gestión Integral de Propiedades",
       "description": "Excellence Conciergerie se encarga de todos los aspectos de la gestión de tu propiedad de lujo, asegurando el mantenimiento tanto interior como exterior. Nuestros informes semanales detallados proporcionan actualizaciones transparentes sobre cada servicio, manteniéndote informado.",
       "pros": [
@@ -87,7 +90,7 @@
       ]
     },
     {
-      "image": "img5.jpg",
+      "image": "img5.webp",
       "title": "Asociaciones Exclusivas con Líderes de la Industria",
       "description": "Mantenemos asociaciones exclusivas con empresas de construcción, arquitectos, diseñadores de interiores, paisajistas y más. Esto asegura intervenciones de calidad superior y mejora el valor y el atractivo de tu propiedad.",
       "pros": [
@@ -100,7 +103,7 @@
       ]
     },
     {
-      "image": "img6.jpg",
+      "image": "img6.webp",
       "title": "Mantenimiento de Exteriores Lujosos",
       "description": "Nuestros equipos dedicados preservan la belleza de tus espacios exteriores, desde el cuidado meticuloso del jardín hasta el mantenimiento experto de la piscina. Aseguramos que el exterior de tu propiedad siga siendo un oasis sereno.",
       "pros": [
@@ -119,7 +122,7 @@
       ]
     },
     {
-      "image": "img7.jpg",
+      "image": "img7.webp",
       "title": "Servicios Personalizados Exclusivos",
       "description": "Ofrecemos servicios personalizados y exclusivos diseñados para superar tus expectativas en la gestión de propiedades. Desde el cuidado especializado hasta la comunicación transparente, aseguramos la excelencia en cada detalle.",
       "pros": [
@@ -142,7 +145,7 @@
   "packs": [
     {
       "icon": "vector17.svg",
-      "pattern": "pattern1.png",
+      "pattern": "pattern1.webp",
       "title": "Excellence Básico",
       "subTitle": "De lunes a viernes, de 8:30 AM a 5:30 PM",
       "pros": [
@@ -156,7 +159,7 @@
     },
     {
       "icon": "vector18.svg",
-      "pattern": "pattern2.png",
+      "pattern": "pattern2.webp",
       "title": "Excellence Premium",
       "subTitle": "7 días a la semana, con horarios flexibles",
       "pros": [
@@ -168,7 +171,7 @@
     },
     {
       "icon": "vector19.svg",
-      "pattern": "pattern3.png",
+      "pattern": "pattern3.webp",
       "title": "Excellence Prestigio",
       "subTitle": "Servicio 24/7, con gestión VIP personalizada",
       "pros": [

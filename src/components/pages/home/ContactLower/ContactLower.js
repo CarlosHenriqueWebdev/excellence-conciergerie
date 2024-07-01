@@ -11,6 +11,7 @@ import {
   initialValues,
 } from "@/components/pages/home/ContactLower/components/formFieldsConfig";
 import { getValidationSchema } from "@/components/pages/home/ContactLower/components/validationSchemas";
+import Image from "next/image";
 
 export default function ContactLower({ translations }) {
   const { t } = useTranslation();
@@ -21,7 +22,7 @@ export default function ContactLower({ translations }) {
 
   const prevButton = () => {
     setStep(1);
-    setSubmissionError("")
+    setSubmissionError("");
     setSelectedFormType(null);
   };
 
@@ -38,7 +39,7 @@ export default function ContactLower({ translations }) {
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         formData,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
       )
       .then(
         (response) => {
@@ -172,7 +173,9 @@ export default function ContactLower({ translations }) {
                   legalLinks={legalLinks}
                 />
 
-                {submissionError && <p className="text-[#FF4C4C]">{submissionError}</p>}
+                {submissionError && (
+                  <p className="text-[#FF4C4C]">{submissionError}</p>
+                )}
               </div>
             )}
             {step === 3 && (

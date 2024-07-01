@@ -1,39 +1,24 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
+import Image from "next/image";
+import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 
-export default function DetailImage({ src, className, delay }) {
-  const targetRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect(); // Stop observing after the animation is triggered
-        }
-      },
-      {
-        threshold: 0.5,
-      }
-    );
-
-    if (targetRef.current) {
-      observer.observe(targetRef.current);
-    }
-
-    return () => {
-      if (targetRef.current) {
-        observer.unobserve(targetRef.current);
-      }
-    };
-  }, []);
-
+export default function DetailImage({
+  src,
+  className,
+  classNameContainer,
+  width,
+  height,
+}) {
   return (
-    <div ref={targetRef} className="img-container">
-      <img
-        className={`${className} animation-setup ${isVisible ? 'img-animation' : ''}`}
+    <div className={`${classNameContainer}`}>
+      <Image
+        className={`${className}`}
         src={src}
         alt=""
+        responsive
+        width={width}
+        height={height}
+        quality={100}
       />
     </div>
   );

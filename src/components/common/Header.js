@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Dialog,
@@ -46,7 +47,7 @@ export default function Header({ translations }) {
   };
 
   return (
-    <header className="bg-eclipse-black text-lavender-haze text-[14px] border-solid border-b-[2px] border-twilight-gray">
+    <header className="bg-eclipse-black text-lavender-haze text-[14px] border-solid border-b-[2px] border-twilight-gray relative z-[1]">
       <nav
         className="px-[24px] py-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex items-center justify-between"
         aria-label="Global"
@@ -54,10 +55,13 @@ export default function Header({ translations }) {
         <div className="flex lg:flex-1">
           <a href="#">
             <span className="sr-only">Your Company</span>
-            <img
-              className="block h-[32px]"
-              src="/assets/images/logo.png"
+            <Image
+              src="/assets/images/logo.webp"
               alt=""
+              intrinsic
+              width={166}
+              height={32}
+              quality={100}
             />
           </a>
         </div>
@@ -96,17 +100,23 @@ export default function Header({ translations }) {
               onClick={toggleDropdown}
             >
               <div className="flex items-center gap-[6px]">
-                <img
+                <Image
                   src={`/assets/images/${t("currentLanguageFlag")}`}
                   alt=""
-                  className="h-[14px] block"
+                  intrinsic
+                  width={14}
+                  height={14}
+                  quality={100}
                 />
                 {t("currentLanguage")}
               </div>
-              <img
+
+              <Image
                 src="/assets/images/vector4.svg"
-                alt=""
-                className="h-[10px] block"
+                intrinsic
+                width={10}
+                height={10}
+                quality={100}
               />
             </button>
             {isOpen && (
@@ -120,10 +130,12 @@ export default function Header({ translations }) {
                       className="flex items-center gap-[6px] hover:bg-graphite-gray px-[24px] py-[12px] w-full cursor-pointer"
                       onClick={() => changeLanguage(item.DO_NOT_CHANGE)}
                     >
-                      <img
+                      <Image
                         src={`/assets/images/${item.flag}`}
-                        alt=""
-                        className="h-[14px] block"
+                        intrinsic
+                        width={14}
+                        height={14}
+                        quality={100}
                       />
                       {item.language}
                     </a>
@@ -145,10 +157,14 @@ export default function Header({ translations }) {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                className="w-auto block h-[32px]"
-                src="/assets/images/logo.png"
+
+              <Image
+                src="/assets/images/logo.webp"
                 alt=""
+                responsive
+                width={166}
+                height={32}
+                quality={100}
               />
             </a>
             <button
@@ -168,17 +184,23 @@ export default function Header({ translations }) {
                     <>
                       <DisclosureButton className="border-solid border-golden-sunbeam border-[3px] flex items-center justify-between w-full text-start block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold">
                         <div className="flex items-center gap-[6px]">
-                          <img
+                          <Image
                             src={`/assets/images/${t("currentLanguageFlag")}`}
-                            alt=""
-                            className="h-[14px] block"
+                            intrinsic
+                            width={14}
+                            height={14}
+                            quality={100}
                           />
+
                           {t("currentLanguage")}
                         </div>
-                        <img
+
+                        <Image
                           src="/assets/images/vector4.svg"
-                          alt=""
-                          className="h-[12px] block"
+                          intrinsic
+                          width={12}
+                          height={12}
+                          quality={100}
                         />
                       </DisclosureButton>
                       <DisclosurePanel className="flex flex-col gap-[16px]">
@@ -190,10 +212,12 @@ export default function Header({ translations }) {
                             className="border-solid border-golden-sunbeam border-[3px] flex items-center gap-[6px] w-full text-start block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold cursor-pointer"
                             onClick={() => changeLanguage(item.DO_NOT_CHANGE)}
                           >
-                            <img
+                            <Image
                               src={`/assets/images/${item.flag}`}
-                              alt=""
-                              className="h-[14px] block"
+                              intrinsic
+                              width={14}
+                              height={14}
+                              quality={100}
                             />
                             {item.language}
                           </a>
