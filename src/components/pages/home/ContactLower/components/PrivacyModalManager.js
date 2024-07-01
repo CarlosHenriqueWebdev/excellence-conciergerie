@@ -2,7 +2,7 @@ import { useState } from "react";
 import LegalModal from "@/components/shared/LegalModal";
 import { useTranslation } from "next-i18next";
 
-export default function PrivacyModalManager({ legalLinks, translations }) {
+export default function PrivacyModalManager({ legalLinks }) {
   const { t } = useTranslation();
   const [modalItem, setModalItem] = useState(null);
 

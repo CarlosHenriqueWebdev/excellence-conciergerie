@@ -168,10 +168,7 @@ export default function ContactLower() {
                   </div>
                 </div>
 
-                <PrivacyModalManager
-                  translations={translations}
-                  legalLinks={legalLinks}
-                />
+                <PrivacyModalManager legalLinks={legalLinks} />
 
                 {submissionError && (
                   <p className="text-[#FF4C4C]">{submissionError}</p>
