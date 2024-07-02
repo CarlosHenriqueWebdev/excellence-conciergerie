@@ -1,4 +1,4 @@
-import React, {  } from "react";
+import React from "react";
 import dynamic from "next/dynamic";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
@@ -124,27 +124,17 @@ export default function Home(props) {
         <Hero />
 
         <div className="bg-midnight-blue border-solid border-t-[8px] border-[#020201] relative z-[1]">
-          <div id="about">
-            <About />
-          </div>
-          <div id="whyUs" className="py-[100px]">
+          <About />
+          <div className="py-[100px]">
             <WhyUs />
           </div>
           <div className="flex flex-col gap-[100px]">
-            <div id="message">
-              <Message />
-            </div>
-            <div id="services">
-              <Services />
-            </div>
-            <div id="subscriptions">
-              <Packs />
-            </div>
+            <Message />
+            <Services />
+            <Packs />
             <div>
-              <div id="questions">
-                <Faq />
-              </div>
-              <div id="contact">
+              <Faq />
+              <div>
                 <ContactUpper />
                 <ContactLower />
               </div>

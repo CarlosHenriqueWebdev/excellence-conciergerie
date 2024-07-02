@@ -41,7 +41,7 @@ export default function Services() {
           <div className="item">
             <DetailText text={t("servicesSubtitle")} />
           </div>
-          <h2 className="item uppercase text-[1.25rem] font-bold">
+          <h2 id="services" className="item uppercase text-[1.25rem] font-bold">
             {t("servicesTitle")}
           </h2>
         </div>
@@ -57,12 +57,14 @@ export default function Services() {
             spaceBetween={100}
             onSwiper={setSwiper}
             onSlideChange={handleSlideChange}
+            aria-hidden={true}
           >
             {t("services", { returnObjects: true })?.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="flex flex-col gap-[32px] md:grid md:grid-cols-[450fr_638fr] select-none cursor-grab">
                   <div>
                     <Image
+                      aria-hidden={true}
                       src={`/assets/images/${item.image}`}
                       alt={`${index}° swiper image`}
                       responsive="true"
@@ -92,6 +94,7 @@ export default function Services() {
                             className="flex items-baseline gap-[8px]"
                           >
                             <Image
+                              aria-hidden={true}
                               src={`/assets/images/vector16.svg`}
                               alt="golden checkmark"
                               width={12}
@@ -111,9 +114,27 @@ export default function Services() {
             ))}
           </Swiper>
 
+          <ul aria-label={t("accessibility_text7")} className="sr-only">
+            {t("services", { returnObjects: true })?.map((item, index) => (
+              <li key={index}>
+                <h3>{item.title}</h3>
+
+                <p>{item.description}</p>
+                <ul>
+                  {item.pros?.map((proItem, proIndex) => (
+                    <li key={proIndex}>
+                      <p>{proItem.text}</p>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+
           <div className="flex w-full justify-between gap-[4px] mt-[32px]">
             {t("services", { returnObjects: true })?.map((_, index) => (
               <button
+                aria-label={t("accessibility_text8")}
                 key={index}
                 onClick={() => handleButtonClick(index)}
                 className={`relative rounded-[2px] w-full bg-white-50 h-[3px] ${

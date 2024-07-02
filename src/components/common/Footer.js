@@ -26,9 +26,17 @@ function Footer() {
 
   const updatedLegalLinks = [...legalLinks, newLegalItem];
 
-  const handleModalOpen = (item) => {
+  const handleModalOpen = (item, targetId) => {
     setModalItem(item);
     setIsModalOpen(true);
+
+    setTimeout(() => {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.tabIndex = -1;
+        targetElement.focus();
+      }
+    }, 500);
   };
 
   return (
@@ -37,6 +45,7 @@ function Footer() {
         <ul className="mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] px-[24px] lg:px-[80px] py-[48px] flex flex-col gap-[48px] md:grid md:grid-cols-[1.5fr_1fr_1fr]">
           <li className="flex flex-col gap-[24px]">
             <Image
+              aria-hidden={true}
               src="/assets/images/logo.webp"
               alt="excellence logo"
               intrinsic="true"
@@ -77,6 +86,7 @@ function Footer() {
                 return (
                   <li key={index} className="flex gap-[8px]">
                     <Image
+                      aria-hidden={true}
                       src={`/assets/images/${item.icon}`}
                       width={22}
                       height={22}
@@ -120,12 +130,14 @@ function Footer() {
           {updatedLegalLinks?.map((item, index) => (
             <li key={index} className="text-white-75 flex gap-[6px]">
               <button
-                onClick={() => handleModalOpen(item)}
+                onClick={() => handleModalOpen(item, "legal-title")}
                 className="cursor-pointer hover:underline"
               >
                 {item.text}
               </button>
-              {index !== updatedLegalLinks.length - 1 && <span>|</span>}
+              {index !== updatedLegalLinks.length - 1 && (
+                <span aria-hidden={true}>|</span>
+              )}
             </li>
           ))}
         </ul>

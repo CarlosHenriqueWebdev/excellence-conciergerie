@@ -21,7 +21,10 @@ export default function ContactUpper() {
                 <div className="item">
                   <DetailText text={t("contactSubtitle")} />
                 </div>
-                <h2 className="item uppercase text-[1.5rem] font-bold">
+                <h2
+                  id="contact"
+                  className="item uppercase text-[1.5rem] font-bold"
+                >
                   {t("contactTitle")}
                 </h2>
               </div>
@@ -56,6 +59,7 @@ export default function ContactUpper() {
                 return (
                   <li key={index} className="item flex gap-[8px]">
                     <Image
+                      aria-hidden={true}
                       src={`/assets/images/${item.icon}`}
                       width={20}
                       height={20}

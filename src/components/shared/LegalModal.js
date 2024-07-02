@@ -9,7 +9,9 @@ function LegalModal({ item, onClose }) {
       case "terms":
         return (
           <div className="flex flex-col gap-[32px]">
-            <h2 className="text-[1.5rem] font-bold uppercase">{item.text}</h2>
+            <h2 id="legal-title" className="text-[1.5rem] font-bold uppercase">
+              {item.text}
+            </h2>
             <div className="flex flex-col gap-[24px]">
               {item.array?.map((subItem, index) => (
                 <div key={index} className="flex flex-col gap-[16px]">
@@ -31,7 +33,9 @@ function LegalModal({ item, onClose }) {
       case "privacy":
         return (
           <div>
-            <h2 className="text-xl font-bold mb-4">{item.text}</h2>
+            <h2 id="legal-title" className="text-xl font-bold mb-4">
+              {item.text}
+            </h2>
             {item.array?.map((subItem, index) => (
               <div key={index} className="mb-4">
                 {subItem.title && (
@@ -45,7 +49,9 @@ function LegalModal({ item, onClose }) {
       case "attributions":
         return (
           <div>
-            <h2 className="text-xl font-bold mb-4">{item.text}</h2>
+            <h2 id="legal-title" className="text-xl font-bold mb-4">
+              {item.text}
+            </h2>
             {item.array?.map((subItem, index) => (
               <div key={index} className="mb-4">
                 <p>
@@ -72,7 +78,11 @@ function LegalModal({ item, onClose }) {
     <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex text-[#181C18] px-[24px] lg:px-[80px] py-[24px] lg:py-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px]">
       <div className="overflow-y-scroll bg-white p-[24px] rounded-[4px] w-full flex flex-col gap-[32px] justify-start">
         <div className="flex justify-end w-full">
-          <button onClick={onClose} className="text-[1.5rem]">
+          <button
+            aria-hidden={true}
+            onClick={onClose}
+            className="text-[1.5rem]"
+          >
             x
           </button>
         </div>

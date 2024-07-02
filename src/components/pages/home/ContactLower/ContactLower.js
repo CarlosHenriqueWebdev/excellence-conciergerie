@@ -60,9 +60,13 @@ export default function ContactLower() {
   const renderFormFields = (fields, formType) => {
     return fields?.map((field, index) => (
       <div key={index} className="flex flex-col gap-[12px]">
-        <label className="text-[1rem]">
+        <label className="text-[1rem]" htmlFor={field.name}>
           {t(field.label)}{" "}
-          {field.required && <span className="text-[#FF4C4C]">*</span>}
+          {field.required && (
+            <span aria-hidden={true} className="text-[#FF4C4C]">
+              *
+            </span>
+          )}
         </label>
         {field.type === "text" ||
         field.type === "email" ||
@@ -72,14 +76,20 @@ export default function ContactLower() {
           <Field
             type={field.type}
             name={field.name}
+            id={field.name}
             placeholder={t(field.placeholder)}
             className="w-full px-[16px] py-[12px] bg-[#31343C] text-white placeholder-white-75 rounded-[4px] border-none focus-visible:outline-golden-yellow"
+            aria-live="assertive"
+            aria-required={field.required}
           />
         ) : field.type === "select" ? (
           <Field
             as="select"
             name={field.name}
+            id={field.name}
             className="w-full px-[16px] py-[12px] bg-[#31343C] text-white placeholder-white-75 rounded-[4px] border-r-[16px] border-transparent border-solid focus-visible:outline-golden-yellow"
+            aria-live="assertive"
+            aria-required={field.required}
           >
             <option value="" disabled>
               {t("blankOption")}
@@ -94,15 +104,23 @@ export default function ContactLower() {
           <Field
             as="textarea"
             name={field.name}
+            id={field.name}
             placeholder={t(field.placeholder)}
             className="w-full px-[16px] py-[12px] bg-[#31343C] text-white placeholder-white-75 rounded-[4px] border-none focus-visible:outline-golden-yellow h-[150px] resize-none"
+            aria-live="assertive"
+            aria-required={field.required}
           />
         ) : null}
         <ErrorMessage
           name={field.name}
-          component="div"
           className="text-[#FF4C4C]"
+          render={(msg) => (
+            <p role="alert" className="text-[#FF4C4C]">
+              {msg}: &quot;{t(field.label)}&quot;
+            </p>
+          )}
         />
+
         {field.helperText && (
           <span className="text-[#FFD84C] text-[0.875rem]">
             {t(field.helperText)}

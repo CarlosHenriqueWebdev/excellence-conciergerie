@@ -38,8 +38,11 @@ export default function Hero() {
   });
 
   return (
-    <div ref={containerRef} onClick={handlePlayButtonClick}>
-      <div className="bg-[url('/assets/images/img9.webp')] bg-cover lg:bg-none panel select-none lg:cursor-pointer relative flex justify-center items-center">
+    <div ref={containerRef}>
+      <div
+        onClick={handlePlayButtonClick}
+        className="bg-[url('/assets/images/img9.webp')] bg-cover lg:bg-none panel select-none lg:cursor-pointer relative flex justify-center items-center"
+      >
         <video
           ref={videoRef}
           className="hidden lg:block absolute top-0 left-0 object-cover w-full h-full"
@@ -47,6 +50,7 @@ export default function Hero() {
           muted
           preload="metadata"
           onLoadedData={handleLoadedData}
+          aria-label={t("accessibility_text5")}
         >
           <source src="/assets/videos/video1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -55,11 +59,20 @@ export default function Hero() {
         <div className="relative z-[20] py-[120px] lg:py-[0] lg:h-[75vh] justify-center items-center px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col w-full">
           <div className="font-bold uppercase flex flex-col gap-[16px] items-center">
             <DetailText text={t("heroSubtitle")} />
-            <h1 className="text-[1.75rem] text-center">{t("heroTitle")}</h1>
+            <h1 id="main-content" className="text-[1.75rem] text-center">
+              {t("heroTitle")}
+            </h1>
           </div>
 
-          <div className="hidden lg:block hover:brightness-75 absolute z-[20] bottom-[12px] left-0 px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] opacity-[0.8]">
+          <button
+            onClick={handlePlayButtonClick}
+            className="hidden lg:block hover:brightness-75 absolute z-[20] bottom-[12px] left-0 px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] opacity-[0.8]"
+            aria-label={
+              isPlaying ? t("accessibility_text3") : t("accessibility_text4")
+            }
+          >
             <Image
+              aria-hidden={true}
               src={
                 isPlaying
                   ? "/assets/images/vector21.svg"
@@ -72,7 +85,7 @@ export default function Hero() {
               quality={100}
               className="w-[20px] h-[20px]"
             />
-          </div>
+          </button>
         </div>
       </div>
     </div>

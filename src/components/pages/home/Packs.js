@@ -14,6 +14,17 @@ export default function Packs() {
     entranceScrollDuration: 5,
   });
 
+  const handleButtonClick = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      setTimeout(() => {
+        targetElement.tabIndex = -1;
+        targetElement.focus();
+      }, 100);
+    }
+  };
+
   return (
     <div ref={containerRef}>
       <div className="px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[32px] w-full">
@@ -21,7 +32,10 @@ export default function Packs() {
           <div className="item">
             <DetailText text={t("packsSubtitle")} />
           </div>
-          <h2 className="item uppercase text-[1.25rem] font-bold">
+          <h2
+            id="subscriptions"
+            className="item uppercase text-[1.25rem] font-bold"
+          >
             {t("packsTitle")}
           </h2>
         </div>
@@ -40,6 +54,7 @@ export default function Packs() {
                   className="scrollBackgroundAnimation flex flex-col gap-[16px] p-[24px] !bg-repeat !bg-[length:50%] md:text-center md:justify-center md:items-center"
                 >
                   <Image
+                    aria-hidden={true}
                     src={`/assets/images/${item.icon}`}
                     alt={`${item.title} illustration icon`}
                     intrinsic="true"
@@ -65,6 +80,7 @@ export default function Packs() {
                         className="flex items-baseline gap-[8px]"
                       >
                         <Image
+                          aria-hidden={true}
                           src={`/assets/images/vector16.svg`}
                           alt="golden checkmark"
                           intrinsic="true"
@@ -81,8 +97,10 @@ export default function Packs() {
                   <ScrollLink
                     className="item btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[1rem] text-white w-fit md:self-center cursor-pointer md:text-center"
                     to="contact"
+                    tabIndex="0"
+                    onClick={() => handleButtonClick("contact")}
                   >
-                    {t("packsButton")}
+                    {t("packsButton")}{" "}
                   </ScrollLink>
                 </div>
               </div>

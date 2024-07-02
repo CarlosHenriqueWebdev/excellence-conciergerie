@@ -17,6 +17,7 @@ export default function About() {
       <div className="md:sticky md:top-0 pt-[100px] md:h-[full] px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[32px] md:grid md:grid-cols-[450fr_638fr]">
         <div className="item">
           <Image
+            aria-hidden={true}
             src="/assets/images/img1.webp"
             className="block w-full object-cover border-solid border-[3px] border-golden-sunbeam rounded-[4px]"
             intrinsic="true"
@@ -33,7 +34,7 @@ export default function About() {
               <DetailText text={t("introductionSubtitle")} />
             </div>
 
-            <h2 className={`item uppercase text-[1.5rem] font-bold`}>
+            <h2 id="about" className={`item uppercase text-[1.5rem] font-bold`}>
               {t("introductionTitle")}
             </h2>
           </div>

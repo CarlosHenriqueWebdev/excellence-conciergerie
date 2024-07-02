@@ -24,5 +24,7 @@ export const getValidationSchema = (formType, t) => {
     }),
   };
 
-  return formType ? baseValidationSchema.concat(validationSchemas[formType]) : baseValidationSchema;
+  return formType
+    ? baseValidationSchema.concat(validationSchemas[formType])
+    : baseValidationSchema;
 };

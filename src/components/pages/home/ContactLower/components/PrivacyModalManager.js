@@ -7,13 +7,21 @@ export default function PrivacyModalManager({ legalLinks }) {
   const { t } = useTranslation();
   const [modalItem, setModalItem] = useState(null);
 
-  const handleModalOpen = () => {
+  const handleModalOpen = (targetId) => {
     const privacyPolicyItem = legalLinks.find(
-      (item) => item.DO_NOT_CHANGE === "privacy"
+      (item) => item.DO_NOT_CHANGE === "privacy",
     );
     if (privacyPolicyItem) {
       setModalItem(privacyPolicyItem);
     }
+
+    setTimeout(() => {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.tabIndex = -1;
+        targetElement.focus();
+      }
+    }, 500);
   };
 
   const handleCloseModal = () => {
@@ -27,7 +35,7 @@ export default function PrivacyModalManager({ legalLinks }) {
         {t("privacyPolicyWarningText")}{" "}
         <button
           type="button"
-          onClick={handleModalOpen}
+          onClick={() => handleModalOpen("legal-title")}
           className="text-[#4C68FF] hover:underline"
         >
           {t("privacyPolicyWarningLink")}

@@ -23,6 +23,7 @@ export default function Message() {
           <div className="px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[24px] md:justify-center md:items-center md:text-center">
             <div className="item relative w-fit">
               <Image
+                aria-hidden={true}
                 src="/assets/images/she1.webp"
                 alt="excellence ceo picture"
                 intrinsic="true"
@@ -39,7 +40,10 @@ export default function Message() {
                 <div className="item">
                   <DetailText text={t("messageSubtitle")} />
                 </div>
-                <h2 className="item uppercase text-[1.5rem] font-bold">
+                <h2
+                  id="message"
+                  className="item uppercase text-[1.5rem] font-bold"
+                >
                   {t("messageTitle")}
                 </h2>
               </div>
