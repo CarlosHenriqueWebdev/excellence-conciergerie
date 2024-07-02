@@ -1,10 +1,6 @@
-import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import React, {  } from "react";
 import dynamic from "next/dynamic";
-import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { GetStaticProps } from "next";
 import { NextSeo } from "next-seo";
 
 // Import skeleton loaders
@@ -81,8 +77,6 @@ export const getStaticProps = async ({ locale }) => {
 };
 
 export default function Home(props) {
-  const { t, i18n } = useTranslation();
-
   return (
     <div>
       <NextSeo
@@ -140,14 +134,12 @@ export default function Home(props) {
             <div id="message">
               <Message />
             </div>
-
             <div id="services">
               <Services />
             </div>
             <div id="subscriptions">
               <Packs />
             </div>
-
             <div>
               <div id="questions">
                 <Faq />

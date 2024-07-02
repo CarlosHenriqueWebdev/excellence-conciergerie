@@ -1,9 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import emailjs from "emailjs-com";
-import LegalModal from "@/components/shared/LegalModal";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
 import PrivacyModalManager from "@/components/pages/home/ContactLower/components/PrivacyModalManager";
 import {
   formFields,
@@ -11,7 +9,6 @@ import {
   initialValues,
 } from "@/components/pages/home/ContactLower/components/formFieldsConfig";
 import { getValidationSchema } from "@/components/pages/home/ContactLower/components/validationSchemas";
-import Image from "next/image";
 
 export default function ContactLower() {
   const { t } = useTranslation();
@@ -39,7 +36,7 @@ export default function ContactLower() {
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         formData,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       )
       .then(
         (response) => {
@@ -51,7 +48,7 @@ export default function ContactLower() {
           console.log("FAILED...", error);
           setSubmissionError(t("submissionError"));
           setSubmitting(false);
-        },
+        }
       )
       .catch((error) => {
         console.log("ERROR...", error);
@@ -63,7 +60,7 @@ export default function ContactLower() {
   const renderFormFields = (fields, formType) => {
     return fields?.map((field, index) => (
       <div key={index} className="flex flex-col gap-[12px]">
-        <label className="text-[16px]">
+        <label className="text-[1rem]">
           {t(field.label)}{" "}
           {field.required && <span className="text-[#FF4C4C]">*</span>}
         </label>
@@ -87,7 +84,7 @@ export default function ContactLower() {
             <option value="" disabled>
               {t("blankOption")}
             </option>
-            {t(field.options, { returnObjects: true }).map((option, idx) => (
+            {t(field.options, { returnObjects: true })?.map((option, idx) => (
               <option key={idx} value={option.value || option.DO_NOT_CHANGE}>
                 {t(option.label)}
               </option>
@@ -107,7 +104,7 @@ export default function ContactLower() {
           className="text-[#FF4C4C]"
         />
         {field.helperText && (
-          <span className="text-[#FFD84C] text-[14px]">
+          <span className="text-[#FFD84C] text-[0.875rem]">
             {t(field.helperText)}
           </span>
         )}
@@ -139,7 +136,7 @@ export default function ContactLower() {
                 {renderFormFields(formFields)}
                 <button
                   type="submit"
-                  className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-full md:w-fit self-end"
+                  className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[1rem] text-white w-full md:w-fit self-end"
                   disabled={isSubmitting}
                 >
                   {t("nextStep")}
@@ -153,14 +150,14 @@ export default function ContactLower() {
                   <div className="flex flex-col gap-[16px] md:flex-row justify-between">
                     <button
                       type="button"
-                      className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-full md:w-fit"
+                      className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[1rem] text-white w-full md:w-fit"
                       onClick={() => prevButton()}
                     >
                       {t("previousStep")}
                     </button>
                     <button
                       type="submit"
-                      className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-full md:w-fit"
+                      className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[1rem] text-white w-full md:w-fit"
                       disabled={isSubmitting}
                     >
                       {t("submit")}
@@ -177,15 +174,15 @@ export default function ContactLower() {
             )}
             {step === 3 && (
               <div className="flex flex-col gap-[16px] items-center">
-                <h2 className="text-[24px] text-white">
+                <h2 className="text-[1.5rem] text-white">
                   {t("formSubmittedSuccessfully")}
                 </h2>
-                <p className="text-[#FFD84C] text-[16px]">
+                <p className="text-[#FFD84C] text-[1rem]">
                   {t("thankYouForYourSubmission")}
                 </p>
                 <button
                   type="button"
-                  className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[16px] text-white w-full md:w-fit"
+                  className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[1rem] text-white w-full md:w-fit"
                   onClick={() => setStep(1)}
                 >
                   {t("backToStart")}

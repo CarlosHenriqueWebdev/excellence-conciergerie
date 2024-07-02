@@ -1,9 +1,6 @@
-import { useEffect, useRef, useState } from "react";
-import useScrollTriggerAnimation from "@/components/hooks/useScrollTriggerAnimation";
+import { useRef } from "react";
 import DetailText from "@/components/shared/DetailText";
-import ImageAnimation from "@/components/shared/ImageAnimation";
 import { useTranslation } from "next-i18next";
-import Sparkle from "react-sparkle";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -24,7 +21,7 @@ export default function ContactUpper() {
                 <div className="item">
                   <DetailText text={t("contactSubtitle")} />
                 </div>
-                <h2 className="item uppercase text-[24px] font-bold">
+                <h2 className="item uppercase text-[1.5rem] font-bold">
                   {t("contactTitle")}
                 </h2>
               </div>
@@ -37,7 +34,7 @@ export default function ContactUpper() {
             </div>
 
             <ul className="flex flex-wrap gap-[16px]">
-              {t("contactInfo", { returnObjects: true }).map((item, index) => {
+              {t("contactInfo", { returnObjects: true })?.map((item, index) => {
                 let href;
                 switch (item.type) {
                   case "email":
@@ -51,6 +48,7 @@ export default function ContactUpper() {
                     break;
                   case "url":
                     href = item.link;
+                    break;
                   default:
                     href = item.link;
                 }
@@ -61,7 +59,9 @@ export default function ContactUpper() {
                       src={`/assets/images/${item.icon}`}
                       width={20}
                       height={20}
-                      alt="Logo"
+                      intrinsic="true"
+                      className="w-[20px] h-[20px]"
+                      alt={`icon ${item.text}`}
                     />
                     <Link
                       href={href}

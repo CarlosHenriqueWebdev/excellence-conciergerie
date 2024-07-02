@@ -1,15 +1,15 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import useScrollTriggerAnimation from "@/components/hooks/useScrollTriggerAnimation";
 import DetailText from "@/components/shared/DetailText";
-import ImageAnimation from "@/components/shared/ImageAnimation";
+
 import { useTranslation } from "next-i18next";
 import Sparkle from "react-sparkle";
 import Image from "next/image";
 
 export default function Message() {
   const { t } = useTranslation();
-  const containerRef = useRef(null);
 
+  const containerRef = useRef(null);
   useScrollTriggerAnimation(containerRef, {
     commonScroll: true,
   });
@@ -24,8 +24,8 @@ export default function Message() {
             <div className="item relative w-fit">
               <Image
                 src="/assets/images/she1.webp"
-                alt=""
-                intrinsic
+                alt="excellence ceo picture"
+                intrinsic="true"
                 width={50}
                 height={50}
                 quality={100}
@@ -39,7 +39,7 @@ export default function Message() {
                 <div className="item">
                   <DetailText text={t("messageSubtitle")} />
                 </div>
-                <h2 className="item uppercase text-[24px] font-bold">
+                <h2 className="item uppercase text-[1.5rem] font-bold">
                   {t("messageTitle")}
                 </h2>
               </div>

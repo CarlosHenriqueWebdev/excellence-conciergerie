@@ -328,30 +328,9 @@
           "description": "A cookie is a small file which asks permission to be placed on your computer's hard drive. Once you agree, the file is added and the cookie helps analyze web traffic or lets you know when you visit a particular site. Cookies allow web applications to respond to you as an individual. The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences."
         }
       ]
-    },
-    {
-      "text": "Attributions",
-      "DO_NOT_CHANGE": "attributions",
-      "array": [
-        {
-          "text": "Images from Unsplash",
-          "link": "www.unsplash.com"
-        },
-        {
-          "text": "Icons from Flaticon",
-          "link": "www.flaticon.com"
-        },
-        {
-          "text": "Fonts from Google Fonts",
-          "link": "fonts.google.com"
-        },
-        {
-          "text": "Illustrations from Freepik",
-          "link": "www.freepik.com"
-        }
-      ]
     }
   ],
+  "attributionsTitle": "Attributions",
   "closeModalButton": "Fermer",
   "privacyPolicyWarningText": "En soumettant ce formulaire, vous acceptez notre ",
   "privacyPolicyWarningLink": "politique de confidentialité",

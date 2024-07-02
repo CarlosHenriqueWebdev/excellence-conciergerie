@@ -1,35 +1,17 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import Link from "next/link";
 import {
   Dialog,
   DialogPanel,
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  Popover,
-  PopoverButton,
   PopoverGroup,
-  PopoverPanel,
-  Transition,
 } from "@headlessui/react";
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useTranslation } from "next-i18next";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -42,7 +24,7 @@ export default function Header() {
   };
 
   const changeLanguage = (newLocale) => {
-    const { pathname, query } = router;
+    const { pathname } = router;
     window.location.href = `${pathname}${newLocale}`;
   };
 
@@ -53,17 +35,15 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#">
-            <span className="sr-only">Your Company</span>
-            <Image
-              src="/assets/images/logo.webp"
-              alt=""
-              intrinsic
-              width={166}
-              height={32}
-              quality={100}
-            />
-          </a>
+          <Image
+            src="/assets/images/logo.webp"
+            alt="excellence logo"
+            width={166}
+            height={32}
+            intrinsic="true"
+            className="w-[166px] h-[32px]"
+            quality={100}
+          />
         </div>
         <div className="flex lg:hidden">
           <button
@@ -79,7 +59,7 @@ export default function Header() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex gap-[24px] items-center">
-          {t("navLinks", { returnObjects: true }).map((item, index) => (
+          {t("navLinks", { returnObjects: true })?.map((item, index) => (
             <ScrollLink
               key={index}
               className="font-semibold hover:text-golden-yellow cursor-pointer"
@@ -99,10 +79,11 @@ export default function Header() {
               <div className="flex items-center gap-[6px]">
                 <Image
                   src={`/assets/images/${t("currentLanguageFlag")}`}
-                  alt=""
-                  intrinsic
+                  alt={`${t("currentLanguage")} flag`}
                   width={14}
                   height={14}
+                  intrinsic="true"
+                  className="w-[14px] h-[14px]"
                   quality={100}
                 />
                 {t("currentLanguage")}
@@ -110,9 +91,11 @@ export default function Header() {
 
               <Image
                 src="/assets/images/vector4.svg"
-                intrinsic
+                alt="down arrow"
                 width={10}
                 height={10}
+                intrinsic="true"
+                className="w-[10px] h-[10px]"
                 quality={100}
               />
             </button>
@@ -121,7 +104,7 @@ export default function Header() {
                 <div>
                   {t("languages", {
                     returnObjects: true,
-                  }).map((item, index) => (
+                  })?.map((item, index) => (
                     <a
                       key={index}
                       className="flex items-center gap-[6px] hover:bg-graphite-gray px-[24px] py-[12px] w-full cursor-pointer"
@@ -129,9 +112,11 @@ export default function Header() {
                     >
                       <Image
                         src={`/assets/images/${item.flag}`}
-                        intrinsic
+                        alt={`${item.language} flag`}
                         width={14}
                         height={14}
+                        intrinsic="true"
+                        className="w-[14px] h-[14px]"
                         quality={100}
                       />
                       {item.language}
@@ -152,18 +137,16 @@ export default function Header() {
         <div className="fixed" />
         <DialogPanel className="fixed inset-y-0 right-0 z-[50] max-w-[280px] overflow-y-auto bg-eclipse-black px-[24px] py-[24px] w-full sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <Image
+              src="/assets/images/logo.webp"
+              alt="excellence logo"
+              width={166}
+              height={32}
+              intrinsic="true"
+              className="w-[166px] h-[32px]"
+              quality={100}
+            />
 
-              <Image
-                src="/assets/images/logo.webp"
-                alt=""
-                responsive
-                width={166}
-                height={32}
-                quality={100}
-              />
-            </a>
             <button
               type="button"
               className="rounded-md p-2.5"
@@ -179,13 +162,15 @@ export default function Header() {
                 <Disclosure as="div" className="flex flex-col gap-[16px]">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="border-solid border-golden-sunbeam border-[3px] flex items-center justify-between w-full text-start block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold">
+                      <DisclosureButton className="border-solid border-golden-sunbeam border-[3px] items-center justify-between w-full text-start block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold">
                         <div className="flex items-center gap-[6px]">
                           <Image
                             src={`/assets/images/${t("currentLanguageFlag")}`}
-                            intrinsic
+                            alt={`${t("currentLanguage")} flag`}
                             width={14}
                             height={14}
+                            intrinsic="true"
+                            className="w-[14px] h-[14px]"
                             quality={100}
                           />
 
@@ -194,26 +179,30 @@ export default function Header() {
 
                         <Image
                           src="/assets/images/vector4.svg"
-                          intrinsic
+                          alt="arrow"
                           width={12}
                           height={12}
+                          intrinsic="true"
+                          className="w-[12px] h-[12px]"
                           quality={100}
                         />
                       </DisclosureButton>
                       <DisclosurePanel className="flex flex-col gap-[16px]">
                         {t("languages", {
                           returnObjects: true,
-                        }).map((item, index) => (
+                        })?.map((item, index) => (
                           <a
                             key={item.name}
-                            className="border-solid border-golden-sunbeam border-[3px] flex items-center gap-[6px] w-full text-start block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold cursor-pointer"
+                            className="border-solid border-golden-sunbeam border-[3px] items-center gap-[6px] w-full text-start block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold cursor-pointer"
                             onClick={() => changeLanguage(item.DO_NOT_CHANGE)}
                           >
                             <Image
                               src={`/assets/images/${item.flag}`}
-                              intrinsic
+                              alt={`${item.language} flag`}
                               width={14}
                               height={14}
+                              intrinsic="true"
+                              className="w-[14px] h-[14px]"
                               quality={100}
                             />
                             {item.language}
@@ -224,7 +213,7 @@ export default function Header() {
                   )}
                 </Disclosure>
 
-                {t("navLinks", { returnObjects: true }).map((item, index) => (
+                {t("navLinks", { returnObjects: true })?.map((item, index) => (
                   <ScrollLink
                     key={index}
                     className="block rounded-[4px] px-[16px] py-[12px] bg-graphite-gray hover:brightness-90 hover:text-golden-yellow font-semibold cursor-pointer"

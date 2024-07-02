@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import DetailText from "@/components/shared/DetailText";
 import { useTranslation } from "next-i18next";
-import ImageAnimation from "@/components/shared/ImageAnimation";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay, Pagination, Navigation, Loop } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import useScrollTriggerAnimation from "@/components/hooks/useScrollTriggerAnimation";
 
@@ -41,7 +41,7 @@ export default function Services() {
           <div className="item">
             <DetailText text={t("servicesSubtitle")} />
           </div>
-          <h2 className="item uppercase text-[20px] font-bold">
+          <h2 className="item uppercase text-[1.25rem] font-bold">
             {t("servicesTitle")}
           </h2>
         </div>
@@ -58,13 +58,14 @@ export default function Services() {
             onSwiper={setSwiper}
             onSlideChange={handleSlideChange}
           >
-            {t("services", { returnObjects: true }).map((item, index) => (
+            {t("services", { returnObjects: true })?.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="flex flex-col gap-[32px] md:grid md:grid-cols-[450fr_638fr] select-none cursor-grab">
                   <div>
                     <Image
                       src={`/assets/images/${item.image}`}
-                      responsive
+                      alt={`${index}° swiper image`}
+                      responsive="true"
                       width={440}
                       height={356}
                       quality={100}
@@ -75,7 +76,7 @@ export default function Services() {
                   <div className="md:py-[16px] lg:pb-[40px]">
                     <div className="flex flex-col gap-[20px] h-[300px] overflow-y-auto">
                       <div className="flex flex-col gap-[16px]">
-                        <h3 className="uppercase text-[20px] font-bold">
+                        <h3 className="uppercase text-[1.25rem] font-bold">
                           {item.title}
                         </h3>
 
@@ -85,16 +86,19 @@ export default function Services() {
                       </div>
 
                       <ul className="flex flex-col gap-[12px]">
-                        {item.pros.map((proItem, proIndex) => (
+                        {item.pros?.map((proItem, proIndex) => (
                           <li
                             key={proIndex}
                             className="flex items-baseline gap-[8px]"
                           >
                             <Image
                               src={`/assets/images/vector16.svg`}
+                              alt="golden checkmark"
                               width={12}
                               height={12}
                               quality={100}
+                              intrinsic="true"
+                              className="w-[12px] h-[12px]"
                             />
                             <p className="font-medium">{proItem.text}</p>
                           </li>
@@ -108,7 +112,7 @@ export default function Services() {
           </Swiper>
 
           <div className="flex w-full justify-between gap-[4px] mt-[32px]">
-            {t("services", { returnObjects: true }).map((_, index) => (
+            {t("services", { returnObjects: true })?.map((_, index) => (
               <button
                 key={index}
                 onClick={() => handleButtonClick(index)}

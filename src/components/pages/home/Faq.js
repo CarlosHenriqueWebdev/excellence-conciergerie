@@ -1,8 +1,7 @@
 import DetailText from "@/components/shared/DetailText";
-import ImageAnimation from "@/components/shared/ImageAnimation";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import useScrollTriggerAnimation from "@/components/hooks/useScrollTriggerAnimation";
 
 export default function Faq() {
@@ -33,14 +32,14 @@ export default function Faq() {
               <div className="item">
                 <DetailText text={t("faqSubtitle")} />
               </div>
-              <h2 className="item uppercase text-[24px] font-bold">
+              <h2 className="item uppercase text-[1.5rem] font-bold">
                 {t("faqTitle")}
               </h2>
             </div>
           </div>
 
           <ul className="flex flex-col gap-[16px]">
-            {faq.map((item, index) => (
+            {faq?.map((item, index) => (
               <li
                 key={index}
                 onClick={() => toggleFaq(index)}
@@ -50,7 +49,8 @@ export default function Faq() {
                   <h3>{item.title}</h3>
                   <Image
                     src="/assets/images/vector4.svg"
-                    intrinsic
+                    alt="arrow"
+                    intrinsic="true"
                     width={12}
                     height={12}
                     quality={100}

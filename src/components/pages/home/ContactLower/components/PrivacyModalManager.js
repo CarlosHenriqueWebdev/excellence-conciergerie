@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import LegalModal from "@/components/shared/LegalModal";
 import { useTranslation } from "next-i18next";
@@ -8,7 +9,7 @@ export default function PrivacyModalManager({ legalLinks }) {
 
   const handleModalOpen = () => {
     const privacyPolicyItem = legalLinks.find(
-      (item) => item.DO_NOT_CHANGE === "privacy",
+      (item) => item.DO_NOT_CHANGE === "privacy"
     );
     if (privacyPolicyItem) {
       setModalItem(privacyPolicyItem);
@@ -22,7 +23,7 @@ export default function PrivacyModalManager({ legalLinks }) {
   return (
     <div>
       {modalItem && <LegalModal item={modalItem} onClose={handleCloseModal} />}
-      <span className="text-[#FFD84C] text-[14px]">
+      <span className="text-[#FFD84C] text-[0.875rem]">
         {t("privacyPolicyWarningText")}{" "}
         <button
           type="button"

@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import DetailText from "@/components/shared/DetailText";
 import Image from "next/image";
-import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import useScrollTriggerAnimation from "@/components/hooks/useScrollTriggerAnimation";
 
 export default function Hero() {
@@ -53,25 +52,27 @@ export default function Hero() {
           Your browser does not support the video tag.
         </video>
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50" />
-        <div className="relative z-[20] py-[120px] lg:py-[0] lg:h-[75vh] flex justify-center items-center px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col w-full">
+        <div className="relative z-[20] py-[120px] lg:py-[0] lg:h-[75vh] justify-center items-center px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col w-full">
           <div className="font-bold uppercase flex flex-col gap-[16px] items-center">
             <DetailText text={t("heroSubtitle")} />
-            <h1 className="text-[28px] text-center">{t("heroTitle")}</h1>
+            <h1 className="text-[1.75rem] text-center">{t("heroTitle")}</h1>
           </div>
 
-          <button className="hidden lg:block hover:brightness-75 absolute z-[20] bottom-[12px] left-0 px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] opacity-[0.8]">
+          <div className="hidden lg:block hover:brightness-75 absolute z-[20] bottom-[12px] left-0 px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] opacity-[0.8]">
             <Image
               src={
                 isPlaying
                   ? "/assets/images/vector21.svg"
                   : "/assets/images/vector20.svg"
               }
-              intrinsic
+              intrinsic="true"
+              alt="play and pause button"
               width={20}
               height={20}
               quality={100}
+              className="w-[20px] h-[20px]"
             />
-          </button>
+          </div>
         </div>
       </div>
     </div>

@@ -14,13 +14,13 @@
     {
       "text": "contact@excellence-conciergerie.com",
       "type": "email",
-      "icon": "vector1.svg",
+      "icon": "vector2.svg",
       "link": "example@example.com"
     },
     {
       "text": "+55 1234-567",
       "type": "whatsapp",
-      "icon": "vector2.svg",
+      "icon": "vector1.svg",
       "link": "1234567890"
     },
     {
@@ -359,28 +359,74 @@
           "description": "A cookie is a small file which asks permission to be placed on your computer's hard drive. Once you agree, the file is added and the cookie helps analyze web traffic or lets you know when you visit a particular site. Cookies allow web applications to respond to you as an individual. The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences."
         }
       ]
+    }
+  ],
+  "attributionsTitle": "Attributions",
+  "attributions": [
+    {
+      "title": "unsplash images",
+      "text": "Images from Unsplash",
+      "link": "https://unsplash.com/"
     },
     {
-      "text": "Attributions",
-      "DO_NOT_CHANGE": "attributions",
-      "array": [
-        {
-          "text": "Images from Unsplash",
-          "link": "www.unsplash.com"
-        },
-        {
-          "text": "Icons from Flaticon",
-          "link": "www.flaticon.com"
-        },
-        {
-          "text": "Fonts from Google Fonts",
-          "link": "fonts.google.com"
-        },
-        {
-          "text": "Illustrations from Freepik",
-          "link": "www.freepik.com"
-        }
-      ]
+      "title": "svgrepo icons",
+      "text": "Arrow Icons and a few others from SVGRepo",
+      "link": "https://www.svgrepo.com/"
+    },
+    {
+      "title": "toptal patterns",
+      "text": "Packs subtle Patterns from Toptal",
+      "link": "https://www.toptal.com/designers/subtlepatterns/"
+    },
+    {
+      "title": "flaticon freepik",
+      "text": "Many cool Icons from Flaticon",
+      "link": "https://www.flaticon.com/"
+    },
+    {
+      "title": "reward icons",
+      "text": "Reward icons created by Freepik - Flaticon",
+      "link": "https://www.flaticon.com/free-icons/reward"
+    },
+    {
+      "title": "graph icons",
+      "text": "Graph icons created by Gregor Cresnar - Flaticon",
+      "link": "https://www.flaticon.com/free-icons/graph"
+    },
+    {
+      "title": "heart icons",
+      "text": "Heart icons created by Freepik - Flaticon",
+      "link": "https://www.flaticon.com/free-icons/heart"
+    },
+    {
+      "title": "camera icons",
+      "text": "Camera icons created by Freepik - Flaticon",
+      "link": "https://www.flaticon.com/free-icons/camera"
+    },
+    {
+      "title": "bulb icons",
+      "text": "Bulb icons created by Creative Stall Premium - Flaticon",
+      "link": "https://www.flaticon.com/free-icons/bulb"
+    },
+    {
+      "title": "watch icons",
+      "text": "Watch icons created by IconMarketPK - Flaticon",
+      "link": "https://www.flaticon.com/free-icons/watch"
+    },
+    {
+      "title": "calendar icons",
+      "text": "Calendar icons created by Anggara - Flaticon",
+      "link": "https://www.flaticon.com/free-icons/calendar"
+    },
+    {
+      "title": "crown icons",
+      "text": "Crown icons created by Freepik - Flaticon",
+      "link": "https://www.flaticon.com/free-icons/crown"
+    },
+    {
+      "title": "fonts google",
+      "text": "Fonts from google fonts",
+      "link": "https://fonts.google.com/"
     }
   ],
   "closeModalButton": "Fermer",

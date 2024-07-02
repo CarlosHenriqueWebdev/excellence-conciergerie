@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import DetailText from "@/components/shared/DetailText";
-import ImageAnimation from "@/components/shared/ImageAnimation";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import useScrollTriggerAnimation from "@/components/hooks/useScrollTriggerAnimation";
@@ -30,12 +29,14 @@ export default function WhyUs() {
     <div ref={containerRef}>
       <div className="px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[32px] md:grid md:grid-cols-[450fr_638fr]">
         <div className="item md:order-[1]">
-          <ImageAnimation
+          <Image
             src="/assets/images/img2.webp"
-            width="630"
-            height="440"
-            className="block w-full object-cover"
-            classNameContainer="border-solid border-[3px] border-golden-sunbeam rounded-[4px] overflow-hidden"
+            className="block w-full object-cover border-solid border-[3px] border-golden-sunbeam rounded-[4px]"
+            intrinsic="true"
+            alt="rock hill on water with a tree above it"
+            width={630}
+            height={440}
+            quality={100}
           />
         </div>
 
@@ -45,7 +46,7 @@ export default function WhyUs() {
               <div className="item">
                 <DetailText text={t("whyUsSubtitle")} />
               </div>
-              <h2 className="item uppercase text-[24px] font-bold">
+              <h2 className="item uppercase text-[1.5rem] font-bold">
                 {t("whyUsTitle")}
               </h2>
             </div>
@@ -56,7 +57,7 @@ export default function WhyUs() {
           </div>
 
           <ul className="item flex flex-col gap-[16px]">
-            {reasons.map((item, index) => (
+            {reasons?.map((item, index) => (
               <li
                 key={index}
                 onClick={() => toggleFaq(index)}
@@ -66,15 +67,19 @@ export default function WhyUs() {
                   <div className="flex items-center gap-[8px]">
                     <Image
                       src={`/assets/images/${item.icon}`}
+                      alt={`icon ${item.title}`}
+                      intrinsic="true"
                       width={16}
                       height={16}
                       quality={100}
-                      className={`${openIndexes.includes(index) ? "heartbeat" : ""}`}
+                      className={`h-[16px] w-[16px] ${openIndexes.includes(index) ? "heartbeat" : ""}`}
                     />
                     <h3>{item.title}</h3>
                   </div>
                   <Image
                     src="/assets/images/vector4.svg"
+                    alt="arrow"
+                    intrinsic="true"
                     width={16}
                     height={16}
                     quality={100}
