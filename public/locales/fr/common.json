@@ -437,6 +437,15 @@
   "invalidEmail": "L'adresse e-mail est invalide",
   "submissionError": "Une erreur inattendue s'est produite lors de la soumission. Veuillez réessayer.",
 
+  "guideLinesAccessibilityText": "Avertissement : Le terme accessibility_text[number] fait référence aux fonctionnalités d'accessibilité du site web conçues pour les utilisateurs de lecteurs d'écran ou les personnes ayant des troubles visuels. Il est recommandé de ne pas modifier les champs suivants :",
+  "accessibility_text1": "Aller au contenu principal",
+  "accessibility_text3": "Appuyez pour mettre en pause la vidéo d'arrière-plan",
+  "accessibility_text4": "Appuyez pour lire la vidéo d'arrière-plan",
+  "accessibility_text5": "Vidéo d'arrière-plan automatique, appuyez pour mettre en pause. Passez si vous utilisez un lecteur d'écran.",
+  "accessibility_text6": "Menu de navigation",
+  "accessibility_text7": "Nos Services",
+  "accessibility_text8": "Bouton de slider, veuillez sauter si vous utilisez un lecteur d'écran",
+
   "footerDescription": "Excellence Conciergerie est une agence de gestion immobilière de luxe basée sur la Côte d'Azur. Notre équipe dédiée offre des services personnalisés pour répondre aux besoins uniques de chaque propriétaire.",
   "footerContactTitle": "Contact",
   "footerSiteLinksTitle": "Liens Utiles"

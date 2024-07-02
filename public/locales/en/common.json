@@ -248,7 +248,7 @@
   "formSubmittedSuccessfully": "Form Submitted Successfully!",
   "thankYouForYourSubmission": "Thank you for your submission. We will respond to you shortly.",
   "backToStart": "Back to Start",
-  
+
   "legalLinks": [
     {
       "text": "Conditions Générales",
@@ -319,6 +319,15 @@
   "requiredField": "Ce champ est obligatoire",
   "invalidEmail": "L'adresse e-mail est invalide",
   "submissionError": "Une erreur inattendue s'est produite lors de la soumission. Veuillez réessayer.",
+
+  "guideLinesAccessibilityText": "Warning: The term accessibility_text[number] refers to website features designed for screen reader users or individuals with visual impairments. It's recommended not to modify the following fields:",
+  "accessibility_text1": "Skip to main content",
+  "accessibility_text3": "Press to pause background video",
+  "accessibility_text4": "Press to play background video",
+  "accessibility_text5": "Automatic video background, press to pause. Skip if using a screen reader.",
+  "accessibility_text6": "Header menu",
+  "accessibility_text7": "Our Services",
+  "accessibility_text8": "Slider button, please skip if using a screen reader",
 
   "footerDescription": "Excellence Conciergerie is a luxury real estate management agency based on the French Riviera. Our dedicated team provides personalized services to meet the unique needs of each property owner.",
   "footerContactTitle": "Contact",

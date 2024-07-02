@@ -332,6 +332,15 @@
   "invalidEmail": "L'adresse e-mail est invalide",
   "submissionError": "Une erreur inattendue s'est produite lors de la soumission. Veuillez réessayer.",
 
+  "guideLinesAccessibilityText": "Aviso: O termo accessibility_text[number] refere-se a recursos de acessibilidade do site destinados a usuários de leitores de tela ou indivíduos com deficiência visual. É recomendável não modificar os seguintes campos:",
+  "accessibility_text1": "Ir para o conteúdo principal",
+  "accessibility_text3": "Pressione para pausar o vídeo de fundo",
+  "accessibility_text4": "Pressione para reproduzir o vídeo de fundo",
+  "accessibility_text5": "Vídeo de fundo automático, pressione para pausar. Ignore se estiver usando um leitor de tela.",
+  "accessibility_text6": "Menu de cabeçalho",
+  "accessibility_text7": "Nossos Serviços",
+  "accessibility_text8": "Botão de slide, por favor, pule se estiver usando um leitor de tela",
+
   "footerDescription": "obiliária de luxo baseada na Riviera Francesa. Nossa equipe dedicada oferece serviços personalizados para atender às necessidades únicas de cada proprietário de imóveis.",
   "footerContactTitle": "Contato",
   "footerSiteLinksTitle": "Links Úteis"
