@@ -113,13 +113,14 @@ function Footer() {
             </h2>
             <ul className="flex flex-col gap-[16px]">
               {t("navLinks", { returnObjects: true })?.map((item, index) => (
-                <ScrollLink
-                  key={index}
-                  className="cursor-pointer hover:underline hover:text-golden-yellow font-medium"
-                  to={item.DO_NOT_CHANGE}
-                >
-                  {item.text}
-                </ScrollLink>
+                <li key={index}>
+                  <ScrollLink
+                    className="cursor-pointer hover:underline hover:text-golden-yellow font-medium"
+                    to={item.DO_NOT_CHANGE}
+                  >
+                    {item.text}
+                  </ScrollLink>
+                </li>
               ))}
             </ul>
           </li>

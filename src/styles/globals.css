@@ -480,11 +480,11 @@ table {
 }
 
 .btn {
-  background: #a78a0f;
+  background: #856e0a;
 }
 
 .btn:hover {
-  background: linear-gradient(90deg, #a78a0f 0%, #b79712 100%);
+  background: linear-gradient(90deg, #856e0a 0%, #a2850f 100%);
 }
 
 .btn:active {
