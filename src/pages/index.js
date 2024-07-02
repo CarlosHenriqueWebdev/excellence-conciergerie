@@ -77,24 +77,39 @@ export const getStaticProps = async ({ locale }) => {
 };
 
 export default function Home(props) {
+  const initialLocale = props._nextI18Next.initialLocale;
+
+  const titles = {
+    en: "Excellence Conciergerie: Unforgettable Luxury on the French Riviera",
+    fr: "Excellence Conciergerie: Découvrez le summum du luxe sur la Côte d'Azur",
+    pt: "Excellence Conciergerie: Experimente o ápice do luxo na Riviera Francesa",
+    es: "Excellence Conciergerie: Experimente el pináculo del lujo en la Riviera francesa",
+  };
+
+  const descriptions = {
+    en: "Experience the epitome of luxury on the French Riviera with Excellence Conciergerie. We provide unforgettable experiences, exceptional property management, and discreet, 5-star service for both property owners and travelers.",
+    fr: "Découvrez le summum du luxe sur la Côte d'Azur avec Excellence Conciergerie. Nous proposons des expériences inoubliables, une gestion immobilière exceptionnelle et un service discret 5 étoiles aux propriétaires et aux voyageurs.",
+    pt: "Experimente o ápice do luxo na Riviera Francesa com a Excellence Conciergerie. Oferecemos experiências inesquecíveis, gestão de propriedades excepcional e serviço discreto 5 estrelas para proprietários e viajantes.",
+    es: "Experimente el pináculo del lujo en la Riviera francesa con Excellence Conciergerie. Brindamos experiencias inolvidables, administración de propiedades excepcionales y un servicio discreto de 5 estrellas para propietarios e invitados.",
+  };
+
   return (
     <div>
       <NextSeo
-        title="Excellence Conciergerie"
-        description="Experience the pinnacle of luxury with Excellence Conciergerie."
+        title={titles[initialLocale]}
+        description={descriptions[initialLocale]}
         canonical="https://www.excellence-conciergerie.com/"
         openGraph={{
           url: "https://www.excellence-conciergerie.com/",
-          title: "Excellence Conciergerie",
-          description:
-            "Experience the pinnacle of luxury with Excellence Conciergerie.",
+          title: titles[initialLocale],
+          description: descriptions[initialLocale],
           images: [
             {
               url: "https://excellence-conciergerie.com/assets/images/img1.webp",
               width: 800,
               height: 600,
               alt: "Excellence Conciergerie",
-              type: "image/jpg",
+              type: "image/webp",
             },
           ],
           site_name: "Excellence Conciergerie",
