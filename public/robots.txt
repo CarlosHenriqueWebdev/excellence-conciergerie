@@ -1,3 +1,9 @@
+# *
 User-agent: *
 Allow: /
-Sitemap: https://www.excellence-conciergerie.com/sitemap.xml
+
+# Host
+Host: https://excellence-conciergerie.com
+
+# Sitemaps
+Sitemap: https://excellence-conciergerie.com/sitemap.xml
