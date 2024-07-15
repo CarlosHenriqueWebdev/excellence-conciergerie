@@ -64,47 +64,27 @@ function Footer() {
               {t("footerContactTitle")}
             </h2>
             <ul className="flex flex-col gap-[16px]">
-              {mergedArray?.map((item, index) => {
-                let href;
-                switch (item.type) {
-                  case "email":
-                    href = `mailto:${item.link}`;
-                    break;
-                  case "whatsapp":
-                    href = `https://wa.me/${item.link}`;
-                    break;
-                  case "phone":
-                    href = `tel:${item.link}`;
-                    break;
-                  case "url":
-                    href = item.link;
-                    break;
-                  default:
-                    href = item.link;
-                }
-
-                return (
-                  <li key={index} className="flex gap-[8px]">
-                    <Image
-                      aria-hidden={true}
-                      src={`/assets/images/${item.icon}`}
-                      width={22}
-                      height={22}
-                      intrinsic="true"
-                      className="w-[22px] h-[22px]"
-                      alt={`${item.text} icon`}
-                    />
-                    <Link
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline hover:text-golden-yellow"
-                    >
-                      {item.text}
-                    </Link>
-                  </li>
-                );
-              })}
+              {mergedArray?.map((item, index) => (
+                <li key={index} className="flex gap-[8px]">
+                  <Image
+                    aria-hidden={true}
+                    src={`/assets/images/${item.icon}`}
+                    width={22}
+                    height={22}
+                    intrinsic="true"
+                    className="w-[22px] h-[22px]"
+                    alt={`${item.text} icon`}
+                  />
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-golden-yellow"
+                  >
+                    {item.text}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </li>
           <li className="flex flex-col gap-[24px]">
