@@ -33,6 +33,12 @@
       "icon": "vector11.svg",
       "type": "url",
       "link": "https://www.linkedin.com/company/excellence-conciergerie/"
+    },
+    {
+      "text": "Instagram",
+      "icon": "vector9.svg",
+      "type": "url",
+      "link": "https://www.instagram.com/excellenceconciergerie/"
     }
   ],
 
