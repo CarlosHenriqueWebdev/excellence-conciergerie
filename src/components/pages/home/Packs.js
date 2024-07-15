@@ -35,7 +35,7 @@ export default function Packs() {
         </div>
         <h2
           id="subscriptions"
-          className="item uppercase text-[1.25rem] font-bold"
+          className="item uppercase text-[1.5rem] font-bold"
         >
           {t("packsTitle")}
         </h2>
