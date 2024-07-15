@@ -507,6 +507,22 @@ table {
   }
 }
 
+.scrollBackgroundAnimation {
+  animation: scrollBackground 20s linear infinite;
+}
+
+@keyframes scrollBackground {
+  0% {
+    background-position: center 0;
+  }
+  50% {
+    background-position: center -100px;
+  }
+  100% {
+    background-position: center 0;
+  }
+}
+
 .progress-bar {
   transform-origin: 0%;
 }
