@@ -117,6 +117,8 @@ function Footer() {
                   <ScrollLink
                     className="cursor-pointer hover:underline hover:text-golden-yellow font-medium"
                     to={item.DO_NOT_CHANGE}
+                    offset={-200}
+                    smooth={true}
                   >
                     {item.text}
                   </ScrollLink>

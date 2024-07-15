@@ -1,8 +1,7 @@
 {
+  "guideLinesLanguagesLocale": "Warning: Do not alter the DO_NOT_CHANGE and currentLocale fields. They are linked to the website language. For example, changing 'en' to 'en_US' will lead to a non-existent page (e.g., https://excellence-conciergerie.com/en_US). Existing locales are pt, en, fr, es. Do not add non-existent locales. Only modify based on the current translation file. fr/common.js currentLocale should always be 'fr', en/common.js currentLocale should always be 'en', etc.",
   "currentLanguage": "Español",
   "currentLanguageFlag": "flag4.svg",
-
-  "guideLinesLanguagesLocale": "Warning: Do not alter the DO_NOT_CHANGE and currentLocale fields. They are linked to the website language. For example, changing 'en' to 'en_US' will lead to a non-existent page (e.g., https://excellence-conciergerie.com/en_US). Existing locales are pt, en, fr, es. Do not add non-existent locales. Only modify based on the current translation file. fr/common.js currentLocale should always be 'fr', en/common.js currentLocale should always be 'en', etc.",
   "currentLocale": "es",
   "languages": [
     { "language": "Portugués", "flag": "flag3.svg", "DO_NOT_CHANGE": "pt" },
@@ -270,62 +269,38 @@
 
   "legalLinks": [
     {
-      "text": "Conditions Générales",
+      "text": "Condiciones Generales",
       "DO_NOT_CHANGE": "terms",
       "array": [
         {
-          "title": "1. Introduction",
-          "description": "Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern our relationship with you in relation to this website."
+          "title": "1. Introducción",
+          "description": "Bienvenido a nuestro sitio web. Si continúas navegando y utilizando este sitio web, aceptas cumplir y estar sujeto a los siguientes términos y condiciones de uso, que junto con nuestra política de privacidad rigen nuestra relación contigo en relación con este sitio web."
         },
         {
-          "title": "2. License to use website",
-          "description": "Unless otherwise stated, we or our licensors own the intellectual property rights in the website and material on the website. Subject to the license below, all these intellectual property rights are reserved."
+          "title": "2. Licencia para utilizar el sitio web",
+          "description": "A menos que se indique lo contrario, nosotros o nuestros licenciantes somos dueños de los derechos de propiedad intelectual en el sitio web y el material en el sitio web. Sujeto a la licencia que se detalla a continuación, todos estos derechos de propiedad intelectual están reservados."
         },
         {
-          "title": "3. Acceptable use",
-          "description": "You must not use this website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity."
+          "title": "3. Uso aceptable",
+          "description": "No debes utilizar este sitio web de ninguna manera que cause, o pueda causar, daño al sitio web o afecte la disponibilidad o accesibilidad del sitio web; o de cualquier manera que sea ilegal, fraudulenta o dañina, o en relación con cualquier propósito o actividad ilegal, fraudulenta o dañina."
         },
         {
-          "title": "4. Limitations of liability",
-          "description": "We will not be liable to you (whether under the law of contact, the law of torts or otherwise) in relation to the contents of, or use of, or otherwise in connection with, this website: for any indirect, special or consequential loss; or for any business losses, loss of revenue, income, profits or anticipated savings, loss of contracts or business relationships, loss of reputation or goodwill, or loss or corruption of information or data."
-        },
-        {
-          "title": "5. Acceptable use",
-          "description": "You must not use this website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity."
-        },
-        {
-          "title": "6. Acceptable use",
-          "description": "You must not use this website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity."
-        },
-        {
-          "title": "7. Acceptable use",
-          "description": "You must not use this website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity."
-        },
-        {
-          "title": "8. Acceptable use",
-          "description": "You must not use this website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity."
+          "title": "4. Limitaciones de responsabilidad",
+          "description": "No seremos responsables ante ti (ya sea bajo la ley de contrato, la ley de agravios u otra) en relación con el contenido o uso de, o de otra manera en conexión con, este sitio web: por cualquier pérdida indirecta, especial o consecuente; o por pérdidas comerciales, pérdida de ingresos, ingresos, ganancias o ahorros anticipados, pérdida de contratos o relaciones comerciales, pérdida de reputación o buena voluntad, o pérdida o corrupción de información o datos."
         }
       ]
     },
     {
-      "text": "Politique de Confidentialité",
+      "text": "Política de Privacidad",
       "DO_NOT_CHANGE": "privacy",
       "array": [
         {
-          "title": "1. Information we collect",
-          "description": "We may collect the following information: name, contact information including email address, demographic information such as postcode, preferences, and interests, other information relevant to customer surveys and/or offers."
+          "title": "1. Información que recopilamos",
+          "description": "Podemos recopilar la siguiente información: nombre, información de contacto incluyendo dirección de correo electrónico, información demográfica como código postal, preferencias e intereses, otra información relevante para encuestas de clientes y/o ofertas."
         },
         {
-          "title": "2. What we do with the information we gather",
-          "description": "We require this information to understand your needs and provide you with a better service, and in particular for the following reasons: internal record keeping, improvement of our products and services, sending promotional emails about new products, special offers or other information which we think you may find interesting using the email address which you have provided."
-        },
-        {
-          "title": "3. Security",
-          "description": "We are committed to ensuring that your information is secure. In order to prevent unauthorized access or disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online."
-        },
-        {
-          "title": "4. How we use cookies",
-          "description": "A cookie is a small file which asks permission to be placed on your computer's hard drive. Once you agree, the file is added and the cookie helps analyze web traffic or lets you know when you visit a particular site. Cookies allow web applications to respond to you as an individual. The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences."
+          "title": "2. Qué hacemos con la información que recopilamos",
+          "description": "Necesitamos esta información para entender tus necesidades y proporcionarte un mejor servicio, y en particular para los siguientes propósitos: mantenimiento de registros internos, mejora de nuestros productos y servicios, envío de correos electrónicos promocionales sobre nuevos productos, ofertas especiales u otra información que creemos que puede ser de tu interés utilizando la dirección de correo electrónico que has proporcionado."
         }
       ]
     }

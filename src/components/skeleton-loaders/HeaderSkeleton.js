@@ -19,7 +19,7 @@ export default function HeaderSkeleton() {
                 ></div>
               ))}
           </div>
-          <span className="text-skeletonLoader">|</span>
+          <div className="text-skeletonLoader">|</div>
           <div className="flex gap-[6px] items-center">
             <div className="h-[14px] w-[14px] bg-skeletonLoader rounded-[100%] mt-[4px]"></div>
             <div className="h-[17px] w-[72px] bg-skeletonLoader rounded"></div>

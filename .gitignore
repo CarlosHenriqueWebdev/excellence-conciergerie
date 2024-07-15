@@ -38,5 +38,5 @@ next-env.d.ts
 
 /src/pages/importedPin.js
 /src/pages/testing.js
-# /src/pages/test.js
+/src/pages/test.js
 # /src/pages/components

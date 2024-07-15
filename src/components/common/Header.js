@@ -50,6 +50,8 @@ export default function Header() {
           to="main-content"
           tabIndex="0"
           onClick={() => handleButtonClick("main-content")}
+          offset={-200}
+          smooth={true}
         >
           {t("accessibility_text1")}{" "}
         </ScrollLink>
@@ -159,6 +161,8 @@ export default function Header() {
                   to={item.DO_NOT_CHANGE}
                   tabIndex="0"
                   onClick={() => handleButtonClick(item.DO_NOT_CHANGE)}
+                  offset={-200}
+                  smooth={true}
                 >
                   {item.text}
                 </ScrollLink>
@@ -265,6 +269,8 @@ export default function Header() {
                           to={item.DO_NOT_CHANGE}
                           tabIndex="0"
                           onClick={() => handleButtonClick(item.DO_NOT_CHANGE)}
+                          offset={-200}
+                          smooth={true}
                         >
                           {item.text}
                         </ScrollLink>

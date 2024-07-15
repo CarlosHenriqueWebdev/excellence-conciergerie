@@ -3,11 +3,14 @@ import { useTranslation } from "next-i18next";
 import DetailText from "@/components/shared/DetailText";
 import Image from "next/image";
 import useScrollTriggerAnimation from "@/components/hooks/useScrollTriggerAnimation";
+import { useInView } from "framer-motion";
 
 export default function Hero() {
   const { t } = useTranslation();
 
   const containerRef = useRef(null);
+  const isInView = useInView(containerRef, { once: true });
+
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isVideoReady, setIsVideoReady] = useState(false);
@@ -56,8 +59,10 @@ export default function Hero() {
           Your browser does not support the video tag.
         </video>
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50" />
-        <div className="relative z-[20] py-[120px] lg:py-[0] lg:h-[75vh] justify-center items-center px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col w-full">
-          <div className="font-bold uppercase flex flex-col gap-[16px] items-center">
+        <div className="relative py-[120px] lg:py-[0] lg:h-[75vh] justify-center items-center px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col w-full">
+          <div
+            className={`${isInView ? "opacity-1" : "opacity-0"} font-bold uppercase flex flex-col gap-[16px] items-center`}
+          >
             <DetailText text={t("heroSubtitle")} />
             <h1 id="main-content" className="text-[1.75rem] text-center">
               {t("heroTitle")}

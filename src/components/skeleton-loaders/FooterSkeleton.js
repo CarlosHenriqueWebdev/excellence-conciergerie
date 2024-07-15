@@ -9,7 +9,7 @@ export default function FooterSkeleton() {
           </div>
 
           <div className="flex flex-col gap-[24px]">
-            <h2 className="text-[1.125rem] uppercase font-bold h-[20px] w-[200px] bg-skeletonLoader"></h2>
+            <div className="h-[20px] w-[200px] bg-skeletonLoader"></div>
             <div className="flex flex-col gap-[16px]">
               {Array.from({ length: 3 })?.map((_, index) => (
                 <div key={index} className="flex gap-[8px]">
@@ -21,7 +21,7 @@ export default function FooterSkeleton() {
           </div>
 
           <div className="flex flex-col gap-[24px]">
-            <h2 className="text-[1.125rem] uppercase font-bold h-[20px] w-[200px] bg-skeletonLoader"></h2>
+            <div className="h-[20px] w-[200px] bg-skeletonLoader"></div>
             <div className="flex flex-col gap-[16px]">
               {Array.from({ length: 3 })?.map((_, index) => (
                 <div
@@ -40,7 +40,7 @@ export default function FooterSkeleton() {
             <div key={index} className="text-white-75 flex gap-[6px]">
               <div className="h-[12px] w-[60px] bg-skeletonLoader"></div>
               {index !== 3 && (
-                <span className="h-[12px] w-[10px] bg-skeletonLoader"></span>
+                <div className="h-[12px] w-[10px] bg-skeletonLoader"></div>
               )}
             </div>
           ))}

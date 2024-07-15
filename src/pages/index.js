@@ -2,6 +2,8 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
+import { motion, useScroll, useSpring } from "framer-motion";
+import Headroom from "react-headroom";
 
 // Import skeleton loaders
 import HeaderSkeleton from "@/components/skeleton-loaders/HeaderSkeleton";
@@ -77,6 +79,13 @@ export const getStaticProps = async ({ locale }) => {
 };
 
 export default function Home(props) {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   const initialLocale = props._nextI18Next.initialLocale;
 
   const titles = {
@@ -135,24 +144,30 @@ export default function Home(props) {
       />
 
       <div>
-        <Header />
+        <Headroom>
+          <div className="relative z-[10]">
+            <Header />
+
+            <motion.div
+              className="progress-bar absolute w-full bg-golden-yellow h-[4px] z-[-1]"
+              style={{ scaleX }}
+            />
+          </div>
+        </Headroom>
+
         <Hero />
 
-        <div className="bg-midnight-blue border-solid border-t-[8px] border-[#020201] relative z-[1]">
+        <div className="bg-midnight-blue border-solid border-t-[8px] border-[#020201] relative flex flex-col gap-[100px] pt-[100px]">
           <About />
-          <div className="py-[100px]">
-            <WhyUs />
-          </div>
-          <div className="flex flex-col gap-[100px]">
-            <Message />
-            <Services />
-            <Packs />
+          <WhyUs />
+          <Message />
+          <Services />
+          <Packs />
+          <div>
+            <Faq />
             <div>
-              <Faq />
-              <div>
-                <ContactUpper />
-                <ContactLower />
-              </div>
+              <ContactUpper />
+              <ContactLower />
             </div>
           </div>
         </div>

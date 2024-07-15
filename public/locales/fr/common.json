@@ -1,8 +1,7 @@
 {
+  "guideLinesLanguagesLocale": "Warning: Do not alter the DO_NOT_CHANGE and currentLocale fields. They are linked to the website language. For example, changing 'en' to 'en_US' will lead to a non-existent page (e.g., https://excellence-conciergerie.com/en_US). Existing locales are pt, en, fr, es. Do not add non-existent locales. Only modify based on the current translation file. fr/common.js currentLocale should always be 'fr', en/common.js currentLocale should always be 'en', etc.",
   "currentLanguage": "Français",
   "currentLanguageFlag": "flag2.svg",
-
-  "guideLinesLanguagesLocale": "Warning: Do not alter the DO_NOT_CHANGE and currentLocale fields. They are linked to the website language. For example, changing 'en' to 'en_US' will lead to a non-existent page (e.g., https://excellence-conciergerie.com/en_US). Existing locales are pt, en, fr, es. Do not add non-existent locales. Only modify based on the current translation file. fr/common.js currentLocale should always be 'fr', en/common.js currentLocale should always be 'en', etc.",
   "currentLocale": "fr",
   "languages": [
     { "language": "Portugais", "flag": "flag3.svg", "DO_NOT_CHANGE": "pt" },
@@ -13,46 +12,31 @@
   "contactInfo": [
     {
       "text": "contact@excellence-conciergerie.com",
-      "type": "email",
       "icon": "vector2.svg",
-      "link": "example@example.com"
+      "link": "mailto:contact@excellence-conciergerie.com"
     },
     {
-      "text": "+55 1234-567",
-      "type": "whatsapp",
+      "text": "+33 6 24 41 94 81",
       "icon": "vector1.svg",
-      "link": "1234567890"
+      "link": "https://wa.me/33624419481"
     },
     {
-      "text": "+55 1234-567",
-      "type": "phone",
+      "text": "+33 6 65 00 28 29",
       "icon": "vector3.svg",
-      "link": "123-456-7890"
+      "link": "tel:+33665002829"
     }
   ],
 
   "socials": [
     {
-      "text": "Instgram",
-      "icon": "vector9.svg",
-      "type": "url",
-      "link": "https://www.instagram.com/"
-    },
-    {
-      "text": "Facebook",
-      "icon": "vector10.svg",
-      "type": "url",
-      "link": "https://www.instagram.com/"
-    },
-    {
       "text": "Linkedin",
       "icon": "vector11.svg",
       "type": "url",
-      "link": "https://www.instagram.com/"
+      "link": "https://www.linkedin.com/company/excellence-conciergerie/"
     }
   ],
 
-  "guideLinesLinks": "Warning: The only accepted values for the DO_NOT_CHANGE fields in navLinks are the current website IDs, which are as follows: about, whyUs, message, subscriptions, services, faq, contact",
+  "guideLinesLinks": "Avertissement : Les seules valeurs acceptées pour les champs DO_NOT_CHANGE dans navLinks sont les IDs actuels du site web, qui sont les suivants : about, whyUs, message, subscriptions, services, faq, contact",
   "navLinks": [
     { "text": "Engagement", "DO_NOT_CHANGE": "about" },
     { "text": "Gestion Locative", "DO_NOT_CHANGE": "services" },
@@ -116,7 +100,7 @@
   "servicesTitle": "Gestion de Location de Luxe",
   "services": [
     {
-      "image": "img4.webp",
+      "image": "img4.jpg",
       "title": "Gestion Complète de Propriété",
       "description": "Excellence Conciergerie gère tous les aspects de la gestion de votre propriété de luxe, assurant à la fois l'entretien intérieur et extérieur. Nos rapports hebdomadaires détaillés vous fournissent des mises à jour transparentes sur chaque service, vous tenant informé.",
       "pros": [
@@ -127,7 +111,7 @@
       ]
     },
     {
-      "image": "img5.webp",
+      "image": "img5.jpg",
       "title": "Partenariats Exclusifs avec des Leaders du Secteur",
       "description": "Nous entretenons des partenariats exclusifs avec des entreprises de construction, des architectes, des designers d'intérieur, des paysagistes et plus encore. Cela garantit des interventions de qualité supérieure et renforce la valeur et l'attrait de votre propriété.",
       "pros": [
@@ -140,7 +124,7 @@
       ]
     },
     {
-      "image": "img6.webp",
+      "image": "img6.jpg",
       "title": "Entretien Luxueux des Espaces Extérieurs",
       "description": "Nos équipes dédiées préservent la beauté de vos espaces extérieurs, de l'entretien méticuleux du jardin à l'expertise dans l'entretien de la piscine. Nous veillons à ce que l'extérieur de votre propriété reste un oasis serein.",
       "pros": [
@@ -157,7 +141,7 @@
       ]
     },
     {
-      "image": "img7.webp",
+      "image": "img7.jpg",
       "title": "Services Personnalisés et Exclusifs",
       "description": "Nous proposons des services sur mesure et exclusifs pour dépasser vos attentes en matière de gestion immobilière. De la prise en charge spécialisée à la communication transparente, nous assurons l'excellence dans chaque détail.",
       "pros": [
@@ -244,8 +228,8 @@
     }
   ],
 
-  "contactSubtitle": "Prenons Contact",
-  "contactTitle": "Contactez-Nous",
+  "contactSubtitle": "Prenez Contact",
+  "contactTitle": "Contactez-nous",
   "contactDescription": "Êtes-vous prêt à élever votre hospitalité et à vous engager pour l'excellence ? Veuillez remplir le formulaire ci-dessous, et notre équipe vous contactera sous peu pour discuter de la manière dont nous pouvons vous aider à offrir des séjours inoubliables à vos clients.",
 
   "blankOption": "Sélectionnez une option",
@@ -254,14 +238,12 @@
   "emailLabel": "Email",
   "emailPlaceholder": "Votre Email",
   "formTypeLabel": "Choisissez un Type de Formulaire",
-
-  "guideLinesFormTypeOptions": "Warning Text: Don't alter the DO_NOT_CHANGE fields. Don't add a new extra formTypeOptions object. Don't remove a existing object. If you need more forms options, contact me so I can insert it for you.",
+  "guideLinesFormTypeOptions": "Texte d'avertissement : Ne modifiez pas les champs DO_NOT_CHANGE dans navLinks. N'ajoutez pas d'objet formTypeOptions supplémentaire. Ne supprimez pas d'objet existant. Si vous avez besoin de plus d'options de formulaire, contactez-moi pour que je puisse les insérer pour vous.",
   "formTypeOptions": [
     { "DO_NOT_CHANGE": "owners", "label": "Propriétaires" },
     { "DO_NOT_CHANGE": "subscriptions", "label": "Abonnements" },
     { "DO_NOT_CHANGE": "others", "label": "Autres" }
   ],
-
   "formTypeHelperText": "Si vous avez des questions générales, veuillez remplir ce formulaire. Si vous êtes propriétaire, veuillez choisir 'Propriétaires' dans le menu déroulant. Si vous souhaitez acheter un abonnement, sélectionnez 'Abonnements'.",
   "propertyLocationLabel": "Emplacement de la Propriété",
   "propertyLocationPlaceholder": "Emplacement",
@@ -306,35 +288,35 @@
       "array": [
         {
           "title": "1. Introduction",
-          "description": "Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern our relationship with you in relation to this website."
+          "description": "Bienvenue sur notre site web. Si vous continuez à naviguer et à utiliser ce site web, vous acceptez de respecter et d'être lié par les conditions générales d'utilisation suivantes, qui régissent notre relation avec vous par rapport à ce site web, ainsi que notre politique de confidentialité."
         },
         {
-          "title": "2. License to use website",
-          "description": "Unless otherwise stated, we or our licensors own the intellectual property rights in the website and material on the website. Subject to the license below, all these intellectual property rights are reserved."
+          "title": "2. Licence d'utilisation du site web",
+          "description": "Sauf indication contraire, nous ou nos concédants détenons les droits de propriété intellectuelle sur le site web et le matériel présent sur le site web. Sous réserve de la licence ci-dessous, tous ces droits de propriété intellectuelle sont réservés."
         },
         {
-          "title": "3. Acceptable use",
-          "description": "You must not use this website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity."
+          "title": "3. Utilisation acceptable",
+          "description": "Vous ne devez pas utiliser ce site web de manière à causer, ou pouvant causer, des dommages au site web ou une altération de la disponibilité ou de l'accessibilité du site web ; ou de quelque manière que ce soit illégale, frauduleuse ou nuisible, ou en relation avec une activité ou un but illégal, frauduleux ou nuisible."
         },
         {
-          "title": "4. Limitations of liability",
-          "description": "We will not be liable to you (whether under the law of contact, the law of torts or otherwise) in relation to the contents of, or use of, or otherwise in connection with, this website: for any indirect, special or consequential loss; or for any business losses, loss of revenue, income, profits or anticipated savings, loss of contracts or business relationships, loss of reputation or goodwill, or loss or corruption of information or data."
+          "title": "4. Limitations de responsabilité",
+          "description": "Nous ne serons pas responsables envers vous (que ce soit en vertu du droit des contrats, du droit délictuel ou autre) en relation avec le contenu, l'utilisation ou autrement en relation avec ce site web : pour toute perte indirecte, spéciale ou consécutrice ; ou pour toute perte d'activité, de revenus, de bénéfices ou d'économies anticipées, perte de contrats ou de relations commerciales, perte de réputation ou de bonne volonté, ou perte ou corruption d'informations ou de données."
         },
         {
-          "title": "5. Acceptable use",
-          "description": "You must not use this website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity."
+          "title": "5. Utilisation acceptable",
+          "description": "Vous ne devez pas utiliser ce site web de manière à causer, ou pouvant causer, des dommages au site web ou une altération de la disponibilité ou de l'accessibilité du site web ; ou de quelque manière que ce soit illégale, frauduleuse ou nuisible, ou en relation avec une activité ou un but illégal, frauduleux ou nuisible."
         },
         {
-          "title": "6. Acceptable use",
-          "description": "You must not use this website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity."
+          "title": "6. Utilisation acceptable",
+          "description": "Vous ne devez pas utiliser ce site web de manière à causer, ou pouvant causer, des dommages au site web ou une altération de la disponibilité ou de l'accessibilité du site web ; ou de quelque manière que ce soit illégale, frauduleuse ou nuisible, ou en relation avec une activité ou un but illégal, frauduleux ou nuisible."
         },
         {
-          "title": "7. Acceptable use",
-          "description": "You must not use this website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity."
+          "title": "7. Utilisation acceptable",
+          "description": "Vous ne devez pas utiliser ce site web de manière à causer, ou pouvant causer, des dommages au site web ou une altération de la disponibilité ou de l'accessibilité du site web ; ou de quelque manière que ce soit illégale, frauduleuse ou nuisible, ou en relation avec une activité ou un but illégal, frauduleux ou nuisible."
         },
         {
-          "title": "8. Acceptable use",
-          "description": "You must not use this website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity."
+          "title": "8. Utilisation acceptable",
+          "description": "Vous ne devez pas utiliser ce site web de manière à causer, ou pouvant causer, des dommages au site web ou une altération de la disponibilité ou de l'accessibilité du site web ; ou de quelque manière que ce soit illégale, frauduleuse ou nuisible, ou en relation avec une activité ou un but illégal, frauduleux ou nuisible."
         }
       ]
     },
@@ -343,24 +325,25 @@
       "DO_NOT_CHANGE": "privacy",
       "array": [
         {
-          "title": "1. Information we collect",
-          "description": "We may collect the following information: name, contact information including email address, demographic information such as postcode, preferences, and interests, other information relevant to customer surveys and/or offers."
+          "title": "1. Informations que nous recueillons",
+          "description": "Nous pouvons collecter les informations suivantes : nom, coordonnées incluant l'adresse e-mail, informations démographiques telles que le code postal, préférences et intérêts, autres informations pertinentes pour les enquêtes clients et/ou offres."
         },
         {
-          "title": "2. What we do with the information we gather",
-          "description": "We require this information to understand your needs and provide you with a better service, and in particular for the following reasons: internal record keeping, improvement of our products and services, sending promotional emails about new products, special offers or other information which we think you may find interesting using the email address which you have provided."
+          "title": "2. Utilisation des informations que nous recueillons",
+          "description": "Nous avons besoin de ces informations pour comprendre vos besoins et vous fournir un meilleur service, et notamment pour les raisons suivantes : tenue de registres internes, amélioration de nos produits et services, envoi d'e-mails promotionnels sur de nouveaux produits, offres spéciales ou autres informations que nous pensons susceptibles de vous intéresser en utilisant l'adresse e-mail que vous avez fournie."
         },
         {
-          "title": "3. Security",
-          "description": "We are committed to ensuring that your information is secure. In order to prevent unauthorized access or disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online."
+          "title": "3. Sécurité",
+          "description": "Nous nous engageons à assurer la sécurité de vos informations. Afin d'empêcher tout accès ou divulgation non autorisé(e), nous avons mis en place des procédures physiques, électroniques et managériales appropriées pour sauvegarder et sécuriser les informations que nous collectons en ligne."
         },
         {
-          "title": "4. How we use cookies",
-          "description": "A cookie is a small file which asks permission to be placed on your computer's hard drive. Once you agree, the file is added and the cookie helps analyze web traffic or lets you know when you visit a particular site. Cookies allow web applications to respond to you as an individual. The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences."
+          "title": "4. Utilisation des cookies",
+          "description": "Un cookie est un petit fichier qui demande la permission d'être placé sur le disque dur de votre ordinateur. Une fois que vous êtes d'accord, le fichier est ajouté et le cookie aide à analyser le trafic web ou vous permet de savoir quand vous visitez un site particulier. Les cookies permettent aux applications web de vous répondre en tant qu'individu. L'application web peut adapter ses opérations à vos besoins, goûts et dégoûts en collectant et se souvenant des informations relatives à vos préférences."
         }
       ]
     }
   ],
+
   "attributionsTitle": "Attributions",
   "attributions": [
     {
@@ -429,6 +412,7 @@
       "link": "https://fonts.google.com/"
     }
   ],
+
   "closeModalButton": "Fermer",
   "privacyPolicyWarningText": "En soumettant ce formulaire, vous acceptez notre ",
   "privacyPolicyWarningLink": "politique de confidentialité",
