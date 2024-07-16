@@ -206,12 +206,15 @@
 
   "guideLinesFormTypeOptions": "Warning Text: Don't alter the DO_NOT_CHANGE fields. Don't add a new extra formTypeOptions object. Don't remove a existing object. If you need more forms options, contact me so I can insert it for you.",
   "formTypeOptions": [
-    { "DO_NOT_CHANGE": "owners", "label": "Owners" },
-    { "DO_NOT_CHANGE": "subscriptions", "label": "Subscriptions" },
-    { "DO_NOT_CHANGE": "others", "label": "Others" }
+    { "DO_NOT_CHANGE": "owners", "label": "I'm a homeowner" },
+    {
+      "DO_NOT_CHANGE": "subscriptions",
+      "label": "I want to know more about subscriptions"
+    },
+    { "DO_NOT_CHANGE": "others", "label": "I have a question" }
   ],
+  "formTypeHelperText": "For general questions, please fill out this form. If you are a homeowner, select 'I'm a homeowner' from the dropdown menu. If you want to know more about subscriptions, choose 'I want to know more about subscriptions'. If you have a question, select 'I have a question'.",
 
-  "formTypeHelperText": "If you have general inquiries, please fill out this form. If you are a property owner, please choose 'Owners' from the dropdown. If you are looking to purchase a subscription, select 'Subscriptions' from the dropdown.",
   "propertyLocationLabel": "Property Location",
   "propertyLocationPlaceholder": "Location",
   "propertyRoomAmountLabel": "Number of Rooms",

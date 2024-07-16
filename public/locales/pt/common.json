@@ -217,13 +217,17 @@
   "formTypeLabel": "Escolha um Tipo de Formulário",
 
   "guideLinesFormTypeOptions": "Warning Text: Don't alter the DO_NOT_CHANGE fields. Don't add a new extra formTypeOptions object. Don't remove a existing object. If you need more forms options, contact me so I can insert it for you.",
-  "formTypeOptions": [
-    { "DO_NOT_CHANGE": "owners", "label": "Proprietários" },
-    { "DO_NOT_CHANGE": "subscriptions", "label": "Assinaturas" },
-    { "DO_NOT_CHANGE": "others", "label": "Outros" }
-  ],
 
-  "formTypeHelperText": "Se você tiver perguntas gerais, preencha este formulário. Se você é proprietário de imóveis, escolha 'Proprietários' no menu suspenso. Se você deseja adquirir uma assinatura, selecione 'Assinaturas'.",
+  "formTypeOptions": [
+    { "DO_NOT_CHANGE": "owners", "label": "Sou proprietário" },
+    {
+      "DO_NOT_CHANGE": "subscriptions",
+      "label": "Quero saber mais sobre assinaturas"
+    },
+    { "DO_NOT_CHANGE": "others", "label": "Tenho uma pergunta" }
+  ],
+  "formTypeHelperText": "Para dúvidas gerais, por favor preencha este formulário. Se você é proprietário, selecione 'Sou proprietário' no menu suspenso. Se você deseja saber mais sobre assinaturas, escolha 'Quero saber mais sobre assinaturas'. Se você tem uma pergunta, selecione 'Tenho uma pergunta'.",
+
   "propertyLocationLabel": "Localização do Imóvel",
   "propertyLocationPlaceholder": "Localização",
   "propertyRoomAmountLabel": "Número de Quartos",
