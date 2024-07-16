@@ -106,7 +106,7 @@
   "servicesTitle": "Gestion de Location de Luxe",
   "services": [
     {
-      "image": "img4.jpg",
+      "image": "img4.webp",
       "title": "Gestion Complète de Propriété",
       "description": "Excellence Conciergerie gère tous les aspects de la gestion de votre propriété de luxe, assurant à la fois l'entretien intérieur et extérieur. Nos rapports hebdomadaires détaillés vous fournissent des mises à jour transparentes sur chaque service, vous tenant informé.",
       "pros": [
@@ -117,7 +117,7 @@
       ]
     },
     {
-      "image": "img5.jpg",
+      "image": "img5.webp",
       "title": "Partenariats Exclusifs avec des Leaders du Secteur",
       "description": "Nous entretenons des partenariats exclusifs avec des entreprises de construction, des architectes, des designers d'intérieur, des paysagistes et plus encore. Cela garantit des interventions de qualité supérieure et renforce la valeur et l'attrait de votre propriété.",
       "pros": [
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "image": "img6.jpg",
+      "image": "img6.webp",
       "title": "Entretien Luxueux des Espaces Extérieurs",
       "description": "Nos équipes dédiées préservent la beauté de vos espaces extérieurs, de l'entretien méticuleux du jardin à l'expertise dans l'entretien de la piscine. Nous veillons à ce que l'extérieur de votre propriété reste un oasis serein.",
       "pros": [
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "image": "img7.jpg",
+      "image": "img7.webp",
       "title": "Services Personnalisés et Exclusifs",
       "description": "Nous proposons des services sur mesure et exclusifs pour dépasser vos attentes en matière de gestion immobilière. De la prise en charge spécialisée à la communication transparente, nous assurons l'excellence dans chaque détail.",
       "pros": [
