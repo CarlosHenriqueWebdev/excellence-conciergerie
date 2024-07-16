@@ -246,11 +246,11 @@
   "formTypeLabel": "Choisissez un Type de Formulaire",
   "guideLinesFormTypeOptions": "Texte d'avertissement : Ne modifiez pas les champs DO_NOT_CHANGE dans navLinks. N'ajoutez pas d'objet formTypeOptions supplémentaire. Ne supprimez pas d'objet existant. Si vous avez besoin de plus d'options de formulaire, contactez-moi pour que je puisse les insérer pour vous.",
   "formTypeOptions": [
-    { "DO_NOT_CHANGE": "owners", "label": "Propriétaires" },
-    { "DO_NOT_CHANGE": "subscriptions", "label": "Abonnements" },
-    { "DO_NOT_CHANGE": "others", "label": "Autres" }
+    { "DO_NOT_CHANGE": "owners", "label": "Je suis propriétaire" },
+    { "DO_NOT_CHANGE": "subscriptions", "label": "Je veux en savoir plus sur les abonnements" },
+    { "DO_NOT_CHANGE": "others", "label": "J'ai une question" }
   ],
-  "formTypeHelperText": "Si vous avez des questions générales, veuillez remplir ce formulaire. Si vous êtes propriétaire, veuillez choisir 'Propriétaires' dans le menu déroulant. Si vous souhaitez acheter un abonnement, sélectionnez 'Abonnements'.",
+  "formTypeHelperText": "Pour des questions générales, veuillez remplir ce formulaire. Si vous êtes propriétaire, sélectionnez 'Je suis propriétaire' dans le menu déroulant. Si vous souhaitez en savoir plus sur les abonnements, choisissez 'Je veux en savoir plus sur les abonnements'. Si vous avez une question, sélectionnez 'J'ai une question'.",
   "propertyLocationLabel": "Emplacement de la Propriété",
   "propertyLocationPlaceholder": "Emplacement",
   "propertyRoomAmountLabel": "Nombre de Chambres",
