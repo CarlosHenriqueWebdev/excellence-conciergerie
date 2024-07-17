@@ -75,8 +75,8 @@ function LegalModal({ item, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex text-[#181C18] px-[24px] lg:px-[80px] py-[24px] lg:py-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px]">
-      <div className="overflow-y-scroll bg-white p-[24px] rounded-[4px] w-full flex flex-col gap-[32px] justify-start">
+    <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex text-[#181C18] px-[24px] lg:px-[80px] py-[24px] lg:py-[80px] w-full">
+      <div className="overflow-y-scroll bg-white p-[24px] rounded-[4px] w-full flex flex-col gap-[32px] justify-start mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px]">
         <div className="flex justify-end w-full">
           <button
             aria-hidden={true}
