@@ -39,6 +39,18 @@ function Footer() {
     }, 500);
   };
 
+  const handleButtonClick = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      setTimeout(() => {
+        targetElement.tabIndex = -1;
+        targetElement.focus();
+      }, 100);
+    }
+  };
+
+
   return (
     <footer className="flex flex-col text-lavender-haze bg-eclipse-black mt-[100px]">
       <div className="border-solid border-t-[2px] border-twilight-gray">
@@ -97,6 +109,7 @@ function Footer() {
                   <ScrollLink
                     className="cursor-pointer hover:underline hover:text-golden-yellow font-medium"
                     to={item.DO_NOT_CHANGE}
+                    onClick={() => handleButtonClick(item.DO_NOT_CHANGE)}
                     offset={-200}
                     smooth={true}
                   >
