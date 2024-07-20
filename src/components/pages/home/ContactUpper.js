@@ -9,7 +9,6 @@ export default function ContactUpper() {
   const { t } = useTranslation();
 
   const introRef = useRef(null);
-  const listRef = useRef(null);
   const isIntroInView = useInView(introRef, { once: true });
 
   return (
