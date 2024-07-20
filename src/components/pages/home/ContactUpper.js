@@ -18,11 +18,9 @@ export default function ContactUpper() {
       <div className="bg-deep-night py-[56px]">
         <div
           ref={introRef}
-          className="px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[24px]"
+          className={`${introRef ? "animated fadeInUp" : "opacity-0"} px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[24px]`}
         >
-          <div
-            className={`${isIntroInView ? "animated fadeInUp" : "opacity-0"} flex flex-col gap-[20px]`}
-          >
+          <div className={`flex flex-col gap-[20px]`}>
             <div className="flex flex-col gap-[16px]">
               <div className="item">
                 <DetailText text={t("contactSubtitle")} />
