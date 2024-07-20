@@ -11,16 +11,17 @@ export default function ContactUpper() {
   const introRef = useRef(null);
   const listRef = useRef(null);
   const isIntroInView = useInView(introRef, { once: true });
-  const isListInView = useInView(listRef, { once: true });
 
   return (
     <div
       className={`py-[100px] bg-cover bg-fixed bg-[url('/assets/images/img8.webp')] border-solid border-y-[8px] border-[#020201] overflow-hidden`}
     >
       <div className="bg-deep-night py-[56px]">
-        <div className="px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[24px]">
+        <div
+          ref={introRef}
+          className="px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[24px]"
+        >
           <div
-            ref={introRef}
             className={`${isIntroInView ? "animated fadeInUp" : "opacity-0"} flex flex-col gap-[20px]`}
           >
             <div className="flex flex-col gap-[16px]">
@@ -40,10 +41,7 @@ export default function ContactUpper() {
             </div>
           </div>
 
-          <ul
-            ref={listRef}
-            className={`${isListInView ? "slide-right-animation" : "opacity-0"} flex flex-wrap gap-[16px]`}
-          >
+          <ul className={`flex flex-wrap gap-[16px]`}>
             {t("contactInfo", { returnObjects: true })?.map((item, index) => (
               <li key={index} className="item flex gap-[8px]">
                 <Image
