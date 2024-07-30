@@ -61,7 +61,7 @@ export default function Hero() {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50" />
         <div className="relative py-[120px] lg:py-[0] lg:h-[75vh] justify-center items-center px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col w-full">
           <div
-            className={`${isInView ? "opacity-1" : "opacity-0"} font-bold uppercase flex flex-col gap-[16px] items-center`}
+            className={`${isInView ? "opacity-1" : "opacity-0"} font-bold uppercase flex flex-col gap-[16px] items-center max-w-[800px]`}
           >
             <DetailText text={t("heroSubtitle")} />
             <h1 id="main-content" className="text-[1.75rem] text-center">
