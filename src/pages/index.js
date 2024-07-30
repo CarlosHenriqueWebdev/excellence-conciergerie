@@ -89,17 +89,17 @@ export default function Home(props) {
   const initialLocale = props._nextI18Next.initialLocale;
 
   const titles = {
-    en: "Excellence Conciergerie: Unforgettable Luxury on the French Riviera",
-    fr: "Excellence Conciergerie: Découvrez le summum du luxe sur la Côte d'Azur",
-    pt: "Excellence Conciergerie: Experimente o ápice do luxo na Riviera Francesa",
-    es: "Excellence Conciergerie: Experimente el pináculo del lujo en la Riviera francesa",
+    en: "Excellence Conciergerie: Luxury Concierge Services in Côte d'Azur and Nice",
+    fr: "Excellence Conciergerie: Services de Conciergerie de Luxe sur la Côte d'Azur et à Nice",
+    pt: "Excellence Conciergerie: Serviços de Concierge de Luxo na Côte d'Azur e Nice",
+    es: "Excellence Conciergerie: Servicios de Concierge de Lujo en Côte d'Azur y Niza",
   };
 
   const descriptions = {
-    en: "Experience the epitome of luxury on the French Riviera with Excellence Conciergerie. We provide unforgettable experiences, exceptional property management, and discreet, 5-star service for both property owners and travelers.",
-    fr: "Découvrez le summum du luxe sur la Côte d'Azur avec Excellence Conciergerie. Nous proposons des expériences inoubliables, une gestion immobilière exceptionnelle et un service discret 5 étoiles aux propriétaires et aux voyageurs.",
-    pt: "Experimente o ápice do luxo na Riviera Francesa com a Excellence Conciergerie. Oferecemos experiências inesquecíveis, gestão de propriedades excepcional e serviço discreto 5 estrelas para proprietários e viajantes.",
-    es: "Experimente el pináculo del lujo en la Riviera francesa con Excellence Conciergerie. Brindamos experiencias inolvidables, administración de propiedades excepcionales y un servicio discreto de 5 estrellas para propietarios e invitados.",
+    en: "Experience the epitome of luxury with Excellence Conciergerie. We offer premium conciergerie de luxe services in Côte d'Azur and Nice, providing unforgettable experiences, exceptional property management, and discreet, 5-star service for property owners and travelers.",
+    fr: "Découvrez le summum du luxe avec Excellence Conciergerie. Nous proposons des services de conciergerie de luxe sur la Côte d'Azur et à Nice, offrant des expériences inoubliables, une gestion immobilière exceptionnelle et un service discret 5 étoiles aux propriétaires et aux voyageurs.",
+    pt: "Experimente o ápice do luxo com a Excellence Conciergerie. Oferecemos serviços de conciergerie de luxo na Côte d'Azur e Nice, proporcionando experiências inesquecíveis, gestão de propriedades excepcional e serviço discreto 5 estrelas para proprietários e viajantes.",
+    es: "Experimente el pináculo del lujo con Excellence Conciergerie. Brindamos servicios de conciergerie de lujo en Côte d'Azur y Niza, ofreciendo experiencias inolvidables, administración de propiedades excepcionales y un servicio discreto de 5 estrellas para propietarios e invitados.",
   };
 
   return (

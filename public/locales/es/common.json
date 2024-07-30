@@ -20,202 +20,6 @@
     { "text": "Contacto", "DO_NOT_CHANGE": "contact" }
   ],
 
-  "heroSubtitle": "Excellence Conciergerie",
-  "heroTitle": "Experiencias Inolvidables y Servicios\nde Lujo Discreto en la Riviera Francesa",
-
-  "introductionSubtitle": "Detalles de Nuestro Compromiso",
-  "introductionTitle": "Nuestro Compromiso Contigo",
-  "introductionDescription": [
-    {
-      "text": "En Excellence Conciergerie, superamos los estándares de lujo creando recuerdos inolvidables y ofreciendo servicios extraordinarios, siempre con absoluta discreción."
-    },
-    {
-      "text": "Para los propietarios, protegemos tu inversión con una gestión integral transparente y eficiente."
-    },
-    {
-      "text": "Para los viajeros, ofrecemos una experiencia excepcional y discreta comparable a los mejores hoteles de 5 estrellas, garantizando excelencia, servicio y atención al detalle."
-    }
-  ],
-
-  "whyUsSubtitle": "Gestión de Propiedades de Lujo",
-  "whyUsTitle": "¿Por Qué Elegir Excellence Conciergerie?",
-  "whyUsDescription": "Descubre por qué los clientes confían en Excellence Conciergerie para servicios excepcionales de gestión de propiedades de lujo. Combinamos experiencia, personalización y eficiencia para gestionar propiedades con un profesionalismo inigualable y una atención meticulosa a los detalles.",
-  "whyUsReasons": [
-    {
-      "icon": "vector12.svg",
-      "title": "Profesionalismo y Experiencia",
-      "description": "Nuestro equipo experimentado asegura una gestión integral de la propiedad, maximizando la visibilidad en plataformas prestigiosas. Profesionales con experiencia elaboran descripciones atractivas de propiedades para mostrar características únicas."
-    },
-    {
-      "icon": "vector13.svg",
-      "title": "Servicio Personalizado",
-      "description": "Ofrecemos soluciones a medida para satisfacer tus necesidades únicas, asegurando una experiencia personalizada y sin problemas a lo largo del proceso de gestión. Nuestro equipo prioriza tus objetivos para aumentar el valor de la propiedad y la satisfacción de los huéspedes."
-    },
-    {
-      "icon": "vector14.svg",
-      "title": "Optimización de la Rentabilidad",
-      "description": "Excellence Conciergerie emplea enfoques estratégicos para maximizar los ingresos por alquiler y el retorno de la inversión para los propietarios. A través del análisis del mercado y técnicas de gestión efectivas, aseguramos rentabilidad."
-    },
-    {
-      "icon": "vector15.svg",
-      "title": "Gestión Integral",
-      "description": "Proporcionamos servicios completos de gestión de propiedades, ofreciendo tranquilidad a los propietarios. Desde la coordinación del mantenimiento hasta las relaciones con los huéspedes, nuestro equipo dedicado asegura que tu propiedad funcione sin problemas y de manera eficiente."
-    },
-    {
-      "icon": "vector22.svg",
-      "title": "Soluciones Innovadoras",
-      "description": "Nos mantenemos a la vanguardia con soluciones innovadoras y conocimientos sobre el mercado de propiedades de lujo. Ya sea implementando tecnología para operaciones eficientes o adaptándonos a las tendencias del mercado, mejoramos el rendimiento de la propiedad y la satisfacción de los huéspedes."
-    }
-  ],
-
-  "messageSubtitle": "Catherine Teixeira",
-  "messageTitle": "Mensaje de la Directora",
-  "messageDescription": "Bienvenido a Excellence Conciergerie. Como Directora General, me complace darte la bienvenida. Para los propietarios, cuidamos tu propiedad con pasión y confidencialidad. Para los viajeros, prometemos una experiencia excepcional y discreta. Excellence Conciergerie representa refinamiento, discreción y atención personal. Bienvenido a la excelencia.",
-
-  "servicesSubtitle": "Gestión sin Estrés, Resultados Excepcionales",
-  "servicesTitle": "Gestión de Alquileres de Lujo",
-  "services": [
-    {
-      "image": "img4.webp",
-      "title": "Gestión Integral de Propiedades",
-      "description": "Excellence Conciergerie se encarga de todos los aspectos de la gestión de tu propiedad de lujo, asegurando el mantenimiento tanto interior como exterior. Nuestros informes semanales detallados proporcionan actualizaciones transparentes sobre cada servicio, manteniéndote informado.",
-      "pros": [
-        { "text": "Mantenimiento integral de tu propiedad." },
-        { "text": "Servicio personalizado y dedicado." },
-        { "text": "Monitoreo 24/7 para total seguridad." },
-        {
-          "text": "Soluciones a medida para satisfacer tus necesidades únicas."
-        }
-      ]
-    },
-    {
-      "image": "img5.webp",
-      "title": "Asociaciones Exclusivas con Líderes de la Industria",
-      "description": "Mantenemos asociaciones exclusivas con empresas de construcción, arquitectos, diseñadores de interiores, paisajistas y más. Esto asegura intervenciones de calidad superior y mejora el valor y el atractivo de tu propiedad.",
-      "pros": [
-        { "text": "Acceso a profesionales de primer nivel en la industria." },
-        {
-          "text": "Servicios personalizados para mejorar el valor y la estética de la propiedad."
-        },
-        { "text": "Experiencia en gestión de propiedades de lujo." },
-        { "text": "Enfoque colaborativo para resultados excepcionales." }
-      ]
-    },
-    {
-      "image": "img6.webp",
-      "title": "Mantenimiento de Exteriores Lujosos",
-      "description": "Nuestros equipos dedicados preservan la belleza de tus espacios exteriores, desde el cuidado meticuloso del jardín hasta el mantenimiento experto de la piscina. Aseguramos que el exterior de tu propiedad siga siendo un oasis sereno.",
-      "pros": [
-        {
-          "text": "Cuidado experto para embellecer y mejorar las áreas exteriores."
-        },
-        {
-          "text": "Servicios personalizados para preservar y mejorar la estética de la propiedad."
-        },
-        {
-          "text": "Mantenimiento regular para mantener la condición impecable."
-        },
-        {
-          "text": "Soluciones especializadas para el mantenimiento de propiedades lujosas."
-        }
-      ]
-    },
-    {
-      "image": "img7.webp",
-      "title": "Servicios Personalizados Exclusivos",
-      "description": "Ofrecemos servicios personalizados y exclusivos diseñados para superar tus expectativas en la gestión de propiedades. Desde el cuidado especializado hasta la comunicación transparente, aseguramos la excelencia en cada detalle.",
-      "pros": [
-        {
-          "text": "Soluciones personalizadas para todas tus necesidades de propiedad."
-        },
-        {
-          "text": "Compromiso con la excelencia y la satisfacción del cliente."
-        },
-        { "text": "Informes de servicio transparentes y detallados." },
-        {
-          "text": "Enfoque personalizado para satisfacer las preferencias únicas del cliente."
-        }
-      ]
-    }
-  ],
-
-  "packsSubtitle": "El plan perfecto para cada estilo de vida.",
-  "packsTitle": "Suscripciones Personalizadas - Satisfacción Garantizada",
-  "packs": [
-    {
-      "icon": "vector17.svg",
-      "pattern": "pattern1.webp",
-      "title": "Excellence Básico",
-      "subTitle": "De lunes a viernes, de 8:30 AM a 5:30 PM",
-      "pros": [
-        { "text": "Mantenimiento integral de tu propiedad." },
-        { "text": "Servicio personalizado y dedicado." },
-        { "text": "Monitoreo 24/7 para total seguridad." },
-        {
-          "text": "Soluciones a medida para satisfacer tus necesidades únicas."
-        }
-      ]
-    },
-    {
-      "icon": "vector18.svg",
-      "pattern": "pattern2.webp",
-      "title": "Excellence Premium",
-      "subTitle": "7 días a la semana, con horarios flexibles",
-      "pros": [
-        { "text": "Todos los beneficios de Excellence Básico." },
-        { "text": "Acceso prioritario a nuestros socios exclusivos." },
-        { "text": "Servicios de conserjería de lujo incluidos." },
-        { "text": "Gestión integral de eventos y viajes." }
-      ]
-    },
-    {
-      "icon": "vector19.svg",
-      "pattern": "pattern3.webp",
-      "title": "Excellence Prestigio",
-      "subTitle": "Servicio 24/7, con gestión VIP personalizada",
-      "pros": [
-        { "text": "Todos los beneficios de Excellence Premium." },
-        { "text": "Consulta de diseño de interiores incluida." },
-        { "text": "Acceso exclusivo a nuestros servicios de alto nivel." },
-        { "text": "Gestión integrada de propiedades e inversiones." }
-      ]
-    }
-  ],
-  "packsButton": "Descubre Nuestras Ofertas y Suscríbete",
-
-  "faqSubtitle": "Preguntas Frecuentes",
-  "faqTitle": "Estamos Aquí para Ayudar",
-  "faq": [
-    {
-      "title": "¿Qué servicios ofrece Excellence Conciergerie?",
-      "description": "Excellence Conciergerie ofrece una gama completa de servicios de gestión de propiedades de lujo, incluyendo mantenimiento, seguridad, gestión de reservas y servicios personalizados tanto para propietarios como para viajeros."
-    },
-    {
-      "title": "¿Cómo funciona la monitorización 24/7 de Excellence Conciergerie?",
-      "description": "Nuestra monitorización 24/7 se basa en tecnologías avanzadas y un equipo dedicado para asegurar una respuesta rápida a cualquier incidente, garantizando la completa seguridad de tu propiedad."
-    },
-    {
-      "title": "¿Cuáles son los beneficios de las asociaciones exclusivas de Excellence Conciergerie?",
-      "description": "Excellence Conciergerie mantiene asociaciones exclusivas con empresas de construcción, arquitectos, diseñadores de interiores y otros profesionales. Esto asegura intervenciones de alta calidad para mejorar y mantener el valor estético de tu propiedad."
-    },
-    {
-      "title": "¿Por qué elegir Excellence Conciergerie para gestionar mi propiedad de lujo?",
-      "description": "Excellence Conciergerie se destaca por su compromiso con la excelencia, transparencia en cada servicio proporcionado y la capacidad de ofrecer soluciones personalizadas que satisfacen exactamente tus necesidades. Nos dedicamos a asegurar que tu propiedad se mantenga impecable y bien mantenida en todo momento."
-    },
-    {
-      "title": "¿Cuáles son los términos de cancelación de los servicios de Excellence Conciergerie?",
-      "description": "Puedes cancelar nuestros servicios en cualquier momento contactándonos directamente. Nos esforzamos por hacer que el proceso de cancelación sea lo más sencillo y transparente posible para nuestros clientes."
-    },
-    {
-      "title": "¿Cómo puedo hacer una solicitud especial a Excellence Conciergerie?",
-      "description": "Para cualquier solicitud especial, ya sea necesidades específicas para tu propiedad o servicios personalizados para un evento, por favor contáctanos directamente. Estamos aquí para acomodar tus necesidades específicas y proporcionar una solución personalizada."
-    }
-  ],
-
-  "contactSubtitle": "Pongámonos en Contacto",
-  "contactTitle": "Contáctanos",
-  "contactDescription": "¿Estás listo para elevar tu hospitalidad y comprometerte con la excelencia? Por favor, completa el formulario a continuación y nuestro equipo te contactará pronto para discutir cómo podemos ayudarte a ofrecer estancias inolvidables a tus clientes.",
-
   "blankOption": "Selecciona una opción",
   "fullNameLabel": "Nombre Completo",
   "fullNamePlaceholder": "Tu nombre completo",
@@ -326,7 +130,198 @@
   "accessibility_text7": "Nuestros Servicios",
   "accessibility_text8": "Botón de deslizador, por favor, omita si está utilizando un lector de pantalla",
 
-  "footerDescription": "Excellence Conciergerie es una agencia de gestión de bienes raíces de lujo con sede en la Riviera Francesa. Nuestro equipo dedicado proporciona servicios personalizados para satisfacer las necesidades únicas de cada propietario.",
   "footerContactTitle": "Contacto",
-  "footerSiteLinksTitle": "Enlaces Útiles"
+  "footerSiteLinksTitle": "Enlaces Útiles",
+
+  "heroSubtitle": "Excellence Conciergerie",
+  "heroTitle": "Experiencias Inolvidables y Servicios de Lujo Discretos en la Côte d'Azur y Niza",
+
+  "introductionSubtitle": "Detalles de Nuestro Compromiso",
+  "introductionTitle": "Nuestro Compromiso con Usted",
+  "introductionDescription": [
+    {
+      "text": "En Excellence Conciergerie, superamos los estándares de lujo creando recuerdos inolvidables y ofreciendo servicios extraordinarios de concierge de lujo en la Côte d'Azur y Niza, siempre con absoluta discreción."
+    },
+    {
+      "text": "Para los propietarios, preservamos su inversión con una gestión inmobiliaria de lujo transparente y eficaz."
+    },
+    {
+      "text": "Para los viajeros, ofrecemos una experiencia excepcional y discreta comparable a los mejores hoteles de 5 estrellas, garantizando excelencia, servicio y atención a los detalles."
+    }
+  ],
+
+  "whyUsSubtitle": "Gestión Inmobiliaria de Lujo",
+  "whyUsTitle": "¿Por Qué Elegir Excellence Conciergerie?",
+  "whyUsDescription": "Descubra por qué los clientes confían en Excellence Conciergerie para servicios excepcionales de gestión inmobiliaria de lujo en la Côte d'Azur y Niza. Combinamos experiencia, personalización y eficiencia para gestionar las propiedades con un profesionalismo incomparable y una atención meticulosa a los detalles.",
+  "whyUsReasons": [
+    {
+      "icon": "vector12.svg",
+      "title": "Profesionalismo y Experiencia",
+      "description": "Nuestro equipo experimentado asegura una gestión completa de bienes inmobiliarios de lujo, maximizando la visibilidad en plataformas prestigiosas. Profesionales experimentados elaboran descripciones cautivadoras para resaltar las características únicas."
+    },
+    {
+      "icon": "vector13.svg",
+      "title": "Servicio Personalizado",
+      "description": "Adaptamos soluciones para satisfacer sus necesidades únicas, garantizando una experiencia fluida y personalizada a lo largo de todo el proceso de gestión inmobiliaria de lujo. Nuestro equipo prioriza sus objetivos para mejorar el valor del bien y la satisfacción de los clientes."
+    },
+    {
+      "icon": "vector14.svg",
+      "title": "Optimización de la Rentabilidad",
+      "description": "Excellence Conciergerie utiliza enfoques estratégicos para maximizar los ingresos por alquiler y el rendimiento de las inversiones para los propietarios en la Côte d'Azur y Niza. A través del análisis de mercado y técnicas de gestión eficaces, aseguramos la rentabilidad."
+    },
+    {
+      "icon": "vector15.svg",
+      "title": "Gestión Completa",
+      "description": "Ofrecemos servicios completos de gestión inmobiliaria de lujo, proporcionando tranquilidad a los propietarios. Desde la coordinación del mantenimiento hasta las relaciones con los invitados, nuestro equipo dedicado asegura el buen funcionamiento y la eficiencia de su propiedad."
+    },
+    {
+      "icon": "vector22.svg",
+      "title": "Soluciones Innovadoras",
+      "description": "Nos mantenemos a la vanguardia con soluciones innovadoras e ideas sobre el mercado inmobiliario de lujo. Ya sea implementando tecnologías para operaciones eficientes o adaptándose a las tendencias del mercado, mejoramos el rendimiento y la satisfacción de los clientes."
+    }
+  ],
+
+  "messageSubtitle": "Catherine Teixeira",
+  "messageTitle": "Mensaje de la Directora",
+  "messageDescription": "Bienvenido a Excellence Conciergerie. Como Directora General, estoy encantada de darle la bienvenida. Para los propietarios, cuidamos su bien con pasión y confidencialidad en la Côte d'Azur y Niza. Para los viajeros, prometemos una experiencia excepcional y discreta. Excellence Conciergerie encarna el refinamiento, la discreción y la atención personal. Bienvenido a la excelencia.",
+
+  "servicesSubtitle": "Gestión Sin Estrés, Resultados Excepcionales",
+  "servicesTitle": "Gestión de Alquiler de Lujo",
+  "services": [
+    {
+      "image": "img4.webp",
+      "title": "Gestión Completa de Propiedad",
+      "description": "Excellence Conciergerie gestiona todos los aspectos de la gestión de su propiedad de lujo en la Côte d'Azur y Niza, asegurando tanto el mantenimiento interior como exterior. Nuestros informes semanales detallados le proporcionan actualizaciones transparentes sobre cada servicio, manteniéndole informado.",
+      "pros": [
+        { "text": "Mantenimiento completo de su propiedad." },
+        { "text": "Servicio personalizado y dedicado." },
+        { "text": "Vigilancia 24/7 para una seguridad total." },
+        { "text": "Soluciones adaptadas a sus necesidades únicas." }
+      ]
+    },
+    {
+      "image": "img5.webp",
+      "title": "Asociaciones Exclusivas con Líderes del Sector",
+      "description": "Mantenemos asociaciones exclusivas con empresas de construcción, arquitectos, diseñadores de interiores, paisajistas y más. Esto garantiza intervenciones de alta calidad y refuerza el valor y el atractivo de su propiedad.",
+      "pros": [
+        { "text": "Acceso a profesionales de alto nivel de la industria." },
+        {
+          "text": "Servicios personalizados para valorar estéticamente la propiedad."
+        },
+        { "text": "Experiencia en gestión de propiedades de lujo." },
+        { "text": "Enfoque colaborativo para resultados excepcionales." }
+      ]
+    },
+    {
+      "image": "img6.webp",
+      "title": "Mantenimiento Lujoso de los Espacios Exteriores",
+      "description": "Nuestros equipos dedicados preservan la belleza de sus espacios exteriores en la Côte d'Azur y Niza, desde el mantenimiento meticuloso del jardín hasta la experiencia en el mantenimiento de la piscina. Aseguramos que el exterior de su propiedad permanezca un oasis sereno.",
+      "pros": [
+        {
+          "text": "Cuidados especializados para mejorar y embellecer los espacios exteriores."
+        },
+        {
+          "text": "Servicios personalizados para preservar y mejorar la estética de la propiedad."
+        },
+        { "text": "Mantenimiento regular para mantener un estado impecable." },
+        {
+          "text": "Soluciones especializadas para un mantenimiento lujoso de la propiedad."
+        }
+      ]
+    },
+    {
+      "image": "img7.webp",
+      "title": "Servicios Personalizados y Exclusivos",
+      "description": "Ofrecemos servicios a medida y exclusivos para superar sus expectativas en la gestión inmobiliaria. Desde la atención especializada hasta la comunicación transparente, aseguramos la excelencia en cada detalle.",
+      "pros": [
+        {
+          "text": "Soluciones personalizadas para todas las necesidades de su propiedad."
+        },
+        {
+          "text": "Compromiso con la excelencia y la satisfacción del cliente."
+        },
+        { "text": "Informes de servicio transparentes y detallados." },
+        {
+          "text": "Enfoque personalizado para satisfacer las preferencias exclusivas de los clientes."
+        }
+      ]
+    }
+  ],
+
+  "packsSubtitle": "El plan perfecto para cada estilo de vida.",
+  "packsTitle": "Suscripciones Personalizadas - Satisfacción Garantizada",
+  "packs": [
+    {
+      "icon": "vector17.svg",
+      "pattern": "pattern1.webp",
+      "title": "Excellence Básico",
+      "subTitle": "De lunes a viernes, de 8:30 a 17:30",
+      "pros": [
+        { "text": "Mantenimiento completo de su propiedad." },
+        { "text": "Servicio personalizado y dedicado." },
+        { "text": "Vigilancia 24/7 para una seguridad total." },
+        { "text": "Soluciones adaptadas a sus necesidades únicas." }
+      ]
+    },
+    {
+      "icon": "vector18.svg",
+      "pattern": "pattern2.webp",
+      "title": "Excellence Premium",
+      "subTitle": "7 días a la semana, con horario flexible",
+      "pros": [
+        { "text": "Todos los beneficios de Excellence Básico." },
+        { "text": "Acceso prioritario a nuestros socios exclusivos." },
+        { "text": "Servicios de concierge de lujo incluidos." },
+        { "text": "Gestión completa de eventos y viajes." }
+      ]
+    },
+    {
+      "icon": "vector19.svg",
+      "pattern": "pattern3.webp",
+      "title": "Excellence Prestige",
+      "subTitle": "Servicio 24/7, con gestión VIP personalizada",
+      "pros": [
+        { "text": "Todos los beneficios de Excellence Premium." },
+        { "text": "Consultoría en diseño de interiores incluida." },
+        { "text": "Acceso exclusivo a nuestros servicios de alto nivel." },
+        { "text": "Gestión integrada de la propiedad y las inversiones." }
+      ]
+    }
+  ],
+  "packsButton": "Descubra Nuestras Ofertas y Suscríbase",
+
+  "faqSubtitle": "Preguntas Frecuentes",
+  "faqTitle": "Estamos Aquí para Ayudar",
+  "faq": [
+    {
+      "title": "¿Qué servicios ofrece Excellence Conciergerie?",
+      "description": "Excellence Conciergerie ofrece una gama completa de servicios de gestión inmobiliaria de lujo en la Côte d'Azur y Niza, que incluyen mantenimiento, seguridad, gestión de reservas y servicios personalizados para propietarios y viajeros."
+    },
+    {
+      "title": "¿Cómo funciona la vigilancia 24/7 de Excellence Conciergerie?",
+      "description": "Nuestra vigilancia 24/7 se basa en tecnologías avanzadas y un equipo dedicado para asegurar una respuesta rápida a cualquier incidente, garantizando la seguridad completa de su propiedad."
+    },
+    {
+      "title": "¿Cuáles son las ventajas de las asociaciones exclusivas de Excellence Conciergerie?",
+      "description": "Excellence Conciergerie mantiene asociaciones exclusivas con empresas de construcción, arquitectos, diseñadores de interiores y otros profesionales. Esto garantiza intervenciones de alta calidad para mejorar y mantener el valor estético de su propiedad."
+    },
+    {
+      "title": "¿Por qué elegir Excellence Conciergerie para gestionar mi propiedad de lujo?",
+      "description": "Excellence Conciergerie se distingue por su compromiso con la excelencia, la transparencia en cada servicio proporcionado y su capacidad para ofrecer soluciones a medida que satisfacen precisamente sus necesidades. Nos comprometemos a mantener su propiedad impecable y bien cuidada en todo momento."
+    },
+    {
+      "title": "¿Cuáles son las condiciones de cancelación de los servicios de Excellence Conciergerie?",
+      "description": "Puede cancelar nuestros servicios en cualquier momento contactándonos directamente. Nos esforzamos por hacer que el proceso de cancelación sea lo más simple y transparente posible para nuestros clientes."
+    },
+    {
+      "title": "¿Cómo puedo hacer una solicitud especial a Excellence Conciergerie?",
+      "description": "Para cualquier solicitud especial, ya sea necesidades específicas para su propiedad o servicios personalizados para un evento, por favor contáctenos directamente. Estamos aquí para satisfacer sus necesidades específicas y ofrecerle una solución a medida."
+    }
+  ],
+
+  "contactSubtitle": "Póngase en Contacto",
+  "contactTitle": "Contáctenos",
+  "contactDescription": "¿Está listo para elevar su hospitalidad y comprometerse con la excelencia en la Côte d'Azur y Niza? Por favor, complete el formulario a continuación y nuestro equipo se pondrá en contacto con usted pronto para discutir cómo podemos ayudar a ofrecer estancias inolvidables a sus clientes.",
+
+  "footerDescription": "Excellence Conciergerie es una agencia de gestión inmobiliaria de lujo basada en la Côte d'Azur y Niza. Nuestro equipo dedicado ofrece servicios personalizados para satisfacer las necesidades únicas de cada propietario."
 }
