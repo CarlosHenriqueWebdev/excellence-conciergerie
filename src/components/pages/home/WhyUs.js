@@ -70,7 +70,7 @@ export default function WhyUs() {
                 aria-expanded={openIndexes.includes(index)}
                 className={`item hover:brightness-90 cursor-pointer font-semibold bg-graphite-gray rounded-[4px] px-[16px] py-[16px] flex flex-col`}
               >
-                <div className="flex justify-between items-center cursor-pointer">
+                <div className="flex justify-between items-center cursor-pointer w-full">
                   <div className="flex items-center gap-[8px]">
                     <Image
                       aria-hidden={true}
