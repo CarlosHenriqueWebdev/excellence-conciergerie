@@ -54,7 +54,7 @@ export default function Faq() {
                 aria-expanded={openIndexes.includes(index)}
                 className="item hover:brightness-90 cursor-pointer font-semibold bg-graphite-gray rounded-[4px] px-[16px] py-[16px] flex flex-col"
               >
-                <div className="flex justify-between items-center cursor-pointer">
+                <div className="flex justify-between items-center cursor-pointer w-full">
                   <h3>{item.title}</h3>
                   <Image
                     aria-hidden={true}
