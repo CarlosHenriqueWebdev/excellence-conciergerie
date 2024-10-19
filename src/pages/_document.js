@@ -4,7 +4,18 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link rel="icon" href="/faviconIcon.ico" />
+        {/* Google Tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTBYBGGPMN"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-NTBYBGGPMN');
+            `,
+          }}
+        />
 
         {/* Google Tag Manager */}
         <script
@@ -19,6 +30,8 @@ export default function Document() {
           }}
         />
         {/* End Google Tag Manager */}
+
+        <link rel="icon" href="/faviconIcon.ico" />
       </Head>
       <body className="text-lavender-haze bg-midnight-blue">
         {/* Google Tag Manager (noscript) */}
