@@ -41,6 +41,14 @@ export default function ContactLower() {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+
+          // Trigger GTM event here after successful form submission
+          if (window && window.dataLayer) {
+            window.dataLayer.push({
+              event: "form_submission", // The event name we configured in GTM
+            });
+          }
+
           setStep(3);
           setSubmitting(false);
         },
