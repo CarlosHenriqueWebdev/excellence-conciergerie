@@ -8,7 +8,7 @@ export default function Document() {
         {/* Google tag (gtag.js) */}
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-K5PJJLB8SK"
+          src="https://www.googletagmanager.com/gtag/js?id=G-3DGMK3CQ1Q"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -16,7 +16,7 @@ export default function Document() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-K5PJJLB8SK');
+              gtag('config', 'G-3DGMK3CQ1Q');
             `,
           }}
         />
