@@ -5,15 +5,21 @@ export default function Document() {
     <Html>
       <Head>
         <link rel="icon" href="/faviconIcon.ico" />
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5PJJLB8SK"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-K5PJJLB8SK');
-        </script>
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-K5PJJLB8SK"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-K5PJJLB8SK');
+            `,
+          }}
+        />
       </Head>
       <body className="text-lavender-haze bg-midnight-blue">
         <Main />
