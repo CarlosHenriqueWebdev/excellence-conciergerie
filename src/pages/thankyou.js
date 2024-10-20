@@ -14,7 +14,7 @@ export default function ThankYou() {
 
 	return (
 		<div>
-			<NextSeo noindex={true} />
+			<NextSeo noindex={true} title="Thank You" />
 
 			<div className="h-[100vh] justify-center items-center px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[32px] md:grid md:grid-cols-[450fr_638fr]">
 				<div
