@@ -442,5 +442,12 @@
   "contactTitle": "Contactez-nous",
   "contactDescription": "Êtes-vous prêt à élever votre hospitalité et à vous engager pour l'excellence sur la Côte d'Azur et à Nice ? Veuillez remplir le formulaire ci-dessous, et notre équipe vous contactera sous peu pour discuter de la manière dont nous pouvons vous aider à offrir des séjours inoubliables à vos clients.",
 
-  "footerDescription": "Excellence Conciergerie est une agence de gestion immobilière de luxe basée sur la Côte d'Azur et à Nice. Notre équipe dédiée offre des services personnalisés pour répondre aux besoins uniques de chaque propriétaire."
+  "footerDescription": "Excellence Conciergerie est une agence de gestion immobilière de luxe basée sur la Côte d'Azur et à Nice. Notre équipe dédiée offre des services personnalisés pour répondre aux besoins uniques de chaque propriétaire.",
+
+  "thankYouSubtitle": "Merci!",
+  "thankYouTitle": "Votre soumission a été reçue!",
+  "thankYouDescription": "Nous apprécions que vous nous ayez contactés. Notre équipe examinera votre message et vous répondra dès que possible.",
+  "additionalInfo": "En attendant, n'hésitez pas à explorer davantage notre site Web.",
+  "goBackHome": "Retour à la page d'accueil"
+
 }

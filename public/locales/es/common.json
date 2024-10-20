@@ -323,5 +323,12 @@
   "contactTitle": "Contáctenos",
   "contactDescription": "¿Está listo para elevar su hospitalidad y comprometerse con la excelencia en la Côte d'Azur y Niza? Por favor, complete el formulario a continuación y nuestro equipo se pondrá en contacto con usted pronto para discutir cómo podemos ayudar a ofrecer estancias inolvidables a sus clientes.",
 
-  "footerDescription": "Excellence Conciergerie es una agencia de gestión inmobiliaria de lujo basada en la Côte d'Azur y Niza. Nuestro equipo dedicado ofrece servicios personalizados para satisfacer las necesidades únicas de cada propietario."
+  "footerDescription": "Excellence Conciergerie es una agencia de gestión inmobiliaria de lujo basada en la Côte d'Azur y Niza. Nuestro equipo dedicado ofrece servicios personalizados para satisfacer las necesidades únicas de cada propietario.",
+
+  "thankYouSubtitle": "¡Gracias!",
+  "thankYouTitle": "¡Tu envío ha sido recibido!",
+  "thankYouDescription": "Agradecemos que te hayas puesto en contacto con nosotros. Nuestro equipo revisará tu mensaje y responderá lo antes posible.",
+  "additionalInfo": "Mientras tanto, siéntete libre de explorar más nuestro sitio web.",
+  "goBackHome": "Volver a la página de inicio"
+
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import emailjs from "emailjs-com";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -16,6 +17,9 @@ export default function ContactLower() {
   const [selectedFormType, setSelectedFormType] = useState(null);
   const [submissionError, setSubmissionError] = useState("");
   const legalLinks = t("legalLinks", { returnObjects: true });
+
+  const router = useRouter(); // Initialize the router to access the current locale
+  const { locale } = router; // Get the current locale
 
   const prevButton = () => {
     setStep(1);
@@ -36,27 +40,22 @@ export default function ContactLower() {
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         formData,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
 
-          // Trigger GTM event here after successful form submission
-          if (window && window.dataLayer) {
-            window.dataLayer.push({
-              event: "form_submission", // The event name we configured in GTM
-            });
-          }
-
-          setStep(3);
           setSubmitting(false);
+
+          // Redirect to the thank you page with the current locale
+          router.push(`/${locale}/thankyou`);
         },
         (error) => {
           console.log("FAILED...", error);
           setSubmissionError(t("submissionError"));
           setSubmitting(false);
-        }
+        },
       )
       .catch((error) => {
         console.log("ERROR...", error);
@@ -196,23 +195,6 @@ export default function ContactLower() {
                 {submissionError && (
                   <p className="text-[#FF4C4C]">{submissionError}</p>
                 )}
-              </div>
-            )}
-            {step === 3 && (
-              <div className="flex flex-col gap-[16px] items-center">
-                <h2 className="text-[1.5rem] text-white">
-                  {t("formSubmittedSuccessfully")}
-                </h2>
-                <p className="text-[#FFD84C] text-[1rem]">
-                  {t("thankYouForYourSubmission")}
-                </p>
-                <button
-                  type="button"
-                  className="btn px-[32px] py-[12px] rounded-[4px] uppercase font-bold text-[1rem] text-white w-full md:w-fit"
-                  onClick={() => setStep(1)}
-                >
-                  {t("backToStart")}
-                </button>
               </div>
             )}
           </Form>
