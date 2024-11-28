@@ -25,6 +25,19 @@ export default function Document() {
           />
         </noscript>
 
+        {/* Google Analytics Tag */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEH2E24BVP"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XEH2E24BVP');
+            `,
+          }}
+        />
+
         <link rel="icon" href="/faviconIcon.ico" />
       </Head>
       <body className="text-lavender-haze bg-midnight-blue">
