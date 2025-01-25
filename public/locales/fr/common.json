@@ -413,28 +413,32 @@
   "faqTitle": "Nous Sommes Là Pour Vous Aider",
   "faq": [
     {
-      "title": "Quels services offre Excellence Conciergerie ?",
-      "description": "Excellence Conciergerie offre une gamme complète de services de gestion immobilière de luxe sur la Côte d'Azur et à Nice, comprenant l'entretien, la sécurité, la gestion des réservations et des services personnalisés pour les propriétaires et les voyageurs."
+      "title": "1. En quoi Excellence Conciergerie se différencie-t-elle d’une agence immobilière ?",
+      "description": "Nous ne réalisons aucune transaction (achat/vente). Nous sommes spécialisés dans la location saisonnière et assurons un service complet (mise en ligne des annonces, ménage, maintenance, etc.) pour optimiser vos revenus."
     },
     {
       "title": "Comment fonctionne la surveillance 24/7 par Excellence Conciergerie ?",
       "description": "Notre surveillance 24/7 repose sur des technologies avancées et une équipe dédiée pour assurer une réponse rapide à tout incident, garantissant la sécurité complète de votre propriété."
     },
     {
-      "title": "Quels sont les avantages des partenariats exclusifs d'Excellence Conciergerie ?",
-      "description": "Excellence Conciergerie entretient des partenariats exclusifs avec des entreprises de construction, des architectes, des designers d'intérieur et d'autres professionnels. Cela garantit des interventions de haute qualité pour améliorer et maintenir la valeur esthétique de votre propriété."
+      "title": "2. Quels services incluez-vous dans la gestion de biens ?",
+      "description": "Notre équipe prend en charge la publication sur les plateformes (Airbnb, Booking…), la synchronisation des réservations, l’accueil des voyageurs, le ménage, la blanchisserie et un suivi global pour garantir la satisfaction des locataires."
     },
     {
-      "title": "Pourquoi choisir Excellence Conciergerie pour gérer ma propriété de luxe ?",
-      "description": "Excellence Conciergerie se distingue par son engagement envers l'excellence, la transparence dans chaque service fourni et sa capacité à fournir des solutions sur mesure qui répondent précisément à vos besoins. Nous nous engageons à ce que votre propriété reste immaculée et bien entretenue en tout temps."
+      "title": "3. Combien coûte la gestion locative chez Excellence Conciergerie ?",
+      "description": "Nos tarifs commencent à 20 % HT du montant brut des locations payées par le voyageur. Nous établissons un devis personnalisé en fonction de la nature et de la localisation de votre bien."
     },
     {
-      "title": "Quelles sont les conditions d'annulation des services d'Excellence Conciergerie ?",
-      "description": "Vous pouvez annuler nos services à tout moment en nous contactant directement. Nous nous efforçons de rendre le processus d'annulation aussi simple et transparent que possible pour nos clients."
+      "title": "4. Qui peut bénéficier de votre service de conciergerie ?",
+      "description": "Nous accompagnons aussi bien les particuliers en vacances ou en déplacement que les entreprises souhaitant offrir un confort haut de gamme à leurs collaborateurs ou clients VIP."
     },
     {
-      "title": "Comment puis-je faire une demande spéciale à Excellence Conciergerie ?",
-      "description": "Pour toute demande spéciale, que ce soit des besoins spécifiques pour votre propriété ou des services personnalisés pour un événement, veuillez nous contacter directement. Nous sommes là pour répondre à vos besoins spécifiques et vous proposer une solution sur mesure."
+      "title": "5. Quelles prestations de luxe proposez-vous ?",
+      "description": "Notre Conciergerie Privée couvre une large gamme de services : chef à domicile, massages, organisation d’événements privés, réservations VIP, transports et bien plus encore."
+    },
+ {
+      "title": "6. Quelles sont vos formules d’abonnement en conciergerie ?",
+      "description": "Nous offrons trois formules : Basique (lun-ven), Premium (lun-dim, 8 h-20 h) et Prestige (24 h/24, 7 j/7). Chaque formule inclut un niveau d’assistance différent, adapté à vos besoins."
     }
   ],
 
