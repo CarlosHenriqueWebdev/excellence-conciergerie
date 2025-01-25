@@ -256,73 +256,73 @@
   ],
 
   "packsSubtitle": "The perfect plan for every lifestyle.",
-  "packsTitle": "Customized Subscriptions - Satisfaction Guaranteed",
-  "packs": [
+"packsTitle": "Customized Subscriptions - Satisfaction Guaranteed",
+"packs": [
     {
       "icon": "vector17.svg",
       "pattern": "pattern1.webp",
-      "title": "Excellence Basic",
+      "title": "Basic Excellence",
       "subTitle": "Monday to Friday, from 8:30 AM to 5:30 PM",
       "pros": [
-        { "text": "Complete maintenance of your property." },
-        { "text": "Personalized and dedicated service." },
-        { "text": "24/7 surveillance for total security." },
-        { "text": "Solutions tailored to your unique needs." }
+        { "text": "Weekday assistance, fixed hours." },
+        { "text": "Ideal for planned needs." },
+        { "text": "Help with simple reservations." },
+        { "text": "Affordable and functional service." }
       ]
     },
     {
       "icon": "vector18.svg",
       "pattern": "pattern2.webp",
-      "title": "Excellence Premium",
-      "subTitle": "7 days a week, with flexible scheduling",
+      "title": "Premium Excellence", 
+      "subTitle": "7 days a week, from 8:00 AM to 8:00 PM",
       "pros": [
-        { "text": "All benefits of Excellence Basic." },
-        { "text": "Priority access to our exclusive partners." },
-        { "text": "Luxury concierge services included." },
-        { "text": "Complete event and travel management." }
+        { "text": "Extended coverage, including weekends." },
+        { "text": "Priority access to our partners." },
+        { "text": "Enhanced responsiveness to your requests." },
+        { "text": "Perfect for more flexible support." }
       ]
     },
     {
       "icon": "vector19.svg",
       "pattern": "pattern3.webp",
-      "title": "Excellence Prestige",
-      "subTitle": "24/7 service, with personalized VIP management",
+      "title": "Prestige Excellence",
+      "subTitle": "24/7 Service",
       "pros": [
-        { "text": "All benefits of Excellence Premium." },
-        { "text": "Interior design consultation included." },
-        { "text": "Exclusive access to our high-level services." },
-        { "text": "Integrated property and investment management." }
+        { "text": "Unlimited assistance, day and night." },
+        { "text": "Emergency management and special requests." },
+        { "text": "VIP access to all our services." },
+        { "text": "Unlimited high-end experience." }
       ]
     }
-  ],
-  "packsButton": "Discover Our Offers and Subscribe",
+],
+"packsButton": "Subscribe",
 
   "faqSubtitle": "Frequently Asked Questions",
-  "faqTitle": "We Are Here to Help",
-  "faq": [
+"faqTitle": "We Are Here to Help",
+"faq": [
     {
-      "title": "What services does Excellence Conciergerie offer?",
-      "description": "Excellence Conciergerie offers a full range of luxury property management services in Côte d'Azur and Nice, including maintenance, security, booking management, and personalized services for property owners and travelers."
+      "title": "1. How does Excellence Concierge differ from a real estate agency?",
+      "description": "We do not carry out any transactions (buying/selling). We specialize in seasonal rentals and provide a full service (listing, cleaning, maintenance, etc.) to optimize your income."
     },
     {
-      "title": "How does Excellence Conciergerie's 24/7 surveillance work?",
-      "description": "Our 24/7 surveillance relies on advanced technologies and a dedicated team to ensure a rapid response to any incidents, guaranteeing complete security for your property."
+      "title": "2. What services do you include in property management?",
+      "description": "Our team handles the listing on platforms (Airbnb, Booking, etc.), reservation synchronization, guest reception, cleaning, laundry, and overall follow-up to ensure tenant satisfaction."
     },
     {
-      "title": "What are the benefits of Excellence Conciergerie's exclusive partnerships?",
-      "description": "Excellence Conciergerie maintains exclusive partnerships with construction companies, architects, interior designers, and other professionals. This ensures high-quality interventions to enhance and maintain the aesthetic value of your property."
+      "title": "3. How much does property management at Excellence Concierge cost?",
+      "description": "Our rates start at 20% excluding VAT of the gross amount of bookings paid by the guest. We provide a customized quote based on the nature and location of your property."
     },
     {
-      "title": "Why choose Excellence Conciergerie to manage my luxury property?",
-      "description": "Excellence Conciergerie stands out for its commitment to excellence, transparency in every service provided, and its ability to deliver tailored solutions that precisely meet your needs. We are committed to keeping your property immaculate and well-maintained at all times."
+      "title": "4. Who can benefit from your concierge service?",
+      "description": "We assist both individuals on vacation or business trips and companies wishing to offer premium comfort to their employees or VIP clients."
     },
     {
-      "title": "What are the cancellation terms for Excellence Conciergerie's services?",
-      "description": "You can cancel our services at any time by contacting us directly. We strive to make the cancellation process as simple and transparent as possible for our clients."
+      "title": "5. What luxury services do you offer?",
+      "description": "Our Private Concierge offers a wide range of services: private chef, massages, organization of private events, VIP reservations, transport, and much more."
     },
     {
-      "title": "How can I make a special request to Excellence Conciergerie?",
-      "description": "For any special requests, whether specific needs for your property or personalized services for an event, please contact us directly. We are here to meet your specific needs and provide a tailored solution."
+      "title": "6. What are your concierge subscription plans?",
+      "description": "We offer three plans: Basic (Mon-Fri), Premium (Mon-Sun, 8 AM - 8 PM), and Prestige (24/7). Each plan includes a different level of assistance, tailored to your needs."
     }
   ],
 
