@@ -276,27 +276,27 @@
   "whyUsDescription": "Découvrez pourquoi les clients font confiance à Excellence Conciergerie pour des services exceptionnels de gestion immobilière de luxe sur la Côte d'Azur et à Nice. Nous combinons expertise, personnalisation et efficacité pour gérer les propriétés avec un professionnalisme inégalé et une attention méticuleuse aux détails.",
   "whyUsReasons": [
     {
-      "icon": "vector12.svg",
+      "icon": "vector22.svg",
       "title": "Service Clé en Main",
       "description": "De la mise en ligne de vos annonces au ménage en passant par l’accueil personnalisé des voyageurs, nous gérons chaque étape de la location saisonnière. Grâce à notre équipe interne et à notre expertise, vous gagnez en sérénité tout en assurant une expérience d’hébergement irréprochable."
     },
     {
-      "icon": "vector13.svg",
+      "icon": "vector12.svg",
       "title": "Conciergerie Premium",
       "description": "Pour répondre aux attentes d’une clientèle exigeante, nous proposons des prestations haut de gamme : chef à domicile, massages sur place, organisation d’excursions, transferts VIP, etc. Notre objectif : sublimer chaque séjour et faire vivre des moments inoubliables à vos locataires."
     },
     {
-      "icon": "vector14.svg",
+      "icon": "vector13.svg",
       "title": "Rentabilité Optimisée",
       "description": "Nous mettons en place des stratégies tarifaires adaptées, des visuels professionnels et un suivi permanent des avis clients pour maximiser vos revenus. Notre connaissance du marché local et notre maîtrise des outils de réservation nous permettent d’ajuster les prix de manière dynamique et pertinente."
     },
     {
-      "icon": "vector15.svg",
+      "icon": "vector14.svg",
       "title": "Réactivité et Qualité",
       "description": "Notre équipe interne de nettoyage garantit un niveau de propreté irréprochable pour chaque arrivée. Nous assurons également une assistance 24/7 pour les locataires et un rapport détaillé pour le propriétaire, afin de garantir la transparence et la satisfaction de tous."
     },
     {
-      "icon": "vector22.svg",
+      "icon": "vector15.svg",
       "title": "Contrôle Qualité et Accueil Personnalisé",
       "description": "Afin de maintenir un haut niveau de standing, nous disposons d’une gouvernante qui vérifie l’état des lieux et la propreté avant chaque arrivée. De plus, nous offrons un kit d’accueil personnalisé pour que chaque voyageur se sente immédiatement chez soi. Ce souci du détail garantit un séjour exceptionnel."
     }
