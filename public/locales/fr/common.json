@@ -306,18 +306,18 @@
   "messageTitle": "Message de la Directrice",
   "messageDescription": "Bienvenue chez Excellence Conciergerie. En tant que Directrice Générale, je suis ravie de vous accueillir. Pour les propriétaires, nous prenons soin de votre bien avec passion et confidentialité sur la Côte d'Azur et à Nice. Pour les voyageurs, nous promettons une expérience exceptionnelle et discrète. Excellence Conciergerie incarne le raffinement, la discrétion et l'attention personnelle. Bienvenue à l'excellence.",
 
-  "servicesSubtitle": "Avec Excellence Conciergerie, libérez-vous des contraintes logistiques et vivez chaque instant en toute sérénité.",
-  "servicesTitle": "Conciergerie Privée",
+  "servicesSubtitle": "Conciergerie Privée",
+  "servicesTitle": "Avec Excellence Conciergerie, libérez-vous des contraintes logistiques et vivez chaque instant en toute sérénité.",
   "services": [
     {
       "image": "img4.webp",
       "title": "Expertise Locale",
       "description": "Nous connaissons chaque recoin de la Côte d’Azur pour vous faire vivre des expériences authentiques et luxueuses. Laissez-nous vous ouvrir les portes de lieux incontournables et secrets. Nous connaissons chaque recoin de la Côte d’Azur pour vous faire vivre des expériences authentiques et luxueuses. Laissez-nous vous ouvrir les portes de lieux incontournables et secrets.",
       "pros": [
-        { "text": "Entretien complet de votre propriété." },
-        { "text": "Service personnalisé et dédié." },
-        { "text": "Surveillance 24/7 pour une sécurité totale." },
-        { "text": "Solutions adaptées à vos besoins uniques." }
+        { "text": "Connaissance approfondie de la Côte d’Azur: Nous vous guidons vers les endroits incontournables et les adresses secrètes, pour un séjour entre luxe et authenticité." },
+        { "text": "Réseau de prestataires locaux: Artisans, producteurs, loueurs de bateaux… Nous sélectionnons chaque partenaire pour garantir une qualité irréprochable." },
+        { "text": "Conseils personnalisés: Besoin d’un restaurant gastronomique ou d’une plage confidentielle ? Nous adaptons nos recommandations à vos envies et à votre style de vie." },
+        { "text": "Ancrage culturel: Découvrez la véritable essence de la Riviera, son patrimoine, ses traditions et profitez d’événements locaux rarement accessibles aux touristes." }
       ]
     },
     {
@@ -325,12 +325,12 @@
       "title": "Réseau de Partenaires",
       "description": "Bénéficiez d’avantages exclusifs grâce à nos collaborations avec des établissements de prestige. Votre séjour prend une toute nouvelle dimension, entre privilèges et découvertes uniques.",
       "pros": [
-        { "text": "Accès à des professionnels de haut niveau de l'industrie." },
+        { "text": "Partenaires de prestige: Nous collaborons avec des chefs étoilés, des spas renommés, des organisateurs d’événements et des lieux d’exception." },
         {
-          "text": "Services personnalisés pour valoriser esthétiquement la propriété."
+          "text": "Accès prioritaire & privilèges: Réservations de dernière minute, places VIP, remises exclusives… Notre réseau vous ouvre des portes souvent fermées au grand public."
         },
-        { "text": "Expertise en gestion de propriétés de luxe." },
-        { "text": "Approche collaborative pour des résultats exceptionnels." }
+        { "text": "Expériences uniques: Organisation de dégustations privées, tours en yacht, soirées privées : nous créons des moments hors du commun grâce à nos contacts." },
+        { "text": "Qualité garantie: Tous nos partenaires sont rigoureusement sélectionnés pour vous assurer des prestations haut de gamme dans chaque domaine." }
       ]
     },
     {
@@ -339,14 +339,14 @@
       "description": "Notre équipe multilingue est formée pour répondre à vos attentes les plus exigeantes, en toute discrétion. Profitez d’un service irréprochable où chaque détail compte.",
       "pros": [
         {
-          "text": "Soins spécialisés pour améliorer et embellir les espaces extérieurs."
+          "text": "Équipe multilingue & formée: Nous parlons couramment plusieurs langues pour accueillir et servir une clientèle internationale avec professionnalisme."
         },
         {
-          "text": "Services sur mesure pour préserver et améliorer l'esthétique de la propriété."
+          "text": "Discrétion et respect de la vie privée: Vos informations et vos demandes sont traitées en toute confidentialité, dans la plus stricte éthique professionnelle."
         },
-        { "text": "Entretien régulier pour maintenir un état impeccable." },
+        { "text": "Disponibilité 24/7: Nous restons joignables à toute heure pour anticiper ou gérer chaque imprévu : un imprévu de voyage, une urgence médicale ou un simple changement de plan." },
         {
-          "text": "Solutions spécialisées pour un entretien luxueux de la propriété."
+          "text": "Processus de contrôle qualité: Vérification systématique (gouvernante, kit d’accueil personnalisé), suivi post-prestation, retours clients : chaque détail est passé au crible pour maintenir notre standard d’excellence."
         }
       ]
     },
@@ -356,12 +356,12 @@
       "description": "Nous adaptons nos prestations à vos envies, qu’il s’agisse de loisirs, de déplacements professionnels ou de services de confort au quotidien.",
       "pros": [
         {
-          "text": "Solutions personnalisées pour tous les besoins de votre propriété."
+          "text": "Services sur-mesure: Chef à domicile, massage, billetterie d’événements, excursions privées : nous personnalisons chaque demande selon vos préférences."
         },
-        { "text": "Engagement envers l'excellence et la satisfaction client." },
-        { "text": "Rapports de service transparents et détaillés." },
+        { "text": "Adapté à votre rythme: Que vous soyez en voyage d’affaires ou en vacances, notre conciergerie s’ajuste à vos contraintes et à votre emploi du temps." },
+        { "text": "Solutions pour professionnels et particuliers: Organisation de réunions, transferts d’entreprise, gestion d’agendas… Nous répondons aussi bien aux besoins business qu’aux loisirs." },
         {
-          "text": "Approche personnalisée pour répondre aux préférences exclusives des clients."
+          "text": "Accompagnement de A à Z: De la simple réservation à la coordination d’un événement complexe, nous nous occupons de tout, pour que vous profitiez pleinement de votre séjour sans le moindre stress."
         }
       ]
     }
