@@ -136,49 +136,49 @@
   "heroSubtitle": "Excellence Conciergerie",
   "heroTitle": "Experiencias Inolvidables y Servicios de Lujo Discretos en la Côte d'Azur",
 
-  "introductionSubtitle": "Detalles de Nuestro Compromiso",
-  "introductionTitle": "Nuestro Compromiso con Usted",
-  "introductionDescription": [
-    {
-      "text": "En Excellence Conciergerie, superamos los estándares de lujo creando recuerdos inolvidables y ofreciendo servicios extraordinarios de concierge de lujo en la Côte d'Azur y Niza, siempre con absoluta discreción."
-    },
-    {
-      "text": "Para los propietarios, preservamos su inversión con una gestión inmobiliaria de lujo transparente y eficaz."
-    },
-    {
-      "text": "Para los viajeros, ofrecemos una experiencia excepcional y discreta comparable a los mejores hoteles de 5 estrellas, garantizando excelencia, servicio y atención a los detalles."
-    }
+"introductionSubtitle": "Detalles de Nuestra Misión",
+"introductionTitle": "Nuestro Compromiso Contigo",
+"introductionDescription": [
+  {
+    "text": "No somos una agencia inmobiliaria, sino una conserjería especializada en la gestión de alquileres vacacionales en la Costa Azul."
+  },
+  {
+    "text": "Gracias a nuestro channel manager, publicamos su propiedad en varias plataformas (Airbnb, Booking, etc.) mientras simplificamos la gestión: una sola cuenta para el propietario, calendarios sincronizados e informes transparentes sobre el rendimiento."
+  },
+  {
+    "text": ""
+  }
   ],
 
-  "whyUsSubtitle": "Gestión Inmobiliaria de Lujo",
-  "whyUsTitle": "¿Por Qué Elegir Excellence Conciergerie?",
-  "whyUsDescription": "Descubra por qué los clientes confían en Excellence Conciergerie para servicios excepcionales de gestión inmobiliaria de lujo en la Côte d'Azur y Niza. Combinamos experiencia, personalización y eficiencia para gestionar las propiedades con un profesionalismo incomparable y una atención meticulosa a los detalles.",
-  "whyUsReasons": [
-    {
-      "icon": "vector12.svg",
-      "title": "Profesionalismo y Experiencia",
-      "description": "Nuestro equipo experimentado asegura una gestión completa de bienes inmobiliarios de lujo, maximizando la visibilidad en plataformas prestigiosas. Profesionales experimentados elaboran descripciones cautivadoras para resaltar las características únicas."
-    },
-    {
-      "icon": "vector13.svg",
-      "title": "Servicio Personalizado",
-      "description": "Adaptamos soluciones para satisfacer sus necesidades únicas, garantizando una experiencia fluida y personalizada a lo largo de todo el proceso de gestión inmobiliaria de lujo. Nuestro equipo prioriza sus objetivos para mejorar el valor del bien y la satisfacción de los clientes."
-    },
-    {
-      "icon": "vector14.svg",
-      "title": "Optimización de la Rentabilidad",
-      "description": "Excellence Conciergerie utiliza enfoques estratégicos para maximizar los ingresos por alquiler y el rendimiento de las inversiones para los propietarios en la Côte d'Azur y Niza. A través del análisis de mercado y técnicas de gestión eficaces, aseguramos la rentabilidad."
-    },
-    {
-      "icon": "vector15.svg",
-      "title": "Gestión Completa",
-      "description": "Ofrecemos servicios completos de gestión inmobiliaria de lujo, proporcionando tranquilidad a los propietarios. Desde la coordinación del mantenimiento hasta las relaciones con los invitados, nuestro equipo dedicado asegura el buen funcionamiento y la eficiencia de su propiedad."
-    },
-    {
-      "icon": "vector22.svg",
-      "title": "Soluciones Innovadoras",
-      "description": "Nos mantenemos a la vanguardia con soluciones innovadoras e ideas sobre el mercado inmobiliario de lujo. Ya sea implementando tecnologías para operaciones eficientes o adaptándose a las tendencias del mercado, mejoramos el rendimiento y la satisfacción de los clientes."
-    }
+ "whyUsSubtitle": "Gestión de Alquileres",
+"whyUsTitle": "¿Por Qué Elegir Excellence Conciergerie?",
+"whyUsDescription": "Descubra por qué los clientes confían en Excellence Conciergerie para servicios excepcionales de gestión de alquileres de lujo en la Costa Azul y Niza. Combinamos experiencia, personalización y eficiencia para gestionar propiedades con un profesionalismo inigualable y una atención meticulosa a los detalles.",
+"whyUsReasons": [
+  {
+    "icon": "vector22.svg",
+    "title": "Servicio Llave en Mano",
+    "description": "Desde la publicación de sus anuncios hasta la limpieza, pasando por la bienvenida personalizada de los viajeros, gestionamos cada etapa del alquiler vacacional. Gracias a nuestro equipo interno y nuestra experiencia, usted gana en tranquilidad mientras asegura una experiencia de alojamiento impecable."
+  },
+  {
+    "icon": "vector12.svg",
+    "title": "Conserjería Premium",
+    "description": "Para satisfacer las expectativas de una clientela exigente, ofrecemos servicios de alta gama: chef a domicilio, masajes en el lugar, organización de excursiones, traslados VIP, etc. Nuestro objetivo: realzar cada estancia y ofrecer momentos inolvidables a sus inquilinos."
+  },
+  {
+    "icon": "vector13.svg",
+    "title": "Rentabilidad Optimizada",
+    "description": "Implementamos estrategias de precios adaptadas, imágenes profesionales y un seguimiento constante de las opiniones de los clientes para maximizar sus ingresos. Nuestro conocimiento del mercado local y nuestra maestría en las herramientas de reserva nos permiten ajustar los precios de manera dinámica y pertinente."
+  },
+  {
+    "icon": "vector14.svg",
+    "title": "Reactividad y Calidad",
+    "description": "Nuestro equipo interno de limpieza garantiza un nivel de limpieza impecable para cada llegada. También ofrecemos asistencia 24/7 para los inquilinos y un informe detallado para el propietario, con el fin de garantizar la transparencia y satisfacción de todos."
+  },
+  {
+    "icon": "vector15.svg",
+    "title": "Control de Calidad y Bienvenida Personalizada",
+    "description": "Para mantener un alto nivel de calidad, contamos con una gobernanta que verifica el estado del lugar y la limpieza antes de cada llegada. Además, ofrecemos un kit de bienvenida personalizado para que cada viajero se sienta inmediatamente como en casa. Este cuidado en los detalles garantiza una estancia excepcional."
+  }
   ],
 
   "messageSubtitle": "Catherine Teixeira",
