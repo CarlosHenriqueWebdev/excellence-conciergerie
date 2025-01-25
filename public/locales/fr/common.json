@@ -44,7 +44,7 @@
 
   "guideLinesLinks": "Avertissement : Les seules valeurs acceptées pour les champs DO_NOT_CHANGE dans navLinks sont les IDs actuels du site web, qui sont les suivants : about, whyUs, message, subscriptions, services, faq, contact",
   "navLinks": [
-    { "text": "Engagement", "DO_NOT_CHANGE": "about" },
+    { "text": "Notre Mission", "DO_NOT_CHANGE": "about" },
     { "text": "Gestion Locative", "DO_NOT_CHANGE": "services" },
     { "text": "Abonnements Personnalisés", "DO_NOT_CHANGE": "subscriptions" },
     { "text": "Contact", "DO_NOT_CHANGE": "contact" }
@@ -257,47 +257,47 @@
   "heroSubtitle": "Excellence Conciergerie",
   "heroTitle": "Expériences Inoubliables et Services de Luxe Discrets sur la Côte d'Azur et à Nice",
 
-  "introductionSubtitle": "Détails de Notre Engagement",
+  "introductionSubtitle": "Détails de Notre Mission",
   "introductionTitle": "Notre Engagement envers Vous",
   "introductionDescription": [
     {
-      "text": "À Excellence Conciergerie, nous dépassons les standards du luxe en créant des souvenirs inoubliables et en offrant des services extraordinaires de conciergerie de luxe sur la Côte d'Azur et à Nice, toujours avec une discrétion absolue."
+      "text": "Nous ne sommes pas une agence immobilière, mais une conciergerie spécialisée dans la gestion locative saisonnière sur la Côte d’Azur. "
     },
     {
-      "text": "Pour les propriétaires, nous préservons votre investissement avec une gestion immobilière de luxe transparente et efficace."
+      "text": "Grâce à notre channel manager, nous publions votre bien sur plusieurs plateformes (Airbnb, Booking, etc.) tout en simplifiant la gestion : un seul compte pour le propriétaire, des calendriers synchronisés et des rapports transparents sur les performances."
     },
     {
-      "text": "Pour les voyageurs, nous offrons une expérience exceptionnelle et discrète comparable aux meilleurs hôtels 5 étoiles, garantissant excellence, service et attention aux détails."
+      "text": ""
     }
   ],
 
-  "whyUsSubtitle": "Gestion Immobilière de Luxe",
+  "whyUsSubtitle": "Gestion Locative",
   "whyUsTitle": "Pourquoi Choisir Excellence Conciergerie ?",
   "whyUsDescription": "Découvrez pourquoi les clients font confiance à Excellence Conciergerie pour des services exceptionnels de gestion immobilière de luxe sur la Côte d'Azur et à Nice. Nous combinons expertise, personnalisation et efficacité pour gérer les propriétés avec un professionnalisme inégalé et une attention méticuleuse aux détails.",
   "whyUsReasons": [
     {
       "icon": "vector12.svg",
-      "title": "Professionnalisme et Expertise",
-      "description": "Notre équipe expérimentée assure une gestion complète des biens immobiliers de luxe, maximisant la visibilité sur des plateformes prestigieuses. Des professionnels chevronnés élaborent des descriptions captivantes pour mettre en valeur les caractéristiques uniques."
+      "title": "Service Clé en Main",
+      "description": "De la mise en ligne des annonces au ménage, en passant par l’accueil des voyageurs."
     },
     {
       "icon": "vector13.svg",
-      "title": "Service Personnalisé",
-      "description": "Nous adaptons des solutions pour répondre à vos besoins uniques, garantissant une expérience fluide et personnalisée tout au long du processus de gestion immobilière de luxe. Notre équipe priorise vos objectifs pour améliorer la valeur du bien et la satisfaction des clients."
+      "title": "Conciergerie Premium",
+      "description": "Options haut de gamme (chef à domicile, massages, organisation d’excursions) pour séduire une clientèle exigeante."
     },
     {
       "icon": "vector14.svg",
-      "title": "Optimisation de la Rentabilité",
-      "description": "Excellence Conciergerie utilise des approches stratégiques pour maximiser le revenu locatif et le rendement des investissements pour les propriétaires sur la Côte d'Azur et à Nice. À travers l'analyse du marché et des techniques de gestion efficaces, nous assurons la rentabilité."
+      "title": "Rentabilité Optimisée",
+      "description": "Stratégies tarifaires adaptées, visuels professionnels, suivi des avis clients pour maximiser les revenus."
     },
     {
       "icon": "vector15.svg",
-      "title": "Gestion Complète",
-      "description": "Nous offrons des services complets de gestion immobilière de luxe, offrant la tranquillité d'esprit aux propriétaires. De la coordination de la maintenance aux relations avec les invités, notre équipe dédiée assure le bon fonctionnement et l'efficacité de votre propriété."
+      "title": "Réactivité et Qualité",
+      "description": "Equipe interne de nettoyage, assistance 24/7 pour les locataires, rapport détaillé pour le propriétaire."
     },
     {
       "icon": "vector22.svg",
-      "title": "Solutions Innovantes",
+      "title": "Réactivité et Qualité",
       "description": "Nous restons à l'avant-garde avec des solutions innovantes et des insights sur le marché immobilier de luxe. Que ce soit en mettant en œuvre des technologies pour des opérations efficaces ou en s'adaptant aux tendances du marché, nous améliorons la performance et la satisfaction des clients."
     }
   ],
