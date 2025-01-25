@@ -46,7 +46,7 @@
   "navLinks": [
     { "text": "Notre Mission", "DO_NOT_CHANGE": "about" },
     { "text": "Gestion Locative", "DO_NOT_CHANGE": "services" },
-    { "text": "Abonnements Personnalisés", "DO_NOT_CHANGE": "subscriptions" },
+    { "text": "Conciergerie Privée", "DO_NOT_CHANGE": "subscriptions" },
     { "text": "Contact", "DO_NOT_CHANGE": "contact" }
   ],
 
@@ -306,69 +306,10 @@
   "messageTitle": "Message de la Directrice",
   "messageDescription": "Bienvenue chez Excellence Conciergerie. En tant que Directrice Générale, je suis ravie de vous accueillir. Pour les propriétaires, nous prenons soin de votre bien avec passion et confidentialité sur la Côte d'Azur et à Nice. Pour les voyageurs, nous promettons une expérience exceptionnelle et discrète. Excellence Conciergerie incarne le raffinement, la discrétion et l'attention personnelle. Bienvenue à l'excellence.",
 
-  "servicesSubtitle": "Gestion Sans Stress, Résultats Exceptionnels",
-  "servicesTitle": "Gestion de Location de Luxe",
-  "services": [
-    {
-      "image": "img4.webp",
-      "title": "Gestion Complète de Propriété",
-      "description": "Excellence Conciergerie gère tous les aspects de la gestion de votre propriété de luxe sur la Côte d'Azur et à Nice, assurant à la fois l'entretien intérieur et extérieur. Nos rapports hebdomadaires détaillés vous fournissent des mises à jour transparentes sur chaque service, vous tenant informé.",
-      "pros": [
-        { "text": "Entretien complet de votre propriété." },
-        { "text": "Service personnalisé et dédié." },
-        { "text": "Surveillance 24/7 pour une sécurité totale." },
-        { "text": "Solutions adaptées à vos besoins uniques." }
-      ]
-    },
-    {
-      "image": "img5.webp",
-      "title": "Partenariats Exclusifs avec des Leaders du Secteur",
-      "description": "Nous entretenons des partenariats exclusifs avec des entreprises de construction, des architectes, des designers d'intérieur, des paysagistes et plus encore. Cela garantit des interventions de qualité supérieure et renforce la valeur et l'attrait de votre propriété.",
-      "pros": [
-        { "text": "Accès à des professionnels de haut niveau de l'industrie." },
-        {
-          "text": "Services personnalisés pour valoriser esthétiquement la propriété."
-        },
-        { "text": "Expertise en gestion de propriétés de luxe." },
-        { "text": "Approche collaborative pour des résultats exceptionnels." }
-      ]
-    },
-    {
-      "image": "img6.webp",
-      "title": "Entretien Luxueux des Espaces Extérieurs",
-      "description": "Nos équipes dédiées préservent la beauté de vos espaces extérieurs sur la Côte d'Azur et à Nice, de l'entretien méticuleux du jardin à l'expertise dans l'entretien de la piscine. Nous veillons à ce que l'extérieur de votre propriété reste un oasis serein.",
-      "pros": [
-        {
-          "text": "Soins spécialisés pour améliorer et embellir les espaces extérieurs."
-        },
-        {
-          "text": "Services sur mesure pour préserver et améliorer l'esthétique de la propriété."
-        },
-        { "text": "Entretien régulier pour maintenir un état impeccable." },
-        {
-          "text": "Solutions spécialisées pour un entretien luxueux de la propriété."
-        }
-      ]
-    },
-    {
-      "image": "img7.webp",
-      "title": "Services Personnalisés et Exclusifs",
-      "description": "Nous proposons des services sur mesure et exclusifs pour dépasser vos attentes en matière de gestion immobilière. De la prise en charge spécialisée à la communication transparente, nous assurons l'excellence dans chaque détail.",
-      "pros": [
-        {
-          "text": "Solutions personnalisées pour tous les besoins de votre propriété."
-        },
-        { "text": "Engagement envers l'excellence et la satisfaction client." },
-        { "text": "Rapports de service transparents et détaillés." },
-        {
-          "text": "Approche personnalisée pour répondre aux préférences exclusives des clients."
-        }
-      ]
-    }
-  ],
+  
 
   "packsSubtitle": "Le plan parfait pour chaque style de vie.",
-  "packsTitle": "Abonnements Personnalisés - Satisfaction Garantie",
+  "packsTitle": "Notre but,  faciliter la vie des voyageurs en Côte d’Azur, qu’ils soient en vacances ou en déplacement professionnel",
   "packs": [
     {
       "icon": "vector17.svg",
