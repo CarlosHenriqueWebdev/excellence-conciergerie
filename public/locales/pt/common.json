@@ -142,186 +142,174 @@
   "heroSubtitle": "Excellence Conciergerie",
   "heroTitle": "Experiências Inesquecíveis e Serviços de Luxo Discretos na Côte d'Azur",
 
-  "introductionSubtitle": "Detalhes do Nosso Compromisso",
-  "introductionTitle": "Nosso Compromisso com Você",
-  "introductionDescription": [
-    {
-      "text": "Na Excellence Conciergerie, superamos os padrões de luxo criando memórias inesquecíveis e oferecendo serviços extraordinários de concierge de luxo na Côte d'Azur e Nice, sempre com absoluta discrição."
-    },
-    {
-      "text": "Para os proprietários, preservamos seu investimento com uma gestão imobiliária de luxo transparente e eficaz."
-    },
-    {
-      "text": "Para os viajantes, oferecemos uma experiência excepcional e discreta comparável aos melhores hotéis 5 estrelas, garantindo excelência, serviço e atenção aos detalhes."
-    }
-  ],
+"introductionSubtitle": "Detalhes da Nossa Missão",
+"introductionTitle": "Nosso Compromisso com Você",
+"introductionDescription": [
+  {
+    "text": "Não somos uma imobiliária, mas uma concierge especializada na gestão de locações sazonais na Côte d’Azur."
+  },
+  {
+    "text": "Com o nosso channel manager, publicamos sua propriedade em várias plataformas (Airbnb, Booking, etc.), simplificando a gestão: uma única conta para o proprietário, calendários sincronizados e relatórios transparentes sobre o desempenho."
+  },
+  {
+    "text": ""
+  }
+],
 
-  "whyUsSubtitle": "Gestão Imobiliária de Luxo",
-  "whyUsTitle": "Por que Escolher a Excellence Conciergerie?",
-  "whyUsDescription": "Descubra por que os clientes confiam na Excellence Conciergerie para serviços excepcionais de gestão imobiliária de luxo na Côte d'Azur e Nice. Combinamos expertise, personalização e eficiência para gerenciar as propriedades com um profissionalismo incomparável e uma atenção meticulosa aos detalhes.",
-  "whyUsReasons": [
-    {
-      "icon": "vector12.svg",
-      "title": "Profissionalismo e Expertise",
-      "description": "Nossa equipe experiente assegura uma gestão completa dos imóveis de luxo, maximizando a visibilidade em plataformas prestigiosas. Profissionais experientes elaboram descrições cativantes para destacar as características únicas."
-    },
-    {
-      "icon": "vector13.svg",
-      "title": "Serviço Personalizado",
-      "description": "Adaptamos soluções para atender às suas necessidades únicas, garantindo uma experiência fluida e personalizada ao longo de todo o processo de gestão imobiliária de luxo. Nossa equipe prioriza seus objetivos para melhorar o valor do imóvel e a satisfação dos clientes."
-    },
-    {
-      "icon": "vector14.svg",
-      "title": "Otimização da Rentabilidade",
-      "description": "A Excellence Conciergerie utiliza abordagens estratégicas para maximizar a renda de aluguel e o retorno dos investimentos para os proprietários na Côte d'Azur e Nice. Através da análise de mercado e técnicas de gestão eficazes, garantimos a rentabilidade."
-    },
-    {
-      "icon": "vector15.svg",
-      "title": "Gestão Completa",
-      "description": "Oferecemos serviços completos de gestão imobiliária de luxo, proporcionando tranquilidade aos proprietários. Desde a coordenação da manutenção até as relações com os hóspedes, nossa equipe dedicada garante o bom funcionamento e a eficiência da sua propriedade."
-    },
-    {
-      "icon": "vector22.svg",
-      "title": "Soluções Inovadoras",
-      "description": "Estamos na vanguarda com soluções inovadoras e insights sobre o mercado imobiliário de luxo. Seja implementando tecnologias para operações eficientes ou adaptando-se às tendências do mercado, melhoramos o desempenho e a satisfação dos clientes."
-    }
-  ],
+ "whyUsSubtitle": "Gestão de Propriedades",
+"whyUsTitle": "Por Que Escolher a Excellence Concierge?",
+"whyUsDescription": "Descubra por que os clientes confiam na Excellence Concierge para serviços excepcionais de gestão de propriedades de luxo na Côte d'Azur e em Nice. Combinamos experiência, personalização e eficiência para gerenciar as propriedades com um profissionalismo incomparável e atenção meticulosa aos detalhes.",
+"whyUsReasons": [
+  {
+    "icon": "vector22.svg",
+    "title": "Serviço Completo",
+    "description": "Desde a publicação dos seus anúncios até a limpeza e o acolhimento personalizado dos hóspedes, gerenciamos cada etapa do aluguel sazonal. Com nossa equipe interna e expertise, você ganha tranquilidade enquanto garante uma experiência de hospedagem impecável."
+  },
+  {
+    "icon": "vector12.svg",
+    "title": "Concierge Premium",
+    "description": "Para atender às expectativas de uma clientela exigente, oferecemos serviços de alto nível: chef em casa, massagens no local, organização de excursões, transfers VIP, etc. Nosso objetivo: tornar cada estadia ainda mais especial e proporcionar momentos inesquecíveis aos seus hóspedes."
+  },
+  {
+    "icon": "vector13.svg",
+    "title": "Rentabilidade Otimizada",
+    "description": "Implementamos estratégias de preços adaptadas, imagens profissionais e acompanhamento contínuo das avaliações dos hóspedes para maximizar seus lucros. Nosso conhecimento do mercado local e domínio das ferramentas de reserva nos permite ajustar os preços de maneira dinâmica e relevante."
+  },
+  {
+    "icon": "vector14.svg",
+    "title": "Reatividade e Qualidade",
+    "description": "Nossa equipe interna de limpeza garante um nível impecável de limpeza para cada chegada. Também oferecemos suporte 24/7 para os hóspedes e relatórios detalhados para os proprietários, garantindo transparência e satisfação para todos."
+  },
+  {
+    "icon": "vector15.svg",
+    "title": "Controle de Qualidade e Acolhimento Personalizado",
+    "description": "Para manter um alto padrão, temos uma governanta que verifica as condições do local e a limpeza antes de cada chegada. Além disso, oferecemos um kit de boas-vindas personalizado para que cada hóspede se sinta em casa imediatamente. Esse cuidado com os detalhes garante uma estadia excepcional."
+  }
+],
 
   "messageSubtitle": "Catherine Teixeira",
   "messageTitle": "Mensagem da Diretora",
   "messageDescription": "Bem-vindo à Excellence Conciergerie. Como Diretora Geral, estou encantada em recebê-lo. Para os proprietários, cuidamos do seu bem com paixão e confidencialidade na Côte d'Azur e Nice. Para os viajantes, prometemos uma experiência excepcional e discreta. A Excellence Conciergerie encarna o refinamento, a discrição e a atenção pessoal. Bem-vindo à excelência.",
 
-  "servicesSubtitle": "Gestão Sem Stress, Resultados Excepcionais",
-  "servicesTitle": "Gestão de Aluguel de Luxo",
-  "services": [
-    {
-      "image": "img4.webp",
-      "title": "Gestão Completa de Propriedade",
-      "description": "A Excellence Conciergerie gerencia todos os aspectos da gestão da sua propriedade de luxo na Côte d'Azur e Nice, garantindo tanto a manutenção interna quanto externa. Nossos relatórios semanais detalhados fornecem atualizações transparentes sobre cada serviço, mantendo você informado.",
-      "pros": [
-        { "text": "Manutenção completa da sua propriedade." },
-        { "text": "Serviço personalizado e dedicado." },
-        { "text": "Monitoramento 24/7 para total segurança." },
-        { "text": "Soluções adaptadas às suas necessidades únicas." }
-      ]
-    },
-    {
-      "image": "img5.webp",
-      "title": "Parcerias Exclusivas com Líderes do Setor",
-      "description": "Mantemos parcerias exclusivas com empresas de construção, arquitetos, designers de interiores, paisagistas e muito mais. Isso garante intervenções de alta qualidade e fortalece o valor e o apelo da sua propriedade.",
-      "pros": [
-        { "text": "Acesso a profissionais de alto nível da indústria." },
-        {
-          "text": "Serviços personalizados para valorizar esteticamente a propriedade."
-        },
-        { "text": "Expertise em gestão de propriedades de luxo." },
-        { "text": "Abordagem colaborativa para resultados excepcionais." }
-      ]
-    },
-    {
-      "image": "img6.webp",
-      "title": "Manutenção Luxuosa dos Espaços Externos",
-      "description": "Nossas equipes dedicadas preservam a beleza dos seus espaços externos na Côte d'Azur e Nice, desde a manutenção meticulosa do jardim até a expertise na manutenção da piscina. Asseguramos que o exterior da sua propriedade permaneça um oásis sereno.",
-      "pros": [
-        {
-          "text": "Cuidados especializados para melhorar e embelezar os espaços externos."
-        },
-        {
-          "text": "Serviços personalizados para preservar e melhorar a estética da propriedade."
-        },
-        { "text": "Manutenção regular para manter um estado impecável." },
-        {
-          "text": "Soluções especializadas para uma manutenção luxuosa da propriedade."
-        }
-      ]
-    },
-    {
-      "image": "img7.webp",
-      "title": "Serviços Personalizados e Exclusivos",
-      "description": "Oferecemos serviços sob medida e exclusivos para superar suas expectativas em gestão imobiliária. Desde o atendimento especializado até a comunicação transparente, asseguramos a excelência em cada detalhe.",
-      "pros": [
-        {
-          "text": "Soluções personalizadas para todas as necessidades da sua propriedade."
-        },
-        { "text": "Compromisso com a excelência e a satisfação do cliente." },
-        { "text": "Relatórios de serviço transparentes e detalhados." },
-        {
-          "text": "Abordagem personalizada para atender às preferências exclusivas dos clientes."
-        }
+ "servicesSubtitle": "Concierge Privado",
+"servicesTitle": "Com a Excellence Concierge, liberte-se das preocupações logísticas e viva cada momento com tranquilidade.",
+"services": [
+  {
+    "image": "img4.webp",
+    "title": "Especialização Local",
+    "description": "Conhecemos cada canto da Côte d'Azur para proporcionar experiências autênticas e luxuosas. Deixe-nos abrir as portas de lugares imperdíveis e secretos. Conhecemos cada canto da Côte d'Azur para proporcionar experiências autênticas e luxuosas. Deixe-nos abrir as portas de lugares imperdíveis e secretos.",
+    "pros": [
+      { "text": "Conhecimento profundo da Côte d'Azur: Guiamos você aos lugares imperdíveis e endereços secretos para uma estadia entre luxo e autenticidade." },
+      { "text": "Rede de prestadores locais: Artesãos, produtores, locadores de barcos... Selecionamos cada parceiro para garantir qualidade impecável." },
+      { "text": "Consultoria personalizada: Precisa de um restaurante gastronômico ou uma praia exclusiva? Adaptamos nossas recomendações aos seus desejos e estilo de vida." },
+      { "text": "Ancoragem cultural: Descubra a verdadeira essência da Riviera, seu patrimônio, tradições e aproveite eventos locais raramente acessíveis a turistas." }
+    ]
+  },
+  {
+    "image": "img5.webp",
+    "title": "Rede de Parceiros",
+    "description": "Aproveite vantagens exclusivas por meio de nossas colaborações com estabelecimentos de prestígio. Sua estadia ganha uma nova dimensão, entre privilégios e descobertas únicas.",
+    "pros": [
+      { "text": "Parceiros de prestígio: Colaboramos com chefs estrelados, spas renomados, organizadores de eventos e locais excepcionais." },
+      { "text": "Acesso prioritário e privilégios: Reservas de última hora, lugares VIP, descontos exclusivos... Nossa rede abre portas frequentemente fechadas ao público geral." },
+      { "text": "Experiências únicas: Organização de degustações privadas, passeios de iate, festas privadas: criamos momentos extraordinários por meio dos nossos contatos." },
+      { "text": "Qualidade garantida: Todos os nossos parceiros são rigorosamente selecionados para garantir serviços de alto nível em cada área." }
+    ]
+  },
+  {
+    "image": "img6.webp",
+    "title": "Qualidade & Confiança",
+    "description": "Nossa equipe multilíngue é treinada para atender às suas expectativas mais exigentes, com discrição. Aproveite um serviço impecável onde cada detalhe conta.",
+    "pros": [
+      { "text": "Equipe multilíngue e treinada: Falamos fluentemente várias línguas para receber e atender uma clientela internacional com profissionalismo." },
+      { "text": "Discrição e respeito pela privacidade: Suas informações e solicitações são tratadas com total confidencialidade, de acordo com a mais estrita ética profissional." },
+      { "text": "Disponibilidade 24/7: Estamos sempre disponíveis para antecipar ou gerenciar qualquer imprevisto: uma viagem inesperada, emergência médica ou simples mudança de planos." },
+      { "text": "Processo de controle de qualidade: Verificação sistemática (governanta, kit de boas-vindas personalizado), acompanhamento pós-serviço, feedbacks de clientes: cada detalhe é minuciosamente verificado para manter nosso padrão de excelência." }
+    ]
+  },
+  {
+    "image": "img7.webp",
+    "title": "Flexibilidade Absoluta",
+    "description": "Adaptamos nossos serviços aos seus desejos, seja para lazer, viagens a negócios ou serviços de conforto diário.",
+    "pros": [
+      { "text": "Serviços sob medida: Chef em casa, massagens, ingressos para eventos, excursões privadas: personalizamos cada pedido de acordo com suas preferências." },
+      { "text": "Adaptado ao seu ritmo: Seja para uma viagem de negócios ou férias, nossa concierge se ajusta às suas necessidades e horários." },
+      { "text": "Soluções para profissionais e particulares: Organização de reuniões, transfers corporativos, gestão de agendas... Atendemos tanto às necessidades de negócios quanto de lazer." },
+      { "text": "Apoio do começo ao fim: Desde a simples reserva até a coordenação de um evento complexo, cuidamos de tudo para que você aproveite sua estadia sem qualquer estresse." }
       ]
     }
   ],
 
-  "packsSubtitle": "O plano perfeito para cada estilo de vida.",
-  "packsTitle": "Assinaturas Personalizadas - Satisfação Garantida",
-  "packs": [
-    {
-      "icon": "vector17.svg",
-      "pattern": "pattern1.webp",
-      "title": "Excellence Básico",
-      "subTitle": "De segunda a sexta-feira, das 8h30 às 17h30",
-      "pros": [
-        { "text": "Manutenção completa da sua propriedade." },
-        { "text": "Serviço personalizado e dedicado." },
-        { "text": "Monitoramento 24/7 para total segurança." },
-        { "text": "Soluções adaptadas às suas necessidades únicas." }
-      ]
-    },
-    {
-      "icon": "vector18.svg",
-      "pattern": "pattern2.webp",
-      "title": "Excellence Premium",
-      "subTitle": "7 dias por semana, com planejamento flexível",
-      "pros": [
-        { "text": "Todos os benefícios do Excellence Básico." },
-        { "text": "Acesso prioritário aos nossos parceiros exclusivos." },
-        { "text": "Serviços de concierge de luxo incluídos." },
-        { "text": "Gestão completa de eventos e viagens." }
-      ]
-    },
-    {
-      "icon": "vector19.svg",
-      "pattern": "pattern3.webp",
-      "title": "Excellence Prestige",
-      "subTitle": "Serviço 24/7, com gestão VIP personalizada",
-      "pros": [
-        { "text": "Todos os benefícios do Excellence Premium." },
-        { "text": "Consultoria em design de interiores incluída." },
-        { "text": "Acesso exclusivo aos nossos serviços de alto nível." },
-        { "text": "Gestão integrada da propriedade e dos investimentos." }
-      ]
-    }
-  ],
-  "packsButton": "Descubra Nossas Ofertas e Inscreva-se",
+ "packsSubtitle": "O plano perfeito para cada estilo de vida.",
+"packsTitle": "Planos Personalizados - Satisfação Garantida",
+"packs": [
+  {
+    "icon": "vector17.svg",
+    "pattern": "pattern1.webp",
+    "title": "Excellence Básico",
+    "subTitle": "De segunda a sexta-feira, das 8h30 às 17h30",
+    "pros": [
+      { "text": "Assistência durante a semana, horários fixos." },
+      { "text": "Ideal para necessidades planejadas." },
+      { "text": "Ajuda para reservas simples." },
+      { "text": "Serviço acessível e funcional." }
+    ]
+  },
+  {
+    "icon": "vector18.svg",
+    "pattern": "pattern2.webp",
+    "title": "Excellence Premium", 
+    "subTitle": "7 dias por semana, das 08:00 às 20:00",
+    "pros": [
+      { "text": "Cobertura estendida, finais de semana inclusos." },
+      { "text": "Acesso prioritário aos nossos parceiros." },
+      { "text": "Maior reatividade para suas solicitações." },
+      { "text": "Perfeito para um acompanhamento mais flexível." }
+    ]
+  },
+  {
+    "icon": "vector19.svg",
+    "pattern": "pattern3.webp",
+    "title": "Excellence Prestige",
+    "subTitle": "Serviço 24/7",
+    "pros": [
+      { "text": "Assistência ilimitada, dia e noite." },
+      { "text": "Gestão de emergências e solicitações especiais." },
+      { "text": "Acesso VIP a todos os nossos serviços." },
+      { "text": "Experiência de alto nível sem limites." }
+    ]
+  }
+],
+"packsButton": "Assine",
 
-  "faqSubtitle": "Perguntas Frequentes",
-  "faqTitle": "Estamos Aqui Para Ajudar",
-  "faq": [
-    {
-      "title": "Quais serviços oferece a Excellence Conciergerie?",
-      "description": "A Excellence Conciergerie oferece uma gama completa de serviços de gestão imobiliária de luxo na Côte d'Azur e Nice, incluindo manutenção, segurança, gestão de reservas e serviços personalizados para proprietários e viajantes."
-    },
-    {
-      "title": "Como funciona o monitoramento 24/7 da Excellence Conciergerie?",
-      "description": "Nosso monitoramento 24/7 se baseia em tecnologias avançadas e uma equipe dedicada para garantir uma resposta rápida a qualquer incidente, garantindo a segurança completa da sua propriedade."
-    },
-    {
-      "title": "Quais são as vantagens das parcerias exclusivas da Excellence Conciergerie?",
-      "description": "A Excellence Conciergerie mantém parcerias exclusivas com empresas de construção, arquitetos, designers de interiores e outros profissionais. Isso garante intervenções de alta qualidade para melhorar e manter o valor estético da sua propriedade."
-    },
-    {
-      "title": "Por que escolher a Excellence Conciergerie para gerenciar minha propriedade de luxo?",
-      "description": "A Excellence Conciergerie se destaca pelo compromisso com a excelência, transparência em cada serviço prestado e capacidade de fornecer soluções sob medida que atendem precisamente às suas necessidades. Nos comprometemos a manter sua propriedade imaculada e bem cuidada o tempo todo."
-    },
-    {
-      "title": "Quais são as condições de cancelamento dos serviços da Excellence Conciergerie?",
-      "description": "Você pode cancelar nossos serviços a qualquer momento entrando em contato diretamente conosco. Nos esforçamos para tornar o processo de cancelamento o mais simples e transparente possível para nossos clientes."
-    },
-    {
-      "title": "Como posso fazer um pedido especial à Excellence Conciergerie?",
-      "description": "Para qualquer pedido especial, seja necessidades específicas para sua propriedade ou serviços personalizados para um evento, entre em contato diretamente conosco. Estamos aqui para atender às suas necessidades específicas e oferecer uma solução sob medida."
-    }
-  ],
+ "faqSubtitle": "Perguntas Frequentes",
+"faqTitle": "Estamos Aqui Para Ajudar Você",
+"faq": [
+  {
+    "title": "1. Em que a Excellence Conciergerie se diferencia de uma imobiliária?",
+    "description": "Nós não realizamos transações (compra/venda). Somos especializados em aluguel por temporada e oferecemos um serviço completo (publicação de anúncios, limpeza, manutenção, etc.) para otimizar seus rendimentos."
+  },
+  {
+    "title": "2. Quais serviços estão incluídos na gestão de imóveis?",
+    "description": "Nossa equipe cuida da publicação nas plataformas (Airbnb, Booking, etc.), sincronização de reservas, recepção dos viajantes, limpeza, lavanderia e um acompanhamento geral para garantir a satisfação dos locatários."
+  },
+  {
+    "title": "3. Quanto custa a gestão de aluguel na Excellence Conciergerie?",
+    "description": "Nossos preços começam a partir de 20% do valor bruto das locações pagas pelo viajante. Elaboramos um orçamento personalizado com base na natureza e localização do seu imóvel."
+  },
+  {
+    "title": "4. Quem pode se beneficiar do seu serviço de concierge?",
+    "description": "Atendemos tanto particulares em férias ou viagem de negócios quanto empresas que desejam oferecer conforto de alto padrão para seus colaboradores ou clientes VIP."
+  },
+  {
+    "title": "5. Quais serviços de luxo vocês oferecem?",
+    "description": "Nosso Concierge Privado abrange uma ampla gama de serviços: chef em casa, massagens, organização de eventos privados, reservas VIP, transportes e muito mais."
+  },
+  {
+    "title": "6. Quais são os preços dos seus planos de concierge?",
+    "description": "Nossos planos começam a partir de 200 € por mês para assistência durante a semana (Plano Básico). Os preços variam conforme o nível de cobertura (Premium ou Prestige) e os serviços incluídos."
+  }
+],
 
   "contactSubtitle": "Entre em Contato",
   "contactTitle": "Fale Conosco",
