@@ -185,67 +185,54 @@
   "messageTitle": "Mensaje de la Directora",
   "messageDescription": "Bienvenido a Excellence Conciergerie. Como Directora General, estoy encantada de darle la bienvenida. Para los propietarios, cuidamos su bien con pasión y confidencialidad en la Côte d'Azur y Niza. Para los viajeros, prometemos una experiencia excepcional y discreta. Excellence Conciergerie encarna el refinamiento, la discreción y la atención personal. Bienvenido a la excelencia.",
 
-  "servicesSubtitle": "Gestión Sin Estrés, Resultados Excepcionales",
-  "servicesTitle": "Gestión de Alquiler de Lujo",
-  "services": [
-    {
-      "image": "img4.webp",
-      "title": "Gestión Completa de Propiedad",
-      "description": "Excellence Conciergerie gestiona todos los aspectos de la gestión de su propiedad de lujo en la Côte d'Azur y Niza, asegurando tanto el mantenimiento interior como exterior. Nuestros informes semanales detallados le proporcionan actualizaciones transparentes sobre cada servicio, manteniéndole informado.",
-      "pros": [
-        { "text": "Mantenimiento completo de su propiedad." },
-        { "text": "Servicio personalizado y dedicado." },
-        { "text": "Vigilancia 24/7 para una seguridad total." },
-        { "text": "Soluciones adaptadas a sus necesidades únicas." }
-      ]
-    },
-    {
-      "image": "img5.webp",
-      "title": "Asociaciones Exclusivas con Líderes del Sector",
-      "description": "Mantenemos asociaciones exclusivas con empresas de construcción, arquitectos, diseñadores de interiores, paisajistas y más. Esto garantiza intervenciones de alta calidad y refuerza el valor y el atractivo de su propiedad.",
-      "pros": [
-        { "text": "Acceso a profesionales de alto nivel de la industria." },
-        {
-          "text": "Servicios personalizados para valorar estéticamente la propiedad."
-        },
-        { "text": "Experiencia en gestión de propiedades de lujo." },
-        { "text": "Enfoque colaborativo para resultados excepcionales." }
-      ]
-    },
-    {
-      "image": "img6.webp",
-      "title": "Mantenimiento Lujoso de los Espacios Exteriores",
-      "description": "Nuestros equipos dedicados preservan la belleza de sus espacios exteriores en la Côte d'Azur y Niza, desde el mantenimiento meticuloso del jardín hasta la experiencia en el mantenimiento de la piscina. Aseguramos que el exterior de su propiedad permanezca un oasis sereno.",
-      "pros": [
-        {
-          "text": "Cuidados especializados para mejorar y embellecer los espacios exteriores."
-        },
-        {
-          "text": "Servicios personalizados para preservar y mejorar la estética de la propiedad."
-        },
-        { "text": "Mantenimiento regular para mantener un estado impecable." },
-        {
-          "text": "Soluciones especializadas para un mantenimiento lujoso de la propiedad."
-        }
-      ]
-    },
-    {
-      "image": "img7.webp",
-      "title": "Servicios Personalizados y Exclusivos",
-      "description": "Ofrecemos servicios a medida y exclusivos para superar sus expectativas en la gestión inmobiliaria. Desde la atención especializada hasta la comunicación transparente, aseguramos la excelencia en cada detalle.",
-      "pros": [
-        {
-          "text": "Soluciones personalizadas para todas las necesidades de su propiedad."
-        },
-        {
-          "text": "Compromiso con la excelencia y la satisfacción del cliente."
-        },
-        { "text": "Informes de servicio transparentes y detallados." },
-        {
-          "text": "Enfoque personalizado para satisfacer las preferencias exclusivas de los clientes."
-        }
-      ]
-    }
+ "servicesSubtitle": "Conserjería Privada",
+"servicesTitle": "Con Excellence Conciergerie, libérese de las restricciones logísticas y viva cada momento con total tranquilidad.",
+"services": [
+  {
+    "image": "img4.webp",
+    "title": "Experiencia Local",
+    "description": "Conocemos cada rincón de la Costa Azul para ofrecerle experiencias auténticas y lujosas. Permítanos abrirle las puertas de lugares imprescindibles y secretos. Conocemos cada rincón de la Costa Azul para ofrecerle experiencias auténticas y lujosas. Permítanos abrirle las puertas de lugares imprescindibles y secretos.",
+    "pros": [
+      { "text": "Conocimiento profundo de la Costa Azul: Lo guiamos hacia los lugares imprescindibles y las direcciones secretas, para una estancia entre lujo y autenticidad." },
+      { "text": "Red de proveedores locales: Artesanos, productores, arrendadores de barcos... Seleccionamos cada socio para garantizar una calidad impecable." },
+      { "text": "Consejos personalizados: ¿Necesita un restaurante gourmet o una playa exclusiva? Adaptamos nuestras recomendaciones a sus deseos y estilo de vida." },
+      { "text": "Enfoque cultural: Descubra la verdadera esencia de la Riviera, su patrimonio, sus tradiciones y disfrute de eventos locales rara vez accesibles para los turistas." }
+    ]
+  },
+  {
+    "image": "img5.webp",
+    "title": "Red de Socios",
+    "description": "Disfrute de ventajas exclusivas gracias a nuestras colaboraciones con establecimientos de prestigio. Su estancia toma una nueva dimensión, entre privilegios y descubrimientos únicos.",
+    "pros": [
+      { "text": "Socios de prestigio: Colaboramos con chefs con estrellas Michelin, spas de renombre, organizadores de eventos y lugares excepcionales." },
+      { "text": "Acceso prioritario y privilegios: Reservas de última hora, lugares VIP, descuentos exclusivos... Nuestra red le abre puertas que normalmente están cerradas al gran público." },
+      { "text": "Experiencias únicas: Organización de catas privadas, paseos en yate, fiestas privadas: creamos momentos fuera de lo común gracias a nuestros contactos." },
+      { "text": "Calidad garantizada: Todos nuestros socios son seleccionados rigurosamente para asegurarle servicios de alta gama en cada área." }
+    ]
+  },
+  {
+    "image": "img6.webp",
+    "title": "Calidad & Confianza",
+    "description": "Nuestro equipo multilingüe está capacitado para cumplir con sus expectativas más exigentes, con total discreción. Disfrute de un servicio impecable donde cada detalle cuenta.",
+    "pros": [
+      { "text": "Equipo multilingüe y capacitado: Hablamos varios idiomas con fluidez para recibir y atender a una clientela internacional con profesionalismo." },
+      { "text": "Discreción y respeto por la privacidad: Su información y solicitudes se tratan con total confidencialidad, siguiendo la ética profesional más estricta." },
+      { "text": "Disponibilidad 24/7: Estamos disponibles a cualquier hora para anticiparnos o gestionar cualquier imprevisto: un cambio de viaje, una emergencia médica o un simple cambio de planes." },
+      { "text": "Proceso de control de calidad: Verificación sistemática (gobernanta, kit de bienvenida personalizado), seguimiento post-servicio, retroalimentación de clientes: cada detalle se revisa minuciosamente para mantener nuestro estándar de excelencia." }
+    ]
+  },
+  {
+    "image": "img7.webp",
+    "title": "Flexibilidad Absoluta",
+    "description": "Adaptamos nuestros servicios a sus deseos, ya sea para ocio, viajes de negocios o servicios de confort diario.",
+    "pros": [
+      { "text": "Servicios a medida: Chef en casa, masajes, entradas a eventos, excursiones privadas: personalizamos cada solicitud según sus preferencias." },
+      { "text": "Adaptado a su ritmo: Ya sea en viaje de negocios o vacaciones, nuestra conserjería se ajusta a sus necesidades y horarios." },
+      { "text": "Soluciones para profesionales y particulares: Organización de reuniones, traslados corporativos, gestión de agendas... Atendemos tanto a necesidades de negocio como de ocio." },
+      { "text": "Acompañamiento de principio a fin: Desde una simple reserva hasta la coordinación de un evento complejo, nos encargamos de todo para que disfrute de su estancia sin el menor estrés."
+      }
+    ]
+  }
   ],
 
 "packsSubtitle": "El plan perfecto para cada estilo de vida.",
