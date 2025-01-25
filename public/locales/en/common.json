@@ -10,12 +10,12 @@
   ],
 
   "guideLinesLinks": "Warning: The only accepted values for the DO_NOT_CHANGE fields in navLinks are the current website IDs, which are as follows: about, whyUs, message, subscriptions, services, faq, contact",
-  "navLinks": [
-    { "text": "Engagement", "DO_NOT_CHANGE": "about" },
-    { "text": "Rental Management", "DO_NOT_CHANGE": "services" },
-    { "text": "Custom Subscriptions", "DO_NOT_CHANGE": "subscriptions" },
+"navLinks": [
+    { "text": "Our Mission", "DO_NOT_CHANGE": "about" },
+    { "text": "Property Management", "DO_NOT_CHANGE": "services" },
+    { "text": "Private Concierge", "DO_NOT_CHANGE": "subscriptions" },
     { "text": "Contact", "DO_NOT_CHANGE": "contact" }
-  ],
+],
 
   "blankOption": "Select an option",
   "fullNameLabel": "Full Name",
@@ -155,50 +155,50 @@
   "footerSiteLinksTitle": "Useful Links",
 
   "heroSubtitle": "Excellence Conciergerie",
-  "heroTitle": "Unforgettable Experiences and Discreet Luxury Services in Côte d'Azur and Nice",
+  "heroTitle": "Unforgettable Experiences and Discreet Luxury Services in Côte d'Azur",
 
-  "introductionSubtitle": "Details of Our Commitment",
-  "introductionTitle": "Our Commitment to You",
-  "introductionDescription": [
+  "introductionSubtitle": "Details of Our Mission",
+"introductionTitle": "Our Commitment to You",
+"introductionDescription": [
     {
-      "text": "At Excellence Conciergerie, we exceed luxury standards by creating unforgettable memories and offering extraordinary luxury concierge services in Côte d'Azur and Nice, always with absolute discretion."
+      "text": "We are not a real estate agency, but a concierge service specialized in seasonal property management on the French Riviera."
     },
     {
-      "text": "For property owners, we preserve your investment with transparent and efficient luxury property management."
+      "text": "With our channel manager, we publish your property on several platforms (Airbnb, Booking, etc.) while simplifying management: a single account for the owner, synchronized calendars, and transparent performance reports."
     },
     {
-      "text": "For travelers, we provide an exceptional and discreet experience comparable to the best 5-star hotels, ensuring excellence, service, and attention to detail."
+      "text": ""
     }
   ],
 
-  "whyUsSubtitle": "Luxury Property Management",
-  "whyUsTitle": "Why Choose Excellence Conciergerie?",
-  "whyUsDescription": "Discover why clients trust Excellence Conciergerie for exceptional luxury property management services in Côte d'Azur and Nice. We combine expertise, personalization, and efficiency to manage properties with unparalleled professionalism and meticulous attention to detail.",
-  "whyUsReasons": [
+ "whyUsSubtitle": "Property Management",
+"whyUsTitle": "Why Choose Excellence Concierge?",
+"whyUsDescription": "Discover why clients trust Excellence Concierge for exceptional luxury property management services on the French Riviera and in Nice. We combine expertise, personalization, and efficiency to manage properties with unparalleled professionalism and meticulous attention to detail.",
+"whyUsReasons": [
+    {
+      "icon": "vector22.svg",
+      "title": "Turnkey Service",
+      "description": "From listing your properties to cleaning and personalized guest reception, we manage every step of seasonal rental. With our in-house team and expertise, you gain peace of mind while ensuring a flawless hospitality experience."
+    },
     {
       "icon": "vector12.svg",
-      "title": "Professionalism and Expertise",
-      "description": "Our experienced team ensures comprehensive management of luxury properties, maximizing visibility on prestigious platforms. Seasoned professionals craft captivating descriptions to highlight unique features."
+      "title": "Premium Concierge",
+      "description": "To meet the demands of a discerning clientele, we offer high-end services: private chef, in-home massages, excursion arrangements, VIP transfers, etc. Our goal: to enhance every stay and create unforgettable moments for your guests."
     },
     {
       "icon": "vector13.svg",
-      "title": "Personalized Service",
-      "description": "We tailor solutions to meet your unique needs, ensuring a smooth and personalized experience throughout the luxury property management process. Our team prioritizes your objectives to enhance property value and client satisfaction."
+      "title": "Optimized Profitability",
+      "description": "We implement tailored pricing strategies, professional visuals, and constant monitoring of guest reviews to maximize your revenue. Our knowledge of the local market and mastery of booking tools enable us to adjust prices dynamically and appropriately."
     },
     {
       "icon": "vector14.svg",
-      "title": "Profitability Optimization",
-      "description": "Excellence Conciergerie uses strategic approaches to maximize rental income and investment returns for property owners in Côte d'Azur and Nice. Through market analysis and effective management techniques, we ensure profitability."
+      "title": "Responsiveness and Quality",
+      "description": "Our in-house cleaning team ensures an impeccable level of cleanliness for every arrival. We also provide 24/7 assistance for guests and a detailed report for the owner to ensure transparency and satisfaction for all."
     },
     {
       "icon": "vector15.svg",
-      "title": "Comprehensive Management",
-      "description": "We offer full luxury property management services, providing peace of mind for owners. From coordinating maintenance to guest relations, our dedicated team ensures smooth operation and efficiency of your property."
-    },
-    {
-      "icon": "vector22.svg",
-      "title": "Innovative Solutions",
-      "description": "We stay at the forefront with innovative solutions and insights into the luxury real estate market. Whether implementing technologies for efficient operations or adapting to market trends, we enhance performance and client satisfaction."
+      "title": "Quality Control and Personalized Welcome",
+      "description": "To maintain a high standard, we have a housekeeper who checks the condition and cleanliness before each arrival. Additionally, we offer a personalized welcome kit to make each guest feel at home right away. This attention to detail guarantees an exceptional stay."
     }
   ],
 
@@ -206,59 +206,53 @@
   "messageTitle": "Message from the Director",
   "messageDescription": "Welcome to Excellence Conciergerie. As the General Director, I am delighted to welcome you. For property owners, we care for your property with passion and confidentiality in Côte d'Azur and Nice. For travelers, we promise an exceptional and discreet experience. Excellence Conciergerie embodies refinement, discretion, and personal attention. Welcome to excellence.",
 
-  "servicesSubtitle": "Stress-Free Management, Exceptional Results",
-  "servicesTitle": "Luxury Rental Management",
-  "services": [
+  "servicesSubtitle": "Private Concierge",
+"servicesTitle": "With Excellence Concierge, free yourself from logistical constraints and live every moment in complete peace of mind.",
+"services": [
     {
       "image": "img4.webp",
-      "title": "Complete Property Management",
-      "description": "Excellence Conciergerie manages all aspects of your luxury property in Côte d'Azur and Nice, ensuring both interior and exterior maintenance. Our detailed weekly reports provide transparent updates on each service, keeping you informed.",
+      "title": "Local Expertise",
+      "description": "We know every corner of the French Riviera to provide you with authentic and luxurious experiences. Let us open the doors to iconic and secret spots for you. We know every corner of the French Riviera to provide you with authentic and luxurious experiences. Let us open the doors to iconic and secret spots for you.",
       "pros": [
-        { "text": "Complete maintenance of your property." },
-        { "text": "Personalized and dedicated service." },
-        { "text": "24/7 surveillance for total security." },
-        { "text": "Solutions tailored to your unique needs." }
+        { "text": "In-depth knowledge of the French Riviera: We guide you to must-see places and secret addresses, offering a stay filled with luxury and authenticity." },
+        { "text": "Network of local providers: Artisans, producers, boat rental services… We carefully select each partner to ensure flawless quality." },
+        { "text": "Personalized advice: Looking for a gourmet restaurant or a private beach? We tailor our recommendations to your desires and lifestyle." },
+        { "text": "Cultural immersion: Discover the true essence of the Riviera, its heritage, traditions, and enjoy local events that are rarely accessible to tourists." }
       ]
     },
     {
       "image": "img5.webp",
-      "title": "Exclusive Partnerships with Industry Leaders",
-      "description": "We maintain exclusive partnerships with construction companies, architects, interior designers, landscapers, and more. This ensures superior quality interventions and enhances the value and appeal of your property.",
+      "title": "Partner Network",
+      "description": "Enjoy exclusive benefits through our collaborations with prestigious establishments. Your stay takes on a whole new dimension, with privileges and unique discoveries.",
       "pros": [
-        { "text": "Access to top-level industry professionals." },
-        {
-          "text": "Personalized services to aesthetically enhance the property."
-        },
-        { "text": "Expertise in managing luxury properties." },
-        { "text": "Collaborative approach for exceptional results." }
+        { "text": "Prestigious partners: We collaborate with Michelin-starred chefs, renowned spas, event organizers, and exceptional venues." },
+        { "text": "Priority access & privileges: Last-minute reservations, VIP spots, exclusive discounts… Our network opens doors often closed to the general public." },
+        { "text": "Unique experiences: Private tastings, yacht tours, private parties: we create extraordinary moments through our contacts." },
+        { "text": "Guaranteed quality: All our partners are rigorously selected to ensure top-notch services in every field." }
       ]
     },
     {
       "image": "img6.webp",
-      "title": "Luxurious Outdoor Space Maintenance",
-      "description": "Our dedicated teams preserve the beauty of your outdoor spaces in Côte d'Azur and Nice, from meticulous garden care to expertise in pool maintenance. We ensure that the exterior of your property remains a serene oasis.",
+      "title": "Quality & Trust",
+      "description": "Our multilingual team is trained to meet your most demanding expectations, with discretion. Enjoy impeccable service where every detail matters.",
       "pros": [
-        { "text": "Specialized care to enhance and beautify outdoor spaces." },
-        {
-          "text": "Tailored services to preserve and enhance property aesthetics."
-        },
-        { "text": "Regular maintenance to keep in impeccable condition." },
-        { "text": "Specialized solutions for luxurious property maintenance." }
+        { "text": "Multilingual & trained team: We speak several languages fluently to welcome and serve an international clientele with professionalism." },
+        { "text": "Discretion and privacy: Your information and requests are handled confidentially, with the highest ethical standards." },
+        { "text": "Availability 24/7: We are always reachable to anticipate or manage any unforeseen events: travel issues, medical emergencies, or simple plan changes." },
+        { "text": "Quality control process: Systematic checks (housekeeper, personalized welcome kit), post-service follow-ups, guest feedback: every detail is scrutinized to maintain our standard of excellence." }
       ]
     },
     {
       "image": "img7.webp",
-      "title": "Personalized and Exclusive Services",
-      "description": "We offer bespoke and exclusive services to exceed your expectations in property management. From specialized care to transparent communication, we ensure excellence in every detail.",
+      "title": "Absolute Flexibility",
+      "description": "We tailor our services to your desires, whether it's leisure, business travel, or daily comfort services.",
       "pros": [
-        { "text": "Customized solutions for all your property needs." },
-        { "text": "Commitment to excellence and client satisfaction." },
-        { "text": "Transparent and detailed service reports." },
-        {
-          "text": "Personalized approach to meet exclusive client preferences."
-        }
+        { "text": "Custom services: Private chef, massage, event tickets, private excursions: we personalize each request according to your preferences." },
+        { "text": "Adapted to your rhythm: Whether you’re on a business trip or vacation, our concierge adjusts to your needs and schedule." },
+        { "text": "Solutions for both professionals and individuals: Meeting organization, company transfers, schedule management… We cater to both business and leisure needs." },
+        { "text": "End-to-end support: From simple reservations to organizing complex events, we take care of everything, so you can fully enjoy your stay without any stress." }
       ]
-    }
+    } 
   ],
 
   "packsSubtitle": "The perfect plan for every lifestyle.",
