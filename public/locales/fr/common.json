@@ -385,8 +385,8 @@
     {
       "icon": "vector18.svg",
       "pattern": "pattern2.webp",
-      "title": "Excellence Premium",
-      "subTitle": "7 jours sur 7, de 08:00 à 20:00",
+      "title": "Excellence Premium", 
+      "subTitle": "7 jours sur 7, de 08:00 à 20:00            ",
       "pros": [
         { "text": "Couverture étendue, week-ends inclus." },
         { "text": "Accès prioritaire à nos partenaires." },
@@ -398,7 +398,7 @@
       "icon": "vector19.svg",
       "pattern": "pattern3.webp",
       "title": "Excellence Prestige",
-      "subTitle": "Service 24/7",
+      "subTitle": "Service 24/7                ",
       "pros": [
         { "text": "Assistance illimitée, jour et nuit." },
         { "text": "Gestion d’urgences et demandes spéciales." },
