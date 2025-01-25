@@ -248,75 +248,75 @@
     }
   ],
 
-  "packsSubtitle": "El plan perfecto para cada estilo de vida.",
-  "packsTitle": "Suscripciones Personalizadas - Satisfacción Garantizada",
-  "packs": [
-    {
-      "icon": "vector17.svg",
-      "pattern": "pattern1.webp",
-      "title": "Excellence Básico",
-      "subTitle": "De lunes a viernes, de 8:30 a 17:30",
-      "pros": [
-        { "text": "Mantenimiento completo de su propiedad." },
-        { "text": "Servicio personalizado y dedicado." },
-        { "text": "Vigilancia 24/7 para una seguridad total." },
-        { "text": "Soluciones adaptadas a sus necesidades únicas." }
-      ]
-    },
-    {
-      "icon": "vector18.svg",
-      "pattern": "pattern2.webp",
-      "title": "Excellence Premium",
-      "subTitle": "7 días a la semana, con horario flexible",
-      "pros": [
-        { "text": "Todos los beneficios de Excellence Básico." },
-        { "text": "Acceso prioritario a nuestros socios exclusivos." },
-        { "text": "Servicios de concierge de lujo incluidos." },
-        { "text": "Gestión completa de eventos y viajes." }
-      ]
-    },
-    {
-      "icon": "vector19.svg",
-      "pattern": "pattern3.webp",
-      "title": "Excellence Prestige",
-      "subTitle": "Servicio 24/7, con gestión VIP personalizada",
-      "pros": [
-        { "text": "Todos los beneficios de Excellence Premium." },
-        { "text": "Consultoría en diseño de interiores incluida." },
-        { "text": "Acceso exclusivo a nuestros servicios de alto nivel." },
-        { "text": "Gestión integrada de la propiedad y las inversiones." }
-      ]
-    }
-  ],
-  "packsButton": "Descubra Nuestras Ofertas y Suscríbase",
+"packsSubtitle": "El plan perfecto para cada estilo de vida.",
+"packsTitle": "Suscripciones Personalizadas - Satisfacción Garantizada",
+"packs": [
+  {
+    "icon": "vector17.svg",
+    "pattern": "pattern1.webp",
+    "title": "Excellence Básico",
+    "subTitle": "De lunes a viernes, de 8:30 a 17:30",
+    "pros": [
+      { "text": "Asistencia durante la semana, horario fijo." },
+      { "text": "Ideal para necesidades planificadas." },
+      { "text": "Ayuda con reservas simples." },
+      { "text": "Servicio accesible y funcional." }
+    ]
+  },
+  {
+    "icon": "vector18.svg",
+    "pattern": "pattern2.webp",
+    "title": "Excellence Premium",
+    "subTitle": "7 días a la semana, de 08:00 a 20:00",
+    "pros": [
+      { "text": "Cobertura extendida, incluidos los fines de semana." },
+      { "text": "Acceso prioritario a nuestros socios." },
+      { "text": "Mayor rapidez en la respuesta a sus solicitudes." },
+      { "text": "Perfecto para una asistencia más flexible." }
+    ]
+  },
+  {
+    "icon": "vector19.svg",
+    "pattern": "pattern3.webp",
+    "title": "Excellence Prestige",
+    "subTitle": "Servicio 24/7",
+    "pros": [
+      { "text": "Asistencia ilimitada, día y noche." },
+      { "text": "Gestión de urgencias y solicitudes especiales." },
+      { "text": "Acceso VIP a todos nuestros servicios." },
+      { "text": "Experiencia de alta gama sin límite." }
+    ]
+  }
+],
+"packsButton": "Suscríbase",
 
-  "faqSubtitle": "Preguntas Frecuentes",
-  "faqTitle": "Estamos Aquí para Ayudar",
-  "faq": [
-    {
-      "title": "¿Qué servicios ofrece Excellence Conciergerie?",
-      "description": "Excellence Conciergerie ofrece una gama completa de servicios de gestión inmobiliaria de lujo en la Côte d'Azur y Niza, que incluyen mantenimiento, seguridad, gestión de reservas y servicios personalizados para propietarios y viajeros."
-    },
-    {
-      "title": "¿Cómo funciona la vigilancia 24/7 de Excellence Conciergerie?",
-      "description": "Nuestra vigilancia 24/7 se basa en tecnologías avanzadas y un equipo dedicado para asegurar una respuesta rápida a cualquier incidente, garantizando la seguridad completa de su propiedad."
-    },
-    {
-      "title": "¿Cuáles son las ventajas de las asociaciones exclusivas de Excellence Conciergerie?",
-      "description": "Excellence Conciergerie mantiene asociaciones exclusivas con empresas de construcción, arquitectos, diseñadores de interiores y otros profesionales. Esto garantiza intervenciones de alta calidad para mejorar y mantener el valor estético de su propiedad."
-    },
-    {
-      "title": "¿Por qué elegir Excellence Conciergerie para gestionar mi propiedad de lujo?",
-      "description": "Excellence Conciergerie se distingue por su compromiso con la excelencia, la transparencia en cada servicio proporcionado y su capacidad para ofrecer soluciones a medida que satisfacen precisamente sus necesidades. Nos comprometemos a mantener su propiedad impecable y bien cuidada en todo momento."
-    },
-    {
-      "title": "¿Cuáles son las condiciones de cancelación de los servicios de Excellence Conciergerie?",
-      "description": "Puede cancelar nuestros servicios en cualquier momento contactándonos directamente. Nos esforzamos por hacer que el proceso de cancelación sea lo más simple y transparente posible para nuestros clientes."
-    },
-    {
-      "title": "¿Cómo puedo hacer una solicitud especial a Excellence Conciergerie?",
-      "description": "Para cualquier solicitud especial, ya sea necesidades específicas para su propiedad o servicios personalizados para un evento, por favor contáctenos directamente. Estamos aquí para satisfacer sus necesidades específicas y ofrecerle una solución a medida."
-    }
+ "faqSubtitle": "Preguntas Frecuentes",
+"faqTitle": "Estamos Aquí Para Ayudarle",
+"faq": [
+  {
+    "title": "1. ¿En qué se diferencia Excellence Conciergerie de una agencia inmobiliaria?",
+    "description": "No realizamos ninguna transacción (compra/venta). Nos especializamos en el alquiler vacacional y ofrecemos un servicio completo (publicación de anuncios, limpieza, mantenimiento, etc.) para optimizar sus ingresos."
+  },
+  {
+    "title": "2. ¿Qué servicios incluyen en la gestión de propiedades?",
+    "description": "Nuestro equipo se encarga de la publicación en plataformas (Airbnb, Booking...), la sincronización de reservas, la recepción de los viajeros, la limpieza, el servicio de lavandería y un seguimiento general para garantizar la satisfacción de los inquilinos."
+  },
+  {
+    "title": "3. ¿Cuánto cuesta la gestión de alquileres en Excellence Conciergerie?",
+    "description": "Nuestros precios comienzan en un 20% más IVA del monto bruto de las reservas pagadas por el viajero. Establecemos un presupuesto personalizado según la naturaleza y ubicación de su propiedad."
+  },
+  {
+    "title": "4. ¿Quién puede beneficiarse de su servicio de conserjería?",
+    "description": "Atendemos tanto a particulares que están de vacaciones o en viaje de negocios como a empresas que desean ofrecer confort de alta gama a sus colaboradores o clientes VIP."
+  },
+  {
+    "title": "5. ¿Qué servicios de lujo ofrecen?",
+    "description": "Nuestro Servicio de Conserjería Privada cubre una amplia gama de servicios: chef en casa, masajes, organización de eventos privados, reservas VIP, transporte y mucho más."
+  },
+  {
+    "title": "6. ¿Cuáles son los precios de sus suscripciones de conserjería?",
+    "description": "Nuestros planes comienzan desde 200 € al mes para asistencia entre semana (Plan Básico). Los precios varían según el nivel de cobertura (Premium o Prestige) y los servicios incluidos."
+  }
   ],
 
   "contactSubtitle": "Póngase en Contacto",
