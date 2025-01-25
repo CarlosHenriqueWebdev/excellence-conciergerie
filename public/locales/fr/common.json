@@ -278,27 +278,27 @@
     {
       "icon": "vector12.svg",
       "title": "Service Clé en Main",
-      "description": "De la mise en ligne des annonces au ménage, en passant par l’accueil des voyageurs."
+      "description": "De la mise en ligne de vos annonces au ménage en passant par l’accueil personnalisé des voyageurs, nous gérons chaque étape de la location saisonnière. Grâce à notre équipe interne et à notre expertise, vous gagnez en sérénité tout en assurant une expérience d’hébergement irréprochable."
     },
     {
       "icon": "vector13.svg",
       "title": "Conciergerie Premium",
-      "description": "Options haut de gamme (chef à domicile, massages, organisation d’excursions) pour séduire une clientèle exigeante."
+      "description": "Pour répondre aux attentes d’une clientèle exigeante, nous proposons des prestations haut de gamme : chef à domicile, massages sur place, organisation d’excursions, transferts VIP, etc. Notre objectif : sublimer chaque séjour et faire vivre des moments inoubliables à vos locataires."
     },
     {
       "icon": "vector14.svg",
       "title": "Rentabilité Optimisée",
-      "description": "Stratégies tarifaires adaptées, visuels professionnels, suivi des avis clients pour maximiser les revenus."
+      "description": "Nous mettons en place des stratégies tarifaires adaptées, des visuels professionnels et un suivi permanent des avis clients pour maximiser vos revenus. Notre connaissance du marché local et notre maîtrise des outils de réservation nous permettent d’ajuster les prix de manière dynamique et pertinente."
     },
     {
       "icon": "vector15.svg",
       "title": "Réactivité et Qualité",
-      "description": "Equipe interne de nettoyage, assistance 24/7 pour les locataires, rapport détaillé pour le propriétaire."
+      "description": "Notre équipe interne de nettoyage garantit un niveau de propreté irréprochable pour chaque arrivée. Nous assurons également une assistance 24/7 pour les locataires et un rapport détaillé pour le propriétaire, afin de garantir la transparence et la satisfaction de tous."
     },
     {
       "icon": "vector22.svg",
-      "title": "Réactivité et Qualité",
-      "description": "Nous restons à l'avant-garde avec des solutions innovantes et des insights sur le marché immobilier de luxe. Que ce soit en mettant en œuvre des technologies pour des opérations efficaces ou en s'adaptant aux tendances du marché, nous améliorons la performance et la satisfaction des clients."
+      "title": "Contrôle Qualité et Accueil Personnalisé",
+      "description": "Afin de maintenir un haut niveau de standing, nous disposons d’une gouvernante qui vérifie l’état des lieux et la propreté avant chaque arrivée. De plus, nous offrons un kit d’accueil personnalisé pour que chaque voyageur se sente immédiatement chez soi. Ce souci du détail garantit un séjour exceptionnel."
     }
   ],
 
