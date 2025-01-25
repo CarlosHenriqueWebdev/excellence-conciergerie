@@ -9,16 +9,13 @@
     { "language": "Francés", "flag": "flag2.svg", "DO_NOT_CHANGE": "fr" }
   ],
 
-  "guideLinesLinks": "Warning: The only accepted values for the DO_NOT_CHANGE fields in navLinks are the current website IDs, which are as follows: about, whyUs, message, subscriptions, services, faq, contact",
-  "navLinks": [
-    { "text": "Compromiso", "DO_NOT_CHANGE": "about" },
-    { "text": "Gestión de Alquileres", "DO_NOT_CHANGE": "services" },
-    {
-      "text": "Suscripciones Personalizadas",
-      "DO_NOT_CHANGE": "subscriptions"
-    },
-    { "text": "Contacto", "DO_NOT_CHANGE": "contact" }
-  ],
+  "guideLinesLinks": "Advertencia: Los únicos valores aceptados para los campos DO_NOT_CHANGE en navLinks son los IDs actuales del sitio web, que son los siguientes: about, whyUs, message, subscriptions, services, faq, contact",
+"navLinks": [
+  { "text": "Nuestra Misión", "DO_NOT_CHANGE": "about" },
+  { "text": "Gestión de Propiedades", "DO_NOT_CHANGE": "services" },
+  { "text": "Conserjería Privada", "DO_NOT_CHANGE": "subscriptions" },
+  { "text": "Contacto", "DO_NOT_CHANGE": "contact" }
+],
 
   "blankOption": "Selecciona una opción",
   "fullNameLabel": "Nombre Completo",
