@@ -9,13 +9,13 @@
     { "language": "Francês", "flag": "flag2.svg", "DO_NOT_CHANGE": "fr" }
   ],
 
-  "guideLinesLinks": "Warning: The only accepted values for the DO_NOT_CHANGE fields in navLinks are the current website IDs, which are as follows: about, whyUs, message, subscriptions, services, faq, contact",
-  "navLinks": [
-    { "text": "Compromisso", "DO_NOT_CHANGE": "about" },
-    { "text": "Gestão de Locação", "DO_NOT_CHANGE": "services" },
-    { "text": "Assinaturas Personalizadas", "DO_NOT_CHANGE": "subscriptions" },
-    { "text": "Contato", "DO_NOT_CHANGE": "contact" }
-  ],
+ "guideLinesLinks": "Aviso: Os únicos valores aceitos para os campos DO_NOT_CHANGE em navLinks são os IDs atuais do site, que são os seguintes: about, whyUs, message, subscriptions, services, faq, contact",
+"navLinks": [
+  { "text": "Nossa Missão", "DO_NOT_CHANGE": "about" },
+  { "text": "Gestão de Propriedades", "DO_NOT_CHANGE": "services" },
+  { "text": "Concierge Privado", "DO_NOT_CHANGE": "subscriptions" },
+  { "text": "Contato", "DO_NOT_CHANGE": "contact" }
+],
 
   "blankOption": "Selecione uma opção",
   "fullNameLabel": "Nome Completo",
