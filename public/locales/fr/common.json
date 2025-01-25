@@ -376,38 +376,38 @@
       "title": "Excellence Basique",
       "subTitle": "Du lundi au vendredi, de 8h30 à 17h30",
       "pros": [
-        { "text": "Entretien complet de votre propriété." },
-        { "text": "Service personnalisé et dédié." },
-        { "text": "Surveillance 24/7 pour une sécurité totale." },
-        { "text": "Solutions adaptées à vos besoins uniques." }
+        { "text": "Assistance en semaine, horaires fixes." },
+        { "text": "Idéal pour les besoins planifiés." },
+        { "text": "Aide pour réservations simples." },
+        { "text": "Service abordable et fonctionnel." }
       ]
     },
     {
       "icon": "vector18.svg",
       "pattern": "pattern2.webp",
       "title": "Excellence Premium",
-      "subTitle": "7 jours sur 7, avec un planning flexible",
+      "subTitle": "7 jours sur 7, de 08:00 à 20:00",
       "pros": [
-        { "text": "Tous les avantages de Excellence Basique." },
-        { "text": "Accès prioritaire à nos partenaires exclusifs." },
-        { "text": "Services de conciergerie de luxe inclus." },
-        { "text": "Gestion complète des événements et des voyages." }
+        { "text": "Couverture étendue, week-ends inclus." },
+        { "text": "Accès prioritaire à nos partenaires." },
+        { "text": "Réactivité renforcée pour vos demandes." },
+        { "text": "Parfait pour un accompagnement plus flexible." }
       ]
     },
     {
       "icon": "vector19.svg",
       "pattern": "pattern3.webp",
       "title": "Excellence Prestige",
-      "subTitle": "Service 24/7, avec gestion VIP personnalisée",
+      "subTitle": "Service 24/7",
       "pros": [
-        { "text": "Tous les avantages de Excellence Premium." },
-        { "text": "Consultation en design intérieur incluse." },
-        { "text": "Accès exclusif à nos services de haut niveau." },
-        { "text": "Gestion intégrée de la propriété et des investissements." }
+        { "text": "Assistance illimitée, jour et nuit." },
+        { "text": "Gestion d’urgences et demandes spéciales." },
+        { "text": "Accès VIP à tous nos services." },
+        { "text": "Expérience haut de gamme sans limite." }
       ]
     }
   ],
-  "packsButton": "Découvrez Nos Offres et Abonnez-vous",
+  "packsButton": "Abonnez-vous",
 
   "faqSubtitle": "Questions Fréquemment Posées",
   "faqTitle": "Nous Sommes Là Pour Vous Aider",
